@@ -1,4 +1,3 @@
-import React from "react";
 import { RadarIcon } from "./RadarIcon";
 
 type AppHeaderProps = {

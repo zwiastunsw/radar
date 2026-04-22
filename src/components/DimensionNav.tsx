@@ -1,4 +1,3 @@
-import React from "react";
 import type { AnswersState, Dimension, Question } from "../types";
 import { cn } from "../utils/scoring";
 import { Card, SectionTitle } from "./ui";

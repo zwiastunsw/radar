@@ -1,5 +1,3 @@
-import React from "react";
-
 type RadarIconProps = {
   size?: number | string;
   className?: string;

@@ -83,3 +83,10 @@ export type DimensionThreshold = {
 export type ModelScoring = AssessmentModel["scoring"];
 
 export type ModelRecommendationsConfig = AssessmentModel["recommendations"];
+
+export type ExecutiveDecisionMeta = {
+  id: string;
+  title: string;
+  reason: string;
+  effect: string;
+};

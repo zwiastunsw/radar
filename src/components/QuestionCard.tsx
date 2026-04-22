@@ -1,4 +1,3 @@
-import React from "react";
 import type { Decision, Dimension, Question, AssessmentModel } from "../types";
 import { getMaturityLabel, cn } from "../utils/scoring";
 import { Badge, Card } from "./ui";

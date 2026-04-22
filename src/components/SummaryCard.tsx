@@ -1,4 +1,3 @@
-import React from "react";
 import { Card } from "./ui";
 
 function formatValue(value: string | number) {

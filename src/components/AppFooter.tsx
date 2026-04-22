@@ -1,4 +1,3 @@
-import React from "react";
 import logoSygnet from "../assets/logo-sygnet.svg";
 import { AccessibleAppIcon } from "../components/AccessibleAppIcon";
 

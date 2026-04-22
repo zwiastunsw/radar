@@ -119,8 +119,12 @@ function getRecommendationLevel(
   if (answer === undefined) return null;
   if (!Number.isInteger(answer)) return null;
 
-  const mapping = model.recommendations.answer_to_level_mapping;
-  const key = String(answer) as keyof typeof mapping;
+  const mapping = model.recommendations
+    .answer_to_level_mapping as Partial<
+      Record<string, RecommendationLevel | null>
+    >;
+
+  const key = String(answer);
   return mapping[key] ?? null;
 }
 
@@ -163,7 +167,10 @@ export function buildRecommendations(
   const level = getRecommendationLevel(answer, model);
   if (!level) return [];
 
-  const recommendationSet = question.recommendations?.[level];
+  const recommendationSet = question.recommendations?.[
+    level
+  ] as Partial<Record<RecommendationType, string>> | undefined;
+
   if (!recommendationSet) return [];
 
   const orderedTypes: RecommendationType[] = [
@@ -173,18 +180,27 @@ export function buildRecommendations(
   ];
 
   return orderedTypes
-    .filter((type) => recommendationSet[type])
-    .map((type) => ({
-      key: `${question.id}-${level}-${type}`,
-      questionId: question.id,
-      questionName: getQuestionDisplayName(question),
-      dimensionId: question.dimension_id,
-      decisionId: question.decision_id,
-      level,
-      priority: getPriorityFromLevel(level),
-      type,
-      text: recommendationSet[type] as string,
-    }));
+    .map((type) => {
+      const text = recommendationSet[type];
+      if (!text) return null;
+
+      return {
+        key: `${question.id}-${level}-${type}`,
+        questionId: question.id,
+        questionName: getQuestionDisplayName(question),
+        dimensionId: question.dimension_id,
+        decisionId: question.decision_id,
+        level,
+        priority: getPriorityFromLevel(level),
+        type,
+        text,
+      };
+    })
+    .filter(
+      (
+        item
+      ): item is ExecutiveRecommendation => item !== null
+    );
 }
 
 function sortRecommendations(

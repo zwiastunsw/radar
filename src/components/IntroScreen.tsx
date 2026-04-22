@@ -1,4 +1,3 @@
-import React from "react";
 import type { AssessmentMetadata, AssessmentModel } from "../types";
 import { Card, ProgressBar, Badge } from "./ui";
 
