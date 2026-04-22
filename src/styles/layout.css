@@ -62,6 +62,7 @@
   --maturity-overall-ring: #cbb6df;  
 }
 
+
 [data-theme="dark"] {
   --bg: #0f0914;
   --surface: #16101c;
@@ -682,4 +683,46 @@ background: linear-gradient(
   .app-footer__logo {
     width: 110px;
   }
+}
+
+
+/* ===== LISTY SYSTEMOWE ===== */
+
+.list {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.list > li {
+  margin-top: 0.5rem;
+}
+
+.list > li:first-child {
+  margin-top: 0;
+}
+
+/* wariant bardziej „UI” (opcjonalny) */
+.list-soft {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.list-soft > li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.list-soft > li:first-child {
+  margin-top: 0;
+}
+
+.list-soft > li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--text-muted);
 }
