@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import assessmentModel from "./assessment-questions.json";
 import type {
   AnswersState,
@@ -39,9 +39,7 @@ function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
-function getAllowedAnswerValues(
-  model: typeof assessmentModel
-): number[] {
+function getAllowedAnswerValues(model: typeof assessmentModel): number[] {
   const mappedValues = Object.keys(model.recommendations.answer_to_level_mapping)
     .map((key) => Number(key))
     .filter((value) => Number.isInteger(value));
@@ -51,8 +49,8 @@ function getAllowedAnswerValues(
 
 function sanitizeAnswers(
   rawAnswers: unknown,
-   questionMap: Record<string, Question>,
-   model: typeof assessmentModel
+  questionMap: Record<string, Question>,
+  model: typeof assessmentModel
 ): AnswersState {
   if (!isRecord(rawAnswers)) return {};
 
@@ -68,12 +66,11 @@ function sanitizeAnswers(
     const allowedValues = getAllowedAnswerValues(model);
     if (!allowedValues.includes(value)) continue;
 
-     result[key] = value;
-   }
- 
-   return result;
- }
+    result[key] = value;
+  }
 
+  return result;
+}
 
 function sanitizeNotes(
   rawNotes: unknown,
@@ -133,14 +130,14 @@ export default function AccessibilityAssessmentUI() {
   const dimensionMap = useMemo(() => getDimensionMap(model), [model]);
   const decisionMap = useMemo(() => getDecisionMap(model), [model]);
   const questionMap = useMemo(
-     () =>
-       Object.fromEntries(model.questions.map((q) => [q.id, q])) as Record<
-         string,
-         Question
-       >,
-     [model]
+    () =>
+      Object.fromEntries(model.questions.map((q) => [q.id, q])) as Record<
+        string,
+        Question
+      >,
+    [model]
   );
-  
+
   const questionsByDimension = useMemo(() => {
     return model.questions.reduce((acc, q) => {
       if (!acc[q.dimension_id]) acc[q.dimension_id] = [];
@@ -170,7 +167,10 @@ export default function AccessibilityAssessmentUI() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<AnswersState>({});
   const [notes, setNotes] = useState<NotesState>({});
+  const [liveMessage, setLiveMessage] = useState("");
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const questionHeadingRef = useRef<HTMLHeadingElement | null>(null);
+  const shouldMoveFocusRef = useRef(false);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("sdadc-theme");
@@ -201,6 +201,17 @@ export default function AccessibilityAssessmentUI() {
   );
   const currentQuestion = activeQuestions[safeIndex];
 
+  useEffect(() => {
+    if (stage !== "form") return;
+    if (!currentQuestion) return;
+    if (!shouldMoveFocusRef.current) return;
+
+    requestAnimationFrame(() => {
+      questionHeadingRef.current?.focus();
+      shouldMoveFocusRef.current = false;
+    });
+  }, [stage, activeDimensionId, currentIndex, currentQuestion]);
+
   const dimensionScore = useMemo(() => {
     const values = activeQuestions
       .map((q) => answers[q.id])
@@ -213,6 +224,24 @@ export default function AccessibilityAssessmentUI() {
   const answeredCount = Object.values(answers).filter(
     (v) => v !== undefined
   ).length;
+
+  const currentDimensionIndex = model.dimensions.findIndex(
+    (d) => d.id === activeDimensionId
+  );
+  const isLastQuestionInDimension =
+    activeQuestions.length > 0 && safeIndex >= activeQuestions.length - 1;
+
+  const nextDimension = (() => {
+    for (let i = currentDimensionIndex + 1; i < model.dimensions.length; i++) {
+      const candidate = model.dimensions[i];
+      if ((questionsByDimension[candidate.id] || []).length > 0) {
+        return candidate;
+      }
+    }
+    return null;
+  })();
+
+  const isLastQuestionOverall = isLastQuestionInDimension && !nextDimension;
 
   const handleExportJson = () => {
     const payload = {
@@ -238,11 +267,10 @@ export default function AccessibilityAssessmentUI() {
       const text = await file.text();
       const parsed = JSON.parse(text) as ImportedAssessmentPayload;
       const importedSchemaVersion =
-         typeof parsed.schema_version === "string" ? parsed.schema_version : null;
+        typeof parsed.schema_version === "string" ? parsed.schema_version : null;
       const currentSchemaVersion = model.schema_version ?? "1.0";
- 
+
       const nextMetadata = sanitizeMetadata(parsed.metadata);
-	   
       const nextAnswers = sanitizeAnswers(parsed.answers, questionMap, model);
       const nextNotes = sanitizeNotes(parsed.notes, validQuestionIds);
 
@@ -267,14 +295,21 @@ export default function AccessibilityAssessmentUI() {
       setActiveDimensionId(nextDimensionId);
       setCurrentIndex(nextIndex);
       setStage("form");
-       if (
-         importedSchemaVersion &&
-         importedSchemaVersion !== currentSchemaVersion
-       ) {
-         window.alert(
-           `Uwaga: importowany plik ma wersję kontraktu ${importedSchemaVersion}, a bieżąca aplikacja pracuje na wersji ${currentSchemaVersion}. Dane zostały wczytane po sanityzacji, ale część informacji mogła zostać pominięta.`
-         );
-       }	  
+      shouldMoveFocusRef.current = true;
+      setLiveMessage(
+        `Wczytano ocenę. Aktywny wymiar: ${
+          dimensionMap[nextDimensionId]?.name_pl ?? "nieznany"
+        }.`
+      );
+
+      if (
+        importedSchemaVersion &&
+        importedSchemaVersion !== currentSchemaVersion
+      ) {
+        window.alert(
+          `Uwaga: importowany plik ma wersję kontraktu ${importedSchemaVersion}, a bieżąca aplikacja pracuje na wersji ${currentSchemaVersion}. Dane zostały wczytane po sanityzacji, ale część informacji mogła zostać pominięta.`
+        );
+      }
     } catch {
       window.alert(
         "Nie udało się wczytać pliku JSON. Sprawdź, czy plik ma poprawny format."
@@ -290,6 +325,67 @@ export default function AccessibilityAssessmentUI() {
 
   const handleGoHome = () => {
     setStage("intro");
+  };
+
+  const handlePrevious = () => {
+    if (!activeQuestions.length) return;
+
+    if (safeIndex > 0) {
+      shouldMoveFocusRef.current = true;
+      setCurrentIndex((i) =>
+        clamp(i - 1, 0, Math.max(activeQuestions.length - 1, 0))
+      );
+      setLiveMessage(
+        `Pytanie ${safeIndex} z ${activeQuestions.length} w wymiarze ${
+          dimensionMap[activeDimensionId]?.name_pl ?? ""
+        }.`
+      );
+      return;
+    }
+
+    for (let i = currentDimensionIndex - 1; i >= 0; i--) {
+      const previousDimension = model.dimensions[i];
+      const previousQuestions = questionsByDimension[previousDimension.id] || [];
+
+      if (previousQuestions.length > 0) {
+        shouldMoveFocusRef.current = true;
+        setActiveDimensionId(previousDimension.id);
+        setCurrentIndex(previousQuestions.length - 1);
+        setLiveMessage(
+          `Przejście do poprzedniego wymiaru: ${previousDimension.name_pl}.`
+        );
+        return;
+      }
+    }
+  };
+
+  const handleNext = () => {
+    if (!activeQuestions.length) return;
+
+    if (!isLastQuestionInDimension) {
+      shouldMoveFocusRef.current = true;
+      setCurrentIndex((i) =>
+        clamp(i + 1, 0, Math.max(activeQuestions.length - 1, 0))
+      );
+      setLiveMessage(
+        `Pytanie ${safeIndex + 2} z ${activeQuestions.length} w wymiarze ${
+          dimensionMap[activeDimensionId]?.name_pl ?? ""
+        }.`
+      );
+      return;
+    }
+
+    if (nextDimension) {
+      shouldMoveFocusRef.current = true;
+      setActiveDimensionId(nextDimension.id);
+      setCurrentIndex(0);
+      setLiveMessage(`Przejście do kolejnego wymiaru: ${nextDimension.name_pl}.`);
+      return;
+    }
+
+    setLiveMessage(
+      "To jest ostatnie pytanie ostatniego wymiaru. Możesz przejść do wyników."
+    );
   };
 
   return (
@@ -321,20 +417,23 @@ export default function AccessibilityAssessmentUI() {
           }
         />
 
+        <div className="sr-only" aria-live="polite">
+          {liveMessage}
+        </div>
+
         <main id="main-content" className="app-main">
           {stage === "intro" ? (
-<IntroScreen
-  metadata={metadata}
-  setMetadata={setMetadata}
-  onStart={() => setStage("form")}
-
-/>
+            <IntroScreen
+              metadata={metadata}
+              setMetadata={setMetadata}
+              onStart={() => setStage("form")}
+            />
           ) : stage === "results" ? (
             <ResultsScreen
               model={model}
               metadata={metadata}
               answers={answers}
-			  notes={notes}
+              notes={notes}
               dimensionMap={dimensionMap}
               decisionMap={decisionMap}
             />
@@ -345,8 +444,12 @@ export default function AccessibilityAssessmentUI() {
                 questionsByDimension={questionsByDimension}
                 activeDimensionId={activeDimensionId}
                 setActiveDimensionId={(id) => {
+                  shouldMoveFocusRef.current = true;
                   setActiveDimensionId(id);
                   setCurrentIndex(0);
+                  setLiveMessage(
+                    `Przejście do wymiaru: ${dimensionMap[id]?.name_pl ?? id}.`
+                  );
                 }}
                 answers={answers}
                 dimensionMap={dimensionMap}
@@ -354,27 +457,27 @@ export default function AccessibilityAssessmentUI() {
 
               <div className="space-y-4">
                 {currentQuestion ? (
-<QuestionCard
-  question={currentQuestion}
-  answer={answers[currentQuestion.id]}
-  onAnswer={(v) =>
-    setAnswers((prev) => ({
-      ...prev,
-      [currentQuestion.id]: v,
-    }))
-  }
-  note={notes[currentQuestion.id]}
-  onNote={(v) =>
-    setNotes((prev) => ({
-      ...prev,
-      [currentQuestion.id]: v,
-    }))
-  }
-  dimension={dimensionMap[currentQuestion.dimension_id]}
-  decision={decisionMap[currentQuestion.decision_id]}
-  dimensionScore={dimensionScore}
-  model={model}
-/>
+                  <QuestionCard
+                    question={currentQuestion}
+                    answer={answers[currentQuestion.id]}
+                    onAnswer={(v) =>
+                      setAnswers((prev) => ({
+                        ...prev,
+                        [currentQuestion.id]: v,
+                      }))
+                    }
+                    note={notes[currentQuestion.id]}
+                    onNote={(v) =>
+                      setNotes((prev) => ({
+                        ...prev,
+                        [currentQuestion.id]: v,
+                      }))
+                    }
+                    dimension={dimensionMap[currentQuestion.dimension_id]}
+                    decision={decisionMap[currentQuestion.decision_id]}
+                    dimensionScore={dimensionScore}
+                    headingRef={questionHeadingRef}
+                  />
                 ) : (
                   <Card className="p-5 text-sm text-[var(--text-muted)]">
                     Brak pytań w wybranym wymiarze.
@@ -391,15 +494,7 @@ export default function AccessibilityAssessmentUI() {
                     <div className="flex gap-2">
                       <button
                         type="button"
-                        onClick={() =>
-                          setCurrentIndex((i) =>
-                            clamp(
-                              i - 1,
-                              0,
-                              Math.max(activeQuestions.length - 1, 0)
-                            )
-                          )
-                        }
+                        onClick={handlePrevious}
                         className="rounded-2xl border border-[var(--border)] px-4 py-2 text-sm text-[var(--text-main)] hover:bg-[var(--card-bg-hover)]"
                       >
                         ← Poprzednie
@@ -407,18 +502,14 @@ export default function AccessibilityAssessmentUI() {
 
                       <button
                         type="button"
-                        onClick={() =>
-                          setCurrentIndex((i) =>
-                            clamp(
-                              i + 1,
-                              0,
-                              Math.max(activeQuestions.length - 1, 0)
-                            )
-                          )
-                        }
-                        className="btn-primary rounded-2xl bg-[var(--brand)] px-4 py-2 text-sm text-[color:var(--on-brand)] hover:opacity-90"
+                        onClick={handleNext}
+                        className="btn-primary rounded-2xl px-4 py-2 text-sm"
                       >
-                        Następne →
+                        {isLastQuestionOverall
+                          ? "To już ostatnie pytanie"
+                          : isLastQuestionInDimension
+                          ? "Następny wymiar →"
+                          : "Następne pytanie →"}
                       </button>
                     </div>
                   </div>

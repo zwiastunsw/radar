@@ -1,4 +1,10 @@
-import type { Decision, Dimension, Question, AssessmentModel } from "../types";
+import type { RefObject } from "react";
+import type {
+  Decision,
+  Dimension,
+  Question,
+  AssessmentModel,
+} from "../types";
 import { getMaturityLabel, cn } from "../utils/scoring";
 import { Badge, Card } from "./ui";
 
@@ -45,7 +51,7 @@ function ScaleOptions({
 
             <div
               className={cn(
-                "mt-1 text-xs leading-5",
+                "mt-1 flex-1 text-xs leading-5",
                 selected
                   ? "text-[color:var(--on-brand)] opacity-85"
                   : "text-[var(--text-muted)]"
@@ -70,6 +76,7 @@ export function QuestionCard({
   onNote,
   dimensionScore,
   model,
+  headingRef,
 }: {
   question: Question;
   answer: number | undefined;
@@ -80,6 +87,7 @@ export function QuestionCard({
   onNote: (value: string) => void;
   dimensionScore: number | null;
   model: AssessmentModel;
+  headingRef?: RefObject<HTMLHeadingElement | null>;
 }) {
   const options = question.answers ?? [];
   const noteId = `note-${question.id}`;
@@ -97,7 +105,11 @@ export function QuestionCard({
         ) : null}
       </div>
 
-      <h3 className="text-lg font-semibold text-[var(--text-main)]">
+      <h3
+        ref={headingRef}
+        tabIndex={-1}
+        className="text-lg font-semibold text-[var(--text-main)] focus:outline-none"
+      >
         {question.text}
       </h3>
 
@@ -115,15 +127,15 @@ export function QuestionCard({
         <ScaleOptions options={options} value={answer} onChange={onAnswer} />
       </div>
 
-     {question.evidence_examples?.length ? (
-         <div className="mt-4 text-sm leading-6 text-[var(--text-muted)]">
-           <span className="font-medium text-[var(--text-main)]">
-             Przykłady dowodów:
-           </span>{" "}
-           {question.evidence_examples.join(", ")}
-         </div>
-       ) : null}
-	   
+      {question.evidence_examples?.length ? (
+        <div className="mt-4 text-sm leading-6 text-[var(--text-muted)]">
+          <span className="font-medium text-[var(--text-main)]">
+            Przykłady dowodów:
+          </span>{" "}
+          {question.evidence_examples.join(", ")}
+        </div>
+      ) : null}
+
       <div className="mt-4">
         <label
           htmlFor={noteId}
