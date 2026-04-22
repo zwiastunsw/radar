@@ -477,6 +477,7 @@ export default function AccessibilityAssessmentUI() {
                     decision={decisionMap[currentQuestion.decision_id]}
                     dimensionScore={dimensionScore}
                     headingRef={questionHeadingRef}
+					model={model}
                   />
                 ) : (
                   <Card className="p-5 text-sm text-[var(--text-muted)]">
