@@ -327,7 +327,7 @@ export default function AccessibilityAssessmentUI() {
   metadata={metadata}
   setMetadata={setMetadata}
   onStart={() => setStage("form")}
-  model={model}
+
 />
           ) : stage === "results" ? (
             <ResultsScreen
