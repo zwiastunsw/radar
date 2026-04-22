@@ -1,0 +1,4031 @@
+{
+  "schema_version": "1.0",
+  "tool_name": "Accessibility Maturity Self-Assessment",
+  "tool_variant": "managerial",
+  "language": "pl-PL",
+  "description": "Pełny model danych dla arkusza samooceny dojrzałości dostępności opartego na wymiarach W3C oraz modelu decyzji zarządczych.",
+  "scoring": {
+    "scale": [
+      {
+        "value": 0,
+        "label": "poziom początkowy",
+        "description": "Brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+      },
+      {
+        "value": 1,
+        "label": "poziom porządkowania",
+        "description": "Podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+      },
+      {
+        "value": 2,
+        "label": "poziom integracji (częściowy)",
+        "description": "Działania są wdrażane i stosowane w części procesów lub obszarów."
+      },
+      {
+        "value": 3,
+        "label": "poziom integracji",
+        "description": "Działania są włączone w procesy i stosowane w większości przypadków."
+      },
+      {
+        "value": 4,
+        "label": "poziom dojrzałości",
+        "description": "Działania są systemowe, spójne i stale doskonalone."
+      }
+    ],
+    "dimension_thresholds": [
+      {
+        "min": 0.0,
+        "max": 1.49,
+        "label": "poziom początkowy"
+      },
+      {
+        "min": 1.5,
+        "max": 2.49,
+        "label": "poziom porządkowania"
+      },
+      {
+        "min": 2.5,
+        "max": 3.49,
+        "label": "poziom integracji"
+      },
+      {
+        "min": 3.5,
+        "max": 4.0,
+        "label": "poziom dojrzałości"
+      }
+    ]
+  },
+  "dimensions": [
+    {
+      "id": "oversight_culture",
+      "name_pl": "Zarządzanie i kultura organizacyjna",
+      "name_en": "Oversight and Culture",
+      "description": "Przywództwo, nadzór, monitoring, kultura organizacyjna i umiejscowienie dostępności w zarządzaniu."
+    },
+    {
+      "id": "personnel",
+      "name_pl": "Personel",
+      "name_en": "Personnel",
+      "description": "Role, odpowiedzialności, mandat i koordynacja działań."
+    },
+    {
+      "id": "knowledge_skills",
+      "name_pl": "Wiedza i umiejętności",
+      "name_en": "Knowledge & Skills",
+      "description": "Kompetencje, szkolenia, praktyczne stosowanie wiedzy."
+    },
+    {
+      "id": "communications",
+      "name_pl": "Komunikacja",
+      "name_en": "Communications",
+      "description": "Publikacja informacji, dokumenty, treści i standardy komunikacyjne."
+    },
+    {
+      "id": "ict_lifecycle",
+      "name_pl": "Cykl życia TIK",
+      "name_en": "ICT Development Lifecycle",
+      "description": "Projektowanie, rozwój, testowanie i utrzymanie usług cyfrowych oraz systemów IT."
+    },
+    {
+      "id": "procurement",
+      "name_pl": "Zamówienia",
+      "name_en": "Procurement",
+      "description": "Uwzględnianie, egzekwowanie i weryfikacja wymagań dostępności w zamówieniach."
+    },
+    {
+      "id": "support",
+      "name_pl": "Wsparcie",
+      "name_en": "Support",
+      "description": "Narzędzia, eksperci, zgłoszenia, budżet i zdolność organizacji do naprawy problemów."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "S1",
+      "group": "strategic",
+      "name_pl": "Ustalenie kierunku i włączenie dostępności do zarządzania"
+    },
+    {
+      "id": "S2",
+      "group": "strategic",
+      "name_pl": "Określenie odpowiedzialności, ról i mandatu działania"
+    },
+    {
+      "id": "S3",
+      "group": "strategic",
+      "name_pl": "Wprowadzenie monitoringu i nadzoru"
+    },
+    {
+      "id": "I1",
+      "group": "information",
+      "name_pl": "Ustanowienie standardów publikacji informacji"
+    },
+    {
+      "id": "I2",
+      "group": "information",
+      "name_pl": "Włączenie dostępności do procesu publikacji"
+    },
+    {
+      "id": "I3",
+      "group": "information",
+      "name_pl": "Wprowadzenie kontroli jakości informacji"
+    },
+    {
+      "id": "U1",
+      "group": "services",
+      "name_pl": "Uwzględnienie dostępności w projektowaniu usług cyfrowych"
+    },
+    {
+      "id": "U2",
+      "group": "services",
+      "name_pl": "Uwzględnienie użytkowników w projektowaniu i ocenie usług"
+    },
+    {
+      "id": "T1",
+      "group": "it",
+      "name_pl": "Uwzględnienie dostępności w rozwoju systemów IT"
+    },
+    {
+      "id": "T2",
+      "group": "it",
+      "name_pl": "Wprowadzenie testowania dostępności"
+    },
+    {
+      "id": "T3",
+      "group": "it",
+      "name_pl": "Zapewnienie utrzymania i naprawy dostępności"
+    },
+    {
+      "id": "Z1",
+      "group": "procurement",
+      "name_pl": "Uwzględnienie wymagań dostępności w zamówieniach"
+    },
+    {
+      "id": "Z2",
+      "group": "procurement",
+      "name_pl": "Egzekwowanie wymagań dostępności od wykonawców"
+    },
+    {
+      "id": "Z3",
+      "group": "procurement",
+      "name_pl": "Weryfikacja i odbiór dostępności"
+    },
+    {
+      "id": "K1",
+      "group": "competence",
+      "name_pl": "Zapewnienie systemowego rozwoju kompetencji"
+    },
+    {
+      "id": "K2",
+      "group": "competence",
+      "name_pl": "Zapewnienie praktycznego stosowania kompetencji"
+    },
+    {
+      "id": "W1",
+      "group": "support",
+      "name_pl": "Zapewnienie narzędzi i wsparcia eksperckiego"
+    },
+    {
+      "id": "W2",
+      "group": "support",
+      "name_pl": "Wprowadzenie mechanizmów zgłaszania i obsługi problemów"
+    },
+    {
+      "id": "W3",
+      "group": "support",
+      "name_pl": "Zapewnienie zdolności organizacji do działań naprawczych"
+    }
+  ],
+  "recommendation_library": {
+    "strategic": {
+      "S1": "Określić dostępność jako element zarządzania organizacją.",
+      "S2": "Włączyć dostępność do strategii, celów i planów działania.",
+      "S3": "Ustanowić jasny kierunek działań w zakresie dostępności.",
+      "S4": "Określić odpowiedzialność za dostępność na poziomie organizacji.",
+      "S5": "Przypisać role i zakresy odpowiedzialności.",
+      "S6": "Zapewnić, aby odpowiedzialność była powiązana z realnymi uprawnieniami.",
+      "S7": "Wprowadzić system monitorowania dostępności.",
+      "S8": "Zapewnić regularne przeglądy i raportowanie.",
+      "S9": "Wykorzystywać wyniki monitoringu do podejmowania decyzji.",
+      "S10": "Zapewnić zasoby niezbędne do realizacji działań.",
+      "S11": "Uwzględnić dostępność w planowaniu budżetu.",
+      "S12": "Zapewnić zdolność organizacji do usuwania problemów.",
+      "S13": "Włączyć dostępność do podejmowania decyzji organizacyjnych.",
+      "S14": "Traktować dostępność jako element zarządzania ryzykiem.",
+      "S15": "Zapewnić spójność działań w całej organizacji."
+    },
+    "systemic": {
+      "SYS1": "Ustanowić standardy działania obowiązujące w całej organizacji.",
+      "SYS2": "Określić wymagania dostępności w danym obszarze.",
+      "SYS3": "Zapewnić jednolite stosowanie standardów.",
+      "SYS4": "Włączyć dostępność do istniejących procesów.",
+      "SYS5": "Zmodyfikować procedury tak, aby uwzględniały dostępność.",
+      "SYS6": "Zapewnić, aby dostępność była elementem codziennych działań.",
+      "SYS7": "Wprowadzić mechanizmy weryfikacji dostępności.",
+      "SYS8": "Zapewnić kontrolę jakości przed publikacją lub wdrożeniem.",
+      "SYS9": "Określić odpowiedzialność za weryfikację.",
+      "SYS10": "Uwzględnić dostępność na wszystkich etapach cyklu życia.",
+      "SYS11": "Zapewnić ciągłość działań w czasie.",
+      "SYS12": "Zapobiegać ponownemu powstawaniu problemów.",
+      "SYS13": "Zapewnić współpracę między obszarami organizacji.",
+      "SYS14": "Zintegrować działania związane z dostępnością.",
+      "SYS15": "Zapewnić spójność decyzji i działań.",
+      "SYS16": "Wprowadzić mechanizmy egzekwowania wymagań dostępności.",
+      "SYS17": "Zapewnić kontrolę realizacji wymagań przez wykonawców.",
+      "SYS18": "Uwzględnić dostępność w odbiorze produktów i usług.",
+      "SYS19": "Zapewnić dostęp do wiedzy i materiałów wspierających.",
+      "SYS20": "Wprowadzić system aktualizacji wiedzy.",
+      "SYS21": "Powiązać wiedzę z praktyką działania."
+    },
+    "operational": {
+      "OP1": "Opracować wytyczne, instrukcje i checklisty.",
+      "OP2": "Przygotować szablony dostępnych dokumentów.",
+      "OP3": "Udostępnić narzędzia wspierające dostępność.",
+      "OP4": "Wprowadzić konkretne działania w codziennej pracy.",
+      "OP5": "Zapewnić stosowanie wymagań w praktyce.",
+      "OP6": "Uprościć działania poprzez gotowe rozwiązania.",
+      "OP7": "Wprowadzić testy dostępności.",
+      "OP8": "Usuwać zidentyfikowane problemy.",
+      "OP9": "Prowadzić rejestr problemów.",
+      "OP10": "Uruchomić kanały zgłaszania problemów.",
+      "OP11": "Zapewnić wsparcie dla pracowników.",
+      "OP12": "Ułatwić rozwiązywanie problemów w praktyce.",
+      "OP13": "Przeprowadzić szkolenia ukierunkowane na praktykę.",
+      "OP14": "Dostosować szkolenia do ról pracowników.",
+      "OP15": "Wspierać wdrażanie wiedzy w działaniu."
+    }
+  },
+  "rule_templates": {
+    "by_answer": [
+      {
+        "id": "R1",
+        "when": {
+          "answer_equals": 0
+        },
+        "priority": "high",
+        "generate": {
+          "include_recommendation_types": [
+            "strategic",
+            "systemic",
+            "operational"
+          ],
+          "message_template": "Obszar {{question.short_name}} nie jest jeszcze objęty świadomym działaniem organizacji. Brakuje decyzji, zasad i mechanizmów potrzebnych do rozpoczęcia zmian."
+        }
+      },
+      {
+        "id": "R2",
+        "when": {
+          "answer_equals": 1
+        },
+        "priority": "high",
+        "generate": {
+          "include_recommendation_types": [
+            "systemic",
+            "operational"
+          ],
+          "include_strategic_if_decision_group_in": [
+            "strategic",
+            "support",
+            "procurement"
+          ],
+          "message_template": "W obszarze {{question.short_name}} pojawiają się pierwsze działania, ale mają one charakter rozproszony i nie tworzą jeszcze spójnego podejścia."
+        }
+      },
+      {
+        "id": "R3",
+        "when": {
+          "answer_equals": 2
+        },
+        "priority": "medium",
+        "generate": {
+          "include_recommendation_types": [
+            "systemic",
+            "operational"
+          ],
+          "message_template": "W obszarze {{question.short_name}} organizacja wdraża rozwiązania tylko częściowo. Potrzebne jest ich rozszerzenie, ujednolicenie i połączenie w spójny model działania."
+        }
+      },
+      {
+        "id": "R4",
+        "when": {
+          "answer_equals": 3
+        },
+        "priority": "low",
+        "generate": {
+          "include_recommendation_types": [
+            "systemic"
+          ],
+          "message_template": "W obszarze {{question.short_name}} działania są w większości zintegrowane z procesami, ale wymagają dalszego utrwalenia i domknięcia słabszych elementów."
+        }
+      },
+      {
+        "id": "R5",
+        "when": {
+          "answer_equals": 4
+        },
+        "priority": "none",
+        "generate": {
+          "include_recommendation_types": [],
+          "message_template": "Obszar {{question.short_name}} funkcjonuje na poziomie dojrzałym i może być dalej rozwijany przez monitorowanie jakości oraz ciągłe doskonalenie."
+        }
+      }
+    ],
+    "patterns": [
+      {
+        "id": "R20",
+        "name": "brak_mandatu",
+        "priority": "very_high",
+        "when_all": [
+          {
+            "question_id": "Q01",
+            "max_answer": 1
+          },
+          {
+            "question_id": "Q02",
+            "max_answer": 1
+          },
+          {
+            "question_id": "Q12",
+            "max_answer": 1
+          },
+          {
+            "question_id": "Q17",
+            "max_answer": 1
+          }
+        ],
+        "message": "Problem ma charakter zarządczy. Organizacja nie zbudowała mandatu do działania w zakresie dostępności.",
+        "recommendations": [
+          "Określić odpowiedzialność za dostępność na poziomie organizacji.",
+          "Zapewnić, aby odpowiedzialność była powiązana z realnymi uprawnieniami.",
+          "Zapewnić zasoby niezbędne do realizacji działań."
+        ]
+      },
+      {
+        "id": "R21",
+        "name": "dzialania_incydentalne_bez_systemu",
+        "priority": "high",
+        "when_all": [
+          {
+            "question_id": "Q37",
+            "min_answer": 2
+          },
+          {
+            "question_id": "Q28",
+            "max_answer": 1
+          },
+          {
+            "question_id": "Q31",
+            "max_answer": 1
+          }
+        ],
+        "message": "Organizacja podejmuje działania incydentalne, ale nie przekształciła ich w system zarządzania informacją.",
+        "recommendations": [
+          "Ustanowić standardy działania obowiązujące w całej organizacji.",
+          "Włączyć dostępność do istniejących procesów.",
+          "Wprowadzić mechanizmy weryfikacji dostępności."
+        ]
+      },
+      {
+        "id": "R22",
+        "name": "wiedza_bez_wdrozenia",
+        "priority": "high",
+        "when_all": [
+          {
+            "question_id": "Q20",
+            "min_answer": 2
+          },
+          {
+            "question_id": "Q21",
+            "max_answer": 1
+          },
+          {
+            "question_id": "Q27",
+            "max_answer": 1
+          }
+        ],
+        "message": "Organizacja rozwija wiedzę, ale nie zapewnia skutecznego wdrożenia tej wiedzy w codziennej pracy.",
+        "recommendations": [
+          "Powiązać wiedzę z praktyką działania.",
+          "Opracować wytyczne, instrukcje i checklisty.",
+          "Przeprowadzić szkolenia ukierunkowane na praktykę."
+        ]
+      },
+      {
+        "id": "R23",
+        "name": "wymagania_bez_egzekwowania",
+        "priority": "high",
+        "when_all": [
+          {
+            "question_id": "Q56",
+            "min_answer": 2
+          },
+          {
+            "question_id": "Q57",
+            "max_answer": 1
+          },
+          {
+            "question_id": "Q58",
+            "max_answer": 1
+          }
+        ],
+        "message": "Organizacja formułuje wymagania, ale nie egzekwuje ich skutecznie.",
+        "recommendations": [
+          "Wprowadzić mechanizmy egzekwowania wymagań dostępności.",
+          "Zapewnić kontrolę realizacji wymagań przez wykonawców.",
+          "Uwzględnić dostępność w odbiorze produktów i usług."
+        ]
+      },
+      {
+        "id": "R24",
+        "name": "diagnoza_bez_zdolnosci_naprawczej",
+        "priority": "high",
+        "when_all": [
+          {
+            "question_id": "Q42",
+            "min_answer": 2
+          },
+          {
+            "question_id": "Q43",
+            "max_answer": 1
+          },
+          {
+            "question_id": "Q62",
+            "max_answer": 1
+          }
+        ],
+        "message": "Organizacja potrafi identyfikować problemy, ale nie ma wystarczającej zdolności do ich systemowego usuwania.",
+        "recommendations": [
+          "Zapewnić zdolność organizacji do usuwania problemów.",
+          "Zapobiegać ponownemu powstawaniu problemów.",
+          "Prowadzić rejestr problemów."
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S1",
+      "short_name": "Decyzja kierownictwa",
+      "text": "Czy kierownictwo podjęło decyzję o włączeniu dostępności do systemu zarządzania organizacją?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S1",
+          "S13"
+        ],
+        "systemic": [
+          "SYS4",
+          "SYS15"
+        ],
+        "operational": [
+          "OP4"
+        ]
+      },
+      "evidence_examples": [
+        "zarządzenie lub polityka",
+        "cele organizacyjne",
+        "plany działania"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze włączenia dostępności do zarządzania organizacją brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze włączenia dostępności do zarządzania organizacją podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze włączenia dostępności do zarządzania organizacją działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze włączenia dostępności do zarządzania organizacją działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze włączenia dostępności do zarządzania organizacją działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "włączenia dostępności do zarządzania organizacją"
+    },
+    {
+      "id": "Q02",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S2",
+      "short_name": "Odpowiedzialność za dostępność",
+      "text": "Czy odpowiedzialność za dostępność jest jasno określona na poziomie organizacji?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S4",
+          "S5",
+          "S6"
+        ],
+        "systemic": [
+          "SYS1",
+          "SYS15"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "zakresy obowiązków",
+        "regulaminy",
+        "schemat odpowiedzialności"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze odpowiedzialności za dostępność brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze odpowiedzialności za dostępność podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze odpowiedzialności za dostępność działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze odpowiedzialności za dostępność działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze odpowiedzialności za dostępność działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "odpowiedzialności za dostępność"
+    },
+    {
+      "id": "Q03",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S3",
+      "short_name": "Planowanie działań",
+      "text": "Czy dostępność jest uwzględniana w planowaniu działań organizacji, projektów lub usług?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S2",
+          "S13"
+        ],
+        "systemic": [
+          "SYS4",
+          "SYS10"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "karty projektów",
+        "procedury planowania",
+        "wzory briefów"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze planowania działań z uwzględnieniem dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze planowania działań z uwzględnieniem dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze planowania działań z uwzględnieniem dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze planowania działań z uwzględnieniem dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze planowania działań z uwzględnieniem dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "planowania działań z uwzględnieniem dostępności"
+    },
+    {
+      "id": "Q04",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S3",
+      "short_name": "Monitoring dostępności",
+      "text": "Czy organizacja monitoruje poziom dostępności i postępy działań?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S7",
+          "S8",
+          "S9"
+        ],
+        "systemic": [
+          "SYS7",
+          "SYS11"
+        ],
+        "operational": [
+          "OP9"
+        ]
+      },
+      "evidence_examples": [
+        "raporty okresowe",
+        "wskaźniki",
+        "harmonogramy przeglądów"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze monitoringu dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze monitoringu dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze monitoringu dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze monitoringu dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze monitoringu dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "monitoringu dostępności"
+    },
+    {
+      "id": "Q05",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S1",
+      "short_name": "Dostępność w dokumentach kierunkowych",
+      "text": "Czy dostępność jest elementem strategii, polityk lub innych dokumentów kierunkowych organizacji?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S2",
+          "S3"
+        ],
+        "systemic": [
+          "SYS1",
+          "SYS15"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "strategia",
+        "polityka organizacji",
+        "plan roczny"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze uwzględnienia dostępności w dokumentach kierunkowych brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze uwzględnienia dostępności w dokumentach kierunkowych podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze uwzględnienia dostępności w dokumentach kierunkowych działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze uwzględnienia dostępności w dokumentach kierunkowych działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze uwzględnienia dostępności w dokumentach kierunkowych działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "uwzględnienia dostępności w dokumentach kierunkowych"
+    },
+    {
+      "id": "Q06",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S3",
+      "short_name": "Regularne przeglądy kierownicze",
+      "text": "Czy kierownictwo regularnie analizuje stan dostępności i postępy działań?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S8",
+          "S9"
+        ],
+        "systemic": [
+          "SYS7",
+          "SYS11"
+        ],
+        "operational": [
+          "OP9"
+        ]
+      },
+      "evidence_examples": [
+        "protokoły narad",
+        "raporty dla kierownictwa",
+        "cykliczne przeglądy"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze przeglądów kierowniczych dotyczących dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze przeglądów kierowniczych dotyczących dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze przeglądów kierowniczych dotyczących dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze przeglądów kierowniczych dotyczących dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze przeglądów kierowniczych dotyczących dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "przeglądów kierowniczych dotyczących dostępności"
+    },
+    {
+      "id": "Q07",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S1",
+      "short_name": "Dostępność jako kryterium decyzji",
+      "text": "Czy dostępność jest uwzględniana przy podejmowaniu istotnych decyzji organizacyjnych?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13",
+          "S14"
+        ],
+        "systemic": [
+          "SYS15",
+          "SYS16"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "notatki decyzyjne",
+        "wymagania w procedurach",
+        "uzasadnienia decyzji"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze uwzględniania dostępności w decyzjach organizacyjnych brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze uwzględniania dostępności w decyzjach organizacyjnych podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze uwzględniania dostępności w decyzjach organizacyjnych działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze uwzględniania dostępności w decyzjach organizacyjnych działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze uwzględniania dostępności w decyzjach organizacyjnych działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "uwzględniania dostępności w decyzjach organizacyjnych"
+    },
+    {
+      "id": "Q08",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S1",
+      "short_name": "Dostępność jako ryzyko",
+      "text": "Czy organizacja traktuje brak dostępności jako ryzyko organizacyjne, prawne lub reputacyjne?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S12",
+          "S14"
+        ],
+        "systemic": [
+          "SYS11",
+          "SYS12"
+        ],
+        "operational": [
+          "OP9"
+        ]
+      },
+      "evidence_examples": [
+        "rejestr ryzyk",
+        "analizy ryzyka",
+        "plany zaradcze"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze traktowania dostępności jako ryzyka organizacyjnego brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze traktowania dostępności jako ryzyka organizacyjnego podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze traktowania dostępności jako ryzyka organizacyjnego działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze traktowania dostępności jako ryzyka organizacyjnego działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze traktowania dostępności jako ryzyka organizacyjnego działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "traktowania dostępności jako ryzyka organizacyjnego"
+    },
+    {
+      "id": "Q09",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S1",
+      "short_name": "Cele w zakresie dostępności",
+      "text": "Czy organizacja posiada cele lub mierniki odnoszące się do dostępności?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S2",
+          "S7"
+        ],
+        "systemic": [
+          "SYS7",
+          "SYS11"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "cele roczne",
+        "KPI",
+        "plany działań"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze celów i mierników w zakresie dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze celów i mierników w zakresie dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze celów i mierników w zakresie dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze celów i mierników w zakresie dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze celów i mierników w zakresie dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "celów i mierników w zakresie dostępności"
+    },
+    {
+      "id": "Q10",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S1",
+      "short_name": "Kultura proaktywna",
+      "text": "Czy organizacja podejmuje działania wyprzedzające, a nie tylko reaguje na problemy dostępności?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S9",
+          "S15"
+        ],
+        "systemic": [
+          "SYS11",
+          "SYS12"
+        ],
+        "operational": [
+          "OP8",
+          "OP9"
+        ]
+      },
+      "evidence_examples": [
+        "plany usprawnień",
+        "przeglądy wyprzedzające",
+        "inicjatywy rozwojowe"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze działań proaktywnych w zakresie dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze działań proaktywnych w zakresie dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze działań proaktywnych w zakresie dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze działań proaktywnych w zakresie dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze działań proaktywnych w zakresie dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "działań proaktywnych w zakresie dostępności"
+    },
+    {
+      "id": "Q11",
+      "dimension_id": "personnel",
+      "decision_id": "S2",
+      "short_name": "Role związane z dostępnością",
+      "text": "Czy istnieją określone role związane z zapewnianiem dostępności?",
+      "target_maturity_level": 2,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S4",
+          "S5"
+        ],
+        "systemic": [
+          "SYS13",
+          "SYS14"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "opisy ról",
+        "decyzje personalne",
+        "procedury współpracy"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze ról związanych z dostępnością brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze ról związanych z dostępnością podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze ról związanych z dostępnością działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze ról związanych z dostępnością działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze ról związanych z dostępnością działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "ról związanych z dostępnością"
+    },
+    {
+      "id": "Q12",
+      "dimension_id": "personnel",
+      "decision_id": "S2",
+      "short_name": "Mandat działania",
+      "text": "Czy odpowiedzialność za dostępność jest powiązana z realnymi uprawnieniami decyzyjnymi lub wpływem na procesy?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S5",
+          "S6"
+        ],
+        "systemic": [
+          "SYS15",
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "upoważnienia",
+        "zakresy decyzyjności",
+        "regulamin organizacyjny"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze mandatu działania w sprawach dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze mandatu działania w sprawach dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze mandatu działania w sprawach dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze mandatu działania w sprawach dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze mandatu działania w sprawach dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "mandatu działania w sprawach dostępności"
+    },
+    {
+      "id": "Q13",
+      "dimension_id": "personnel",
+      "decision_id": "S2",
+      "short_name": "Koordynacja działań",
+      "text": "Czy działania związane z dostępnością są koordynowane w organizacji?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S15"
+        ],
+        "systemic": [
+          "SYS13",
+          "SYS14"
+        ],
+        "operational": [
+          "OP4"
+        ]
+      },
+      "evidence_examples": [
+        "koordynator",
+        "zespół roboczy",
+        "harmonogram spotkań"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze koordynacji działań związanych z dostępnością brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze koordynacji działań związanych z dostępnością podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze koordynacji działań związanych z dostępnością działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze koordynacji działań związanych z dostępnością działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze koordynacji działań związanych z dostępnością działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "koordynacji działań związanych z dostępnością"
+    },
+    {
+      "id": "Q14",
+      "dimension_id": "personnel",
+      "decision_id": "S2",
+      "short_name": "Operacyjny opis ról",
+      "text": "Czy role związane z dostępnością są opisane w sposób operacyjny, wskazujący konkretne zadania?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S5"
+        ],
+        "systemic": [
+          "SYS4",
+          "SYS15"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "opisy stanowisk",
+        "matryca odpowiedzialności",
+        "procedury"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze operacyjnego opisu ról związanych z dostępnością brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze operacyjnego opisu ról związanych z dostępnością podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze operacyjnego opisu ról związanych z dostępnością działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze operacyjnego opisu ról związanych z dostępnością działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze operacyjnego opisu ról związanych z dostępnością działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "operacyjnego opisu ról związanych z dostępnością"
+    },
+    {
+      "id": "Q15",
+      "dimension_id": "personnel",
+      "decision_id": "S2",
+      "short_name": "Odpowiedzialność w procesach",
+      "text": "Czy odpowiedzialność za dostępność jest przypisana do konkretnych procesów, a nie wyłącznie do jednej osoby?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S4",
+          "S5"
+        ],
+        "systemic": [
+          "SYS4",
+          "SYS14"
+        ],
+        "operational": [
+          "OP4"
+        ]
+      },
+      "evidence_examples": [
+        "mapa procesów",
+        "RACI",
+        "procedury procesowe"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze przypisania odpowiedzialności za dostępność do procesów brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze przypisania odpowiedzialności za dostępność do procesów podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze przypisania odpowiedzialności za dostępność do procesów działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze przypisania odpowiedzialności za dostępność do procesów działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze przypisania odpowiedzialności za dostępność do procesów działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "przypisania odpowiedzialności za dostępność do procesów"
+    },
+    {
+      "id": "Q16",
+      "dimension_id": "personnel",
+      "decision_id": "S2",
+      "short_name": "Zakresy obowiązków",
+      "text": "Czy dostępność jest uwzględniona w zakresach obowiązków odpowiednich osób lub zespołów?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S5",
+          "S6"
+        ],
+        "systemic": [
+          "SYS4",
+          "SYS6"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "zakresy obowiązków",
+        "opisy stanowisk",
+        "regulaminy pracy"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze uwzględnienia dostępności w zakresach obowiązków brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze uwzględnienia dostępności w zakresach obowiązków podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze uwzględnienia dostępności w zakresach obowiązków działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze uwzględnienia dostępności w zakresach obowiązków działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze uwzględnienia dostępności w zakresach obowiązków działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "uwzględnienia dostępności w zakresach obowiązków"
+    },
+    {
+      "id": "Q17",
+      "dimension_id": "personnel",
+      "decision_id": "S2",
+      "short_name": "Zasoby dla osób odpowiedzialnych",
+      "text": "Czy osoby odpowiedzialne za dostępność mają czas i zasoby do realizacji swoich zadań?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S10"
+        ],
+        "systemic": [
+          "SYS11",
+          "SYS15"
+        ],
+        "operational": [
+          "OP11"
+        ]
+      },
+      "evidence_examples": [
+        "budżet",
+        "alokacja czasu pracy",
+        "plany zadań"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze zasobów dla osób odpowiedzialnych za dostępność brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze zasobów dla osób odpowiedzialnych za dostępność podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze zasobów dla osób odpowiedzialnych za dostępność działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze zasobów dla osób odpowiedzialnych za dostępność działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze zasobów dla osób odpowiedzialnych za dostępność działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "zasobów dla osób odpowiedzialnych za dostępność"
+    },
+    {
+      "id": "Q18",
+      "dimension_id": "personnel",
+      "decision_id": "S2",
+      "short_name": "Współpraca między działami",
+      "text": "Czy istnieją mechanizmy współpracy między działami odpowiedzialnymi za informację, usługi, IT, zamówienia i wsparcie?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S15"
+        ],
+        "systemic": [
+          "SYS13",
+          "SYS14"
+        ],
+        "operational": [
+          "OP4"
+        ]
+      },
+      "evidence_examples": [
+        "zespół międzydziałowy",
+        "spotkania koordynacyjne",
+        "wspólne procedury"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze współpracy między działami w sprawach dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze współpracy między działami w sprawach dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze współpracy między działami w sprawach dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze współpracy między działami w sprawach dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze współpracy między działami w sprawach dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "współpracy między działami w sprawach dostępności"
+    },
+    {
+      "id": "Q19",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K1",
+      "short_name": "Kompetencje adekwatne do ról",
+      "text": "Czy pracownicy mają wiedzę o dostępności adekwatną do swoich ról?",
+      "target_maturity_level": 2,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S10"
+        ],
+        "systemic": [
+          "SYS19",
+          "SYS21"
+        ],
+        "operational": [
+          "OP13",
+          "OP14"
+        ]
+      },
+      "evidence_examples": [
+        "matryca kompetencji",
+        "wyniki szkoleń",
+        "ocena potrzeb"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze kompetencji adekwatnych do ról brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze kompetencji adekwatnych do ról podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze kompetencji adekwatnych do ról działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze kompetencji adekwatnych do ról działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze kompetencji adekwatnych do ról działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "kompetencji adekwatnych do ról"
+    },
+    {
+      "id": "Q20",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K1",
+      "short_name": "Systematyczne szkolenia",
+      "text": "Czy organizacja prowadzi systematyczne szkolenia z dostępności?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S10"
+        ],
+        "systemic": [
+          "SYS19",
+          "SYS20"
+        ],
+        "operational": [
+          "OP13",
+          "OP14"
+        ]
+      },
+      "evidence_examples": [
+        "programy szkoleń",
+        "harmonogramy",
+        "listy uczestników"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze systematycznych szkoleń z dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze systematycznych szkoleń z dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze systematycznych szkoleń z dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze systematycznych szkoleń z dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze systematycznych szkoleń z dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "systematycznych szkoleń z dostępności"
+    },
+    {
+      "id": "Q21",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K2",
+      "short_name": "Praktyczne stosowanie wiedzy",
+      "text": "Czy pracownicy potrafią stosować wymagania dostępności w praktyce?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S10"
+        ],
+        "systemic": [
+          "SYS21",
+          "SYS6"
+        ],
+        "operational": [
+          "OP5",
+          "OP15"
+        ]
+      },
+      "evidence_examples": [
+        "wyniki kontroli jakości",
+        "analiza błędów",
+        "przykłady poprawnych wdrożeń"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze praktycznego stosowania wiedzy o dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze praktycznego stosowania wiedzy o dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze praktycznego stosowania wiedzy o dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze praktycznego stosowania wiedzy o dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze praktycznego stosowania wiedzy o dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "praktycznego stosowania wiedzy o dostępności"
+    },
+    {
+      "id": "Q22",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K1",
+      "short_name": "Aktualizacja wiedzy",
+      "text": "Czy wiedza o dostępności jest regularnie aktualizowana?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S10"
+        ],
+        "systemic": [
+          "SYS20",
+          "SYS19"
+        ],
+        "operational": [
+          "OP13"
+        ]
+      },
+      "evidence_examples": [
+        "aktualizacje materiałów",
+        "cykliczne szkolenia",
+        "komunikaty merytoryczne"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze aktualizacji wiedzy o dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze aktualizacji wiedzy o dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze aktualizacji wiedzy o dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze aktualizacji wiedzy o dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze aktualizacji wiedzy o dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "aktualizacji wiedzy o dostępności"
+    },
+    {
+      "id": "Q23",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K1",
+      "short_name": "Szkolenia dla ról",
+      "text": "Czy szkolenia są dostosowane do różnych ról, np. kierownictwa, redaktorów, IT, zamówień i obsługi klienta?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S10"
+        ],
+        "systemic": [
+          "SYS19",
+          "SYS21"
+        ],
+        "operational": [
+          "OP14"
+        ]
+      },
+      "evidence_examples": [
+        "programy modułowe",
+        "ścieżki szkoleniowe",
+        "opisy grup docelowych"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze dostosowania szkoleń do ról brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze dostosowania szkoleń do ról podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze dostosowania szkoleń do ról działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze dostosowania szkoleń do ról działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze dostosowania szkoleń do ról działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "dostosowania szkoleń do ról"
+    },
+    {
+      "id": "Q24",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K1",
+      "short_name": "Onboarding",
+      "text": "Czy nowe osoby otrzymują wprowadzenie do wymagań dostępności w zakresie adekwatnym do ich roli?",
+      "target_maturity_level": 2,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S10"
+        ],
+        "systemic": [
+          "SYS19",
+          "SYS20"
+        ],
+        "operational": [
+          "OP13",
+          "OP14"
+        ]
+      },
+      "evidence_examples": [
+        "program wdrożeniowy",
+        "materiały onboardingowe",
+        "checklista HR"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze onboardingu w zakresie dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze onboardingu w zakresie dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze onboardingu w zakresie dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze onboardingu w zakresie dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze onboardingu w zakresie dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "onboardingu w zakresie dostępności"
+    },
+    {
+      "id": "Q25",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K2",
+      "short_name": "Materiały wspierające",
+      "text": "Czy pracownicy mają dostęp do instrukcji, checklist, wzorów i innych materiałów wspierających stosowanie wymagań dostępności?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S10"
+        ],
+        "systemic": [
+          "SYS19",
+          "SYS21"
+        ],
+        "operational": [
+          "OP1",
+          "OP3"
+        ]
+      },
+      "evidence_examples": [
+        "intranet",
+        "repozytorium materiałów",
+        "wzory i checklisty"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze materiałów wspierających stosowanie wymagań dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze materiałów wspierających stosowanie wymagań dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze materiałów wspierających stosowanie wymagań dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze materiałów wspierających stosowanie wymagań dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze materiałów wspierających stosowanie wymagań dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "materiałów wspierających stosowanie wymagań dostępności"
+    },
+    {
+      "id": "Q26",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K1",
+      "short_name": "Kompetencje specjalistyczne",
+      "text": "Czy organizacja rozwija specjalistyczne kompetencje potrzebne do rozwiązywania trudniejszych problemów dostępności?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S10"
+        ],
+        "systemic": [
+          "SYS19",
+          "SYS21"
+        ],
+        "operational": [
+          "OP13",
+          "OP15"
+        ]
+      },
+      "evidence_examples": [
+        "plan rozwoju specjalistów",
+        "udział w szkoleniach eksperckich",
+        "sieć ekspertów"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze rozwoju kompetencji specjalistycznych brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze rozwoju kompetencji specjalistycznych podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze rozwoju kompetencji specjalistycznych działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze rozwoju kompetencji specjalistycznych działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze rozwoju kompetencji specjalistycznych działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "rozwoju kompetencji specjalistycznych"
+    },
+    {
+      "id": "Q27",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K2",
+      "short_name": "Wiedza stosowana we właściwym momencie",
+      "text": "Czy pracownicy wiedzą, kiedy i na jakim etapie procesu należy uwzględniać wymagania dostępności?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S10"
+        ],
+        "systemic": [
+          "SYS21",
+          "SYS4"
+        ],
+        "operational": [
+          "OP5",
+          "OP15"
+        ]
+      },
+      "evidence_examples": [
+        "mapy procesu",
+        "instrukcje etapowe",
+        "checklisty procesowe"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze stosowania wiedzy o dostępności we właściwym momencie procesu brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze stosowania wiedzy o dostępności we właściwym momencie procesu podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze stosowania wiedzy o dostępności we właściwym momencie procesu działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze stosowania wiedzy o dostępności we właściwym momencie procesu działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze stosowania wiedzy o dostępności we właściwym momencie procesu działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "stosowania wiedzy o dostępności we właściwym momencie procesu"
+    },
+    {
+      "id": "Q28",
+      "dimension_id": "communications",
+      "decision_id": "I1",
+      "short_name": "Standardy publikacji informacji",
+      "text": "Czy organizacja posiada standardy publikacji informacji?",
+      "target_maturity_level": 2,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S1",
+          "S15"
+        ],
+        "systemic": [
+          "SYS1",
+          "SYS3"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "standard redakcyjny",
+        "wytyczne publikacyjne",
+        "polityka publikacji"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze standardów publikacji informacji brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze standardów publikacji informacji podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze standardów publikacji informacji działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze standardów publikacji informacji działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze standardów publikacji informacji działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "standardów publikacji informacji"
+    },
+    {
+      "id": "Q29",
+      "dimension_id": "communications",
+      "decision_id": "I2",
+      "short_name": "Proces publikacji",
+      "text": "Czy proces tworzenia i publikacji informacji uwzględnia dostępność?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4",
+          "SYS5"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "procedura publikacji",
+        "schemat akceptacji",
+        "mapa procesu"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze uwzględnienia dostępności w procesie publikacji brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze uwzględnienia dostępności w procesie publikacji podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze uwzględnienia dostępności w procesie publikacji działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze uwzględnienia dostępności w procesie publikacji działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze uwzględnienia dostępności w procesie publikacji działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "uwzględnienia dostępności w procesie publikacji"
+    },
+    {
+      "id": "Q30",
+      "dimension_id": "communications",
+      "decision_id": "I2",
+      "short_name": "Dokumenty zgodne ze standardami",
+      "text": "Czy publikowane dokumenty są przygotowywane zgodnie ze standardami dostępności?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S15"
+        ],
+        "systemic": [
+          "SYS2",
+          "SYS3"
+        ],
+        "operational": [
+          "OP2",
+          "OP5"
+        ]
+      },
+      "evidence_examples": [
+        "próbki dokumentów",
+        "szablony",
+        "wyniki kontroli"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze przygotowania dokumentów zgodnie ze standardami dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze przygotowania dokumentów zgodnie ze standardami dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze przygotowania dokumentów zgodnie ze standardami dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze przygotowania dokumentów zgodnie ze standardami dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze przygotowania dokumentów zgodnie ze standardami dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "przygotowania dokumentów zgodnie ze standardami dostępności"
+    },
+    {
+      "id": "Q31",
+      "dimension_id": "communications",
+      "decision_id": "I3",
+      "short_name": "Kontrola jakości treści",
+      "text": "Czy istnieje kontrola jakości publikowanych treści z perspektywy dostępności?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S7",
+          "S8"
+        ],
+        "systemic": [
+          "SYS7",
+          "SYS8"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "checklisty weryfikacyjne",
+        "procedura zatwierdzania",
+        "zapisy kontroli"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze kontroli jakości publikowanych treści brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze kontroli jakości publikowanych treści podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze kontroli jakości publikowanych treści działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze kontroli jakości publikowanych treści działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze kontroli jakości publikowanych treści działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "kontroli jakości publikowanych treści"
+    },
+    {
+      "id": "Q32",
+      "dimension_id": "communications",
+      "decision_id": "I1",
+      "short_name": "Szablony dostępnych dokumentów",
+      "text": "Czy organizacja posiada szablony dokumentów i materiałów, które ułatwiają tworzenie treści dostępnych?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S15"
+        ],
+        "systemic": [
+          "SYS1",
+          "SYS3"
+        ],
+        "operational": [
+          "OP2",
+          "OP6"
+        ]
+      },
+      "evidence_examples": [
+        "szablony DOCX",
+        "szablony PPTX",
+        "szablony PDF"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze szablonów dostępnych dokumentów i materiałów brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze szablonów dostępnych dokumentów i materiałów podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze szablonów dostępnych dokumentów i materiałów działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze szablonów dostępnych dokumentów i materiałów działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze szablonów dostępnych dokumentów i materiałów działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "szablonów dostępnych dokumentów i materiałów"
+    },
+    {
+      "id": "Q33",
+      "dimension_id": "communications",
+      "decision_id": "I2",
+      "short_name": "Narzędzia dla publikacji",
+      "text": "Czy publikacja informacji jest wspierana narzędziami lub ustawieniami, które pomagają utrzymać dostępność?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S10"
+        ],
+        "systemic": [
+          "SYS2",
+          "SYS6"
+        ],
+        "operational": [
+          "OP3",
+          "OP6"
+        ]
+      },
+      "evidence_examples": [
+        "konfiguracja CMS",
+        "narzędzia wspierające redakcję",
+        "instrukcje użytkowania"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze narzędzi wspierających publikację dostępnych informacji brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze narzędzi wspierających publikację dostępnych informacji podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze narzędzi wspierających publikację dostępnych informacji działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze narzędzi wspierających publikację dostępnych informacji działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze narzędzi wspierających publikację dostępnych informacji działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "narzędzi wspierających publikację dostępnych informacji"
+    },
+    {
+      "id": "Q34",
+      "dimension_id": "communications",
+      "decision_id": "I3",
+      "short_name": "Weryfikacja przed publikacją",
+      "text": "Czy treści i dokumenty są sprawdzane przed publikacją pod kątem dostępności?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S8"
+        ],
+        "systemic": [
+          "SYS7",
+          "SYS8"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "etap kontroli",
+        "raporty sprawdzające",
+        "lista kryteriów"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze weryfikacji dostępności przed publikacją brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze weryfikacji dostępności przed publikacją podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze weryfikacji dostępności przed publikacją działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze weryfikacji dostępności przed publikacją działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze weryfikacji dostępności przed publikacją działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "weryfikacji dostępności przed publikacją"
+    },
+    {
+      "id": "Q35",
+      "dimension_id": "communications",
+      "decision_id": "I3",
+      "short_name": "Informacja zwrotna od użytkowników",
+      "text": "Czy organizacja zbiera i wykorzystuje informacje zwrotne użytkowników dotyczące dostępności informacji?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S9",
+          "S15"
+        ],
+        "systemic": [
+          "SYS11",
+          "SYS12"
+        ],
+        "operational": [
+          "OP9"
+        ]
+      },
+      "evidence_examples": [
+        "formularze kontaktowe",
+        "analiza zgłoszeń",
+        "wnioski z obsługi"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze wykorzystania informacji zwrotnej od użytkowników brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze wykorzystania informacji zwrotnej od użytkowników podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze wykorzystania informacji zwrotnej od użytkowników działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze wykorzystania informacji zwrotnej od użytkowników działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze wykorzystania informacji zwrotnej od użytkowników działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "wykorzystania informacji zwrotnej od użytkowników"
+    },
+    {
+      "id": "Q36",
+      "dimension_id": "communications",
+      "decision_id": "I2",
+      "short_name": "Różne kanały komunikacji",
+      "text": "Czy wymagania dostępności są stosowane spójnie w różnych kanałach komunikacji, np. WWW, BIP, dokumentach i mediach społecznościowych?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S15"
+        ],
+        "systemic": [
+          "SYS1",
+          "SYS3"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "wspólne standardy",
+        "przeglądy kanałów",
+        "wytyczne kanałowe"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze spójnego stosowania wymagań dostępności w różnych kanałach komunikacji brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze spójnego stosowania wymagań dostępności w różnych kanałach komunikacji podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze spójnego stosowania wymagań dostępności w różnych kanałach komunikacji działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze spójnego stosowania wymagań dostępności w różnych kanałach komunikacji działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze spójnego stosowania wymagań dostępności w różnych kanałach komunikacji działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "spójnego stosowania wymagań dostępności w różnych kanałach komunikacji"
+    },
+    {
+      "id": "Q37",
+      "dimension_id": "communications",
+      "decision_id": "I1",
+      "short_name": "Polityka publikacji",
+      "text": "Czy organizacja posiada politykę lub formalne zasady publikacji informacji dostępnych cyfrowo?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S1",
+          "S15"
+        ],
+        "systemic": [
+          "SYS1",
+          "SYS3"
+        ],
+        "operational": [
+          "OP1",
+          "OP2"
+        ]
+      },
+      "evidence_examples": [
+        "polityka redakcyjna",
+        "zarządzenie",
+        "instrukcja organizacyjna"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze polityki publikacji informacji dostępnych cyfrowo brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze polityki publikacji informacji dostępnych cyfrowo podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze polityki publikacji informacji dostępnych cyfrowo działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze polityki publikacji informacji dostępnych cyfrowo działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze polityki publikacji informacji dostępnych cyfrowo działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "polityki publikacji informacji dostępnych cyfrowo"
+    },
+    {
+      "id": "Q38",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "U1",
+      "short_name": "Projektowanie usług cyfrowych",
+      "text": "Czy dostępność jest uwzględniana w projektowaniu usług cyfrowych?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S2",
+          "S13"
+        ],
+        "systemic": [
+          "SYS2",
+          "SYS10"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "briefy projektowe",
+        "wymagania funkcjonalne",
+        "makiety i opisy UX"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze uwzględnienia dostępności w projektowaniu usług cyfrowych brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze uwzględnienia dostępności w projektowaniu usług cyfrowych podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze uwzględnienia dostępności w projektowaniu usług cyfrowych działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze uwzględnienia dostępności w projektowaniu usług cyfrowych działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze uwzględnienia dostępności w projektowaniu usług cyfrowych działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "uwzględnienia dostępności w projektowaniu usług cyfrowych"
+    },
+    {
+      "id": "Q39",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "U1",
+      "short_name": "Wymagania przed projektem",
+      "text": "Czy wymagania dostępności są definiowane przed rozpoczęciem projektu lub prac rozwojowych?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S2"
+        ],
+        "systemic": [
+          "SYS2",
+          "SYS10"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "wymagania projektowe",
+        "brief",
+        "checklista startowa"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze definiowania wymagań dostępności przed rozpoczęciem projektu brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze definiowania wymagań dostępności przed rozpoczęciem projektu podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze definiowania wymagań dostępności przed rozpoczęciem projektu działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze definiowania wymagań dostępności przed rozpoczęciem projektu działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze definiowania wymagań dostępności przed rozpoczęciem projektu działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "definiowania wymagań dostępności przed rozpoczęciem projektu"
+    },
+    {
+      "id": "Q40",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "T1",
+      "short_name": "Dostępność w rozwoju IT",
+      "text": "Czy dostępność jest uwzględniana w rozwoju systemów IT i aplikacji używanych przez organizację?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4",
+          "SYS10"
+        ],
+        "operational": [
+          "OP5"
+        ]
+      },
+      "evidence_examples": [
+        "standard developerski",
+        "DoD",
+        "wymagania techniczne"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze uwzględnienia dostępności w rozwoju systemów IT brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze uwzględnienia dostępności w rozwoju systemów IT podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze uwzględnienia dostępności w rozwoju systemów IT działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze uwzględnienia dostępności w rozwoju systemów IT działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze uwzględnienia dostępności w rozwoju systemów IT działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "uwzględnienia dostępności w rozwoju systemów IT"
+    },
+    {
+      "id": "Q41",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "T2",
+      "short_name": "Testy dostępności",
+      "text": "Czy prowadzone są testy dostępności w rozwoju usług cyfrowych i systemów IT?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S7",
+          "S8"
+        ],
+        "systemic": [
+          "SYS7",
+          "SYS8"
+        ],
+        "operational": [
+          "OP7"
+        ]
+      },
+      "evidence_examples": [
+        "raporty testów",
+        "harmonogram testów",
+        "procedury testowania"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze testów dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze testów dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze testów dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze testów dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze testów dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "testów dostępności"
+    },
+    {
+      "id": "Q42",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "T3",
+      "short_name": "Systemowe usuwanie problemów",
+      "text": "Czy problemy dostępności są usuwane systemowo?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S12"
+        ],
+        "systemic": [
+          "SYS11",
+          "SYS12"
+        ],
+        "operational": [
+          "OP8",
+          "OP9"
+        ]
+      },
+      "evidence_examples": [
+        "backlog",
+        "zgłoszenia naprawcze",
+        "potwierdzenia wdrożenia poprawek"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze systemowego usuwania problemów dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze systemowego usuwania problemów dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze systemowego usuwania problemów dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze systemowego usuwania problemów dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze systemowego usuwania problemów dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "systemowego usuwania problemów dostępności"
+    },
+    {
+      "id": "Q43",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "U1",
+      "short_name": "Analiza potrzeb użytkowników",
+      "text": "Czy potrzeby różnych użytkowników są uwzględniane na etapie analizy potrzeb?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S2",
+          "S13"
+        ],
+        "systemic": [
+          "SYS2",
+          "SYS10"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "analiza potrzeb",
+        "persony",
+        "wymagania biznesowe"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze uwzględniania potrzeb różnych użytkowników na etapie analizy potrzeb brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze uwzględniania potrzeb różnych użytkowników na etapie analizy potrzeb podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze uwzględniania potrzeb różnych użytkowników na etapie analizy potrzeb działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze uwzględniania potrzeb różnych użytkowników na etapie analizy potrzeb działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze uwzględniania potrzeb różnych użytkowników na etapie analizy potrzeb działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "uwzględniania potrzeb różnych użytkowników na etapie analizy potrzeb"
+    },
+    {
+      "id": "Q44",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "U2",
+      "short_name": "Dostępność w projektowaniu UX",
+      "text": "Czy dostępność jest uwzględniana w projektowaniu doświadczenia użytkownika i architektury interfejsu?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS2",
+          "SYS10"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "makiety",
+        "design system",
+        "wytyczne UX"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze uwzględnienia dostępności w projektowaniu UX i architektury interfejsu brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze uwzględnienia dostępności w projektowaniu UX i architektury interfejsu podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze uwzględnienia dostępności w projektowaniu UX i architektury interfejsu działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze uwzględnienia dostępności w projektowaniu UX i architektury interfejsu działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze uwzględnienia dostępności w projektowaniu UX i architektury interfejsu działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "uwzględnienia dostępności w projektowaniu UX i architektury interfejsu"
+    },
+    {
+      "id": "Q45",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "T1",
+      "short_name": "Dokumentacja projektowa",
+      "text": "Czy wymagania dostępności są częścią dokumentacji projektowej i technicznej?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S2"
+        ],
+        "systemic": [
+          "SYS2",
+          "SYS10"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "specyfikacja",
+        "story/epiki",
+        "architektura rozwiązania"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze uwzględnienia wymagań dostępności w dokumentacji projektowej i technicznej brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze uwzględnienia wymagań dostępności w dokumentacji projektowej i technicznej podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze uwzględnienia wymagań dostępności w dokumentacji projektowej i technicznej działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze uwzględnienia wymagań dostępności w dokumentacji projektowej i technicznej działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze uwzględnienia wymagań dostępności w dokumentacji projektowej i technicznej działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "uwzględnienia wymagań dostępności w dokumentacji projektowej i technicznej"
+    },
+    {
+      "id": "Q46",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "T2",
+      "short_name": "Różne metody testów",
+      "text": "Czy testy dostępności obejmują więcej niż jedną metodę, np. testy automatyczne i manualne?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S7",
+          "S8"
+        ],
+        "systemic": [
+          "SYS7",
+          "SYS8"
+        ],
+        "operational": [
+          "OP7"
+        ]
+      },
+      "evidence_examples": [
+        "narzędzia automatyczne",
+        "raporty manualne",
+        "plan testów"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze stosowania różnych metod testów dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze stosowania różnych metod testów dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze stosowania różnych metod testów dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze stosowania różnych metod testów dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze stosowania różnych metod testów dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "stosowania różnych metod testów dostępności"
+    },
+    {
+      "id": "Q47",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "U2",
+      "short_name": "Udział użytkowników w ocenie",
+      "text": "Czy użytkownicy lub przedstawiciele użytkowników są angażowani w ocenę lub testowanie usług?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13",
+          "S15"
+        ],
+        "systemic": [
+          "SYS13",
+          "SYS14"
+        ],
+        "operational": [
+          "OP4"
+        ]
+      },
+      "evidence_examples": [
+        "testy z użytkownikami",
+        "konsultacje",
+        "warsztaty"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze udziału użytkowników w ocenie i testowaniu usług brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze udziału użytkowników w ocenie i testowaniu usług podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze udziału użytkowników w ocenie i testowaniu usług działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze udziału użytkowników w ocenie i testowaniu usług działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze udziału użytkowników w ocenie i testowaniu usług działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "udziału użytkowników w ocenie i testowaniu usług"
+    },
+    {
+      "id": "Q48",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "T3",
+      "short_name": "Utrzymanie dostępności",
+      "text": "Czy dostępność jest uwzględniana w utrzymaniu systemów, aktualizacjach i zmianach powdrożeniowych?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S7",
+          "S8"
+        ],
+        "systemic": [
+          "SYS10",
+          "SYS11"
+        ],
+        "operational": [
+          "OP7",
+          "OP8"
+        ]
+      },
+      "evidence_examples": [
+        "procedury change",
+        "checklista release",
+        "przeglądy po zmianie"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze uwzględnienia dostępności w utrzymaniu systemów i zmianach powdrożeniowych brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze uwzględnienia dostępności w utrzymaniu systemów i zmianach powdrożeniowych podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze uwzględnienia dostępności w utrzymaniu systemów i zmianach powdrożeniowych działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze uwzględnienia dostępności w utrzymaniu systemów i zmianach powdrożeniowych działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze uwzględnienia dostępności w utrzymaniu systemów i zmianach powdrożeniowych działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "uwzględnienia dostępności w utrzymaniu systemów i zmianach powdrożeniowych"
+    },
+    {
+      "id": "Q49",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "T3",
+      "short_name": "Zapobieganie regresji",
+      "text": "Czy organizacja zapobiega sytuacjom, w których zmiany w systemie pogarszają wcześniej osiągnięty poziom dostępności?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S9"
+        ],
+        "systemic": [
+          "SYS11",
+          "SYS12"
+        ],
+        "operational": [
+          "OP7",
+          "OP8"
+        ]
+      },
+      "evidence_examples": [
+        "testy regresji",
+        "bramki jakości",
+        "analiza incydentów"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze zapobiegania regresji dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze zapobiegania regresji dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze zapobiegania regresji dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze zapobiegania regresji dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze zapobiegania regresji dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "zapobiegania regresji dostępności"
+    },
+    {
+      "id": "Q50",
+      "dimension_id": "procurement",
+      "decision_id": "Z1",
+      "short_name": "Wymagania w zamówieniach",
+      "text": "Czy wymagania dostępności są uwzględniane w zamówieniach?",
+      "target_maturity_level": 2,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S1",
+          "S15"
+        ],
+        "systemic": [
+          "SYS1",
+          "SYS16"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "OPZ",
+        "SIWZ",
+        "wzory dokumentacji zamówieniowej"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze uwzględniania wymagań dostępności w zamówieniach brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze uwzględniania wymagań dostępności w zamówieniach podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze uwzględniania wymagań dostępności w zamówieniach działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze uwzględniania wymagań dostępności w zamówieniach działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze uwzględniania wymagań dostępności w zamówieniach działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "uwzględniania wymagań dostępności w zamówieniach"
+    },
+    {
+      "id": "Q51",
+      "dimension_id": "procurement",
+      "decision_id": "Z2",
+      "short_name": "Egzekwowanie wymagań",
+      "text": "Czy wymagania dostępności są egzekwowane od wykonawców?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS16",
+          "SYS17"
+        ],
+        "operational": [
+          "OP9"
+        ]
+      },
+      "evidence_examples": [
+        "protokoły kontroli",
+        "wezwania do uzupełnień",
+        "postanowienia umowne"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze egzekwowania wymagań dostępności od wykonawców brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze egzekwowania wymagań dostępności od wykonawców podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze egzekwowania wymagań dostępności od wykonawców działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze egzekwowania wymagań dostępności od wykonawców działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze egzekwowania wymagań dostępności od wykonawców działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "egzekwowania wymagań dostępności od wykonawców"
+    },
+    {
+      "id": "Q52",
+      "dimension_id": "procurement",
+      "decision_id": "Z3",
+      "short_name": "Odbiór z uwzględnieniem dostępności",
+      "text": "Czy odbiór produktów lub usług uwzględnia dostępność?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS18",
+          "SYS17"
+        ],
+        "operational": [
+          "OP7"
+        ]
+      },
+      "evidence_examples": [
+        "protokoły odbioru",
+        "checklisty odbiorowe",
+        "raporty zgodności"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze uwzględnienia dostępności w odbiorze produktów i usług brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze uwzględnienia dostępności w odbiorze produktów i usług podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze uwzględnienia dostępności w odbiorze produktów i usług działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze uwzględnienia dostępności w odbiorze produktów i usług działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze uwzględnienia dostępności w odbiorze produktów i usług działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "uwzględnienia dostępności w odbiorze produktów i usług"
+    },
+    {
+      "id": "Q53",
+      "dimension_id": "procurement",
+      "decision_id": "Z1",
+      "short_name": "Standardowe zapisy zamówieniowe",
+      "text": "Czy organizacja posiada standardowe wzory zapisów dotyczących dostępności w dokumentacji zamówieniowej?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S1",
+          "S15"
+        ],
+        "systemic": [
+          "SYS1",
+          "SYS16"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "wzory zapisów",
+        "biblioteka klauzul",
+        "instrukcja dla zamawiających"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze standardowych zapisów dotyczących dostępności w dokumentacji zamówieniowej brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze standardowych zapisów dotyczących dostępności w dokumentacji zamówieniowej podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze standardowych zapisów dotyczących dostępności w dokumentacji zamówieniowej działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze standardowych zapisów dotyczących dostępności w dokumentacji zamówieniowej działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze standardowych zapisów dotyczących dostępności w dokumentacji zamówieniowej działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "standardowych zapisów dotyczących dostępności w dokumentacji zamówieniowej"
+    },
+    {
+      "id": "Q54",
+      "dimension_id": "procurement",
+      "decision_id": "Z2",
+      "short_name": "Dowody od wykonawców",
+      "text": "Czy wykonawcy są zobowiązani do przedstawiania dowodów spełnienia wymagań dostępności?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS16",
+          "SYS17"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "ACR/VPAT",
+        "oświadczenia",
+        "raporty z testów"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze pozyskiwania dowodów spełnienia wymagań dostępności od wykonawców brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze pozyskiwania dowodów spełnienia wymagań dostępności od wykonawców podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze pozyskiwania dowodów spełnienia wymagań dostępności od wykonawców działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze pozyskiwania dowodów spełnienia wymagań dostępności od wykonawców działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze pozyskiwania dowodów spełnienia wymagań dostępności od wykonawców działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "pozyskiwania dowodów spełnienia wymagań dostępności od wykonawców"
+    },
+    {
+      "id": "Q55",
+      "dimension_id": "procurement",
+      "decision_id": "Z1",
+      "short_name": "Dostępność jako kryterium oceny",
+      "text": "Czy dostępność bywa uwzględniana jako kryterium oceny ofert lub warunek merytoryczny wyboru rozwiązania?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13",
+          "S15"
+        ],
+        "systemic": [
+          "SYS16",
+          "SYS17"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "kryteria oceny",
+        "matryca oceny",
+        "wytyczne dla komisji"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze uwzględniania dostępności jako kryterium oceny ofert brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze uwzględniania dostępności jako kryterium oceny ofert podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze uwzględniania dostępności jako kryterium oceny ofert działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze uwzględniania dostępności jako kryterium oceny ofert działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze uwzględniania dostępności jako kryterium oceny ofert działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "uwzględniania dostępności jako kryterium oceny ofert"
+    },
+    {
+      "id": "Q56",
+      "dimension_id": "procurement",
+      "decision_id": "Z3",
+      "short_name": "Kompetencje oceny odbioru",
+      "text": "Czy organizacja posiada kompetencje lub wsparcie pozwalające ocenić dostępność dostarczonego produktu lub usługi?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S10"
+        ],
+        "systemic": [
+          "SYS17",
+          "SYS18"
+        ],
+        "operational": [
+          "OP7"
+        ]
+      },
+      "evidence_examples": [
+        "skład komisji",
+        "wsparcie eksperta",
+        "protokół oceny"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze kompetencji do oceny dostępności przy odbiorze brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze kompetencji do oceny dostępności przy odbiorze podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze kompetencji do oceny dostępności przy odbiorze działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze kompetencji do oceny dostępności przy odbiorze działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze kompetencji do oceny dostępności przy odbiorze działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "kompetencji do oceny dostępności przy odbiorze"
+    },
+    {
+      "id": "Q57",
+      "dimension_id": "procurement",
+      "decision_id": "Z1",
+      "short_name": "Systemy wewnętrzne w zamówieniach",
+      "text": "Czy wymagania dostępności są stosowane również przy zakupie lub rozwoju systemów używanych wewnętrznie przez pracowników?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S1",
+          "S15"
+        ],
+        "systemic": [
+          "SYS1",
+          "SYS16"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "zamówienia na ERP/HR",
+        "wymagania wewnętrzne",
+        "protokoły odbioru"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze stosowania wymagań dostępności przy zakupie i rozwoju systemów wewnętrznych brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze stosowania wymagań dostępności przy zakupie i rozwoju systemów wewnętrznych podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze stosowania wymagań dostępności przy zakupie i rozwoju systemów wewnętrznych działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze stosowania wymagań dostępności przy zakupie i rozwoju systemów wewnętrznych działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze stosowania wymagań dostępności przy zakupie i rozwoju systemów wewnętrznych działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "stosowania wymagań dostępności przy zakupie i rozwoju systemów wewnętrznych"
+    },
+    {
+      "id": "Q58",
+      "dimension_id": "support",
+      "decision_id": "W1",
+      "short_name": "Narzędzia wspierające dostępność",
+      "text": "Czy organizacja posiada narzędzia wspierające ocenę i wdrażanie dostępności?",
+      "target_maturity_level": 2,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S10"
+        ],
+        "systemic": [
+          "SYS2",
+          "SYS6"
+        ],
+        "operational": [
+          "OP3"
+        ]
+      },
+      "evidence_examples": [
+        "licencje narzędzi",
+        "instrukcje użycia",
+        "wykaz dostępnych narzędzi"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze narzędzi wspierających ocenę i wdrażanie dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze narzędzi wspierających ocenę i wdrażanie dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze narzędzi wspierających ocenę i wdrażanie dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze narzędzi wspierających ocenę i wdrażanie dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze narzędzi wspierających ocenę i wdrażanie dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "narzędzi wspierających ocenę i wdrażanie dostępności"
+    },
+    {
+      "id": "Q59",
+      "dimension_id": "support",
+      "decision_id": "W1",
+      "short_name": "Wsparcie eksperckie",
+      "text": "Czy pracownicy mają dostęp do wsparcia eksperckiego w sprawach dostępności?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S10"
+        ],
+        "systemic": [
+          "SYS19",
+          "SYS21"
+        ],
+        "operational": [
+          "OP11",
+          "OP12"
+        ]
+      },
+      "evidence_examples": [
+        "lista ekspertów",
+        "kanał konsultacji",
+        "harmonogram dyżurów"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze wsparcia eksperckiego w sprawach dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze wsparcia eksperckiego w sprawach dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze wsparcia eksperckiego w sprawach dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze wsparcia eksperckiego w sprawach dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze wsparcia eksperckiego w sprawach dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "wsparcia eksperckiego w sprawach dostępności"
+    },
+    {
+      "id": "Q60",
+      "dimension_id": "support",
+      "decision_id": "W2",
+      "short_name": "Mechanizm zgłoszeń",
+      "text": "Czy istnieje mechanizm zgłaszania problemów dostępności przez pracowników lub użytkowników?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S15"
+        ],
+        "systemic": [
+          "SYS5",
+          "SYS11"
+        ],
+        "operational": [
+          "OP10"
+        ]
+      },
+      "evidence_examples": [
+        "formularz zgłoszeń",
+        "system ticketowy",
+        "procedura obsługi zgłoszeń"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze mechanizmu zgłaszania problemów dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze mechanizmu zgłaszania problemów dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze mechanizmu zgłaszania problemów dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze mechanizmu zgłaszania problemów dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze mechanizmu zgłaszania problemów dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "mechanizmu zgłaszania problemów dostępności"
+    },
+    {
+      "id": "Q61",
+      "dimension_id": "support",
+      "decision_id": "W2",
+      "short_name": "Obsługa zgłoszeń",
+      "text": "Czy zgłoszenia dotyczące dostępności są obsługiwane w sposób uporządkowany, z określeniem odpowiedzialności i terminów?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S8",
+          "S9"
+        ],
+        "systemic": [
+          "SYS5",
+          "SYS9"
+        ],
+        "operational": [
+          "OP9",
+          "OP10"
+        ]
+      },
+      "evidence_examples": [
+        "workflow zgłoszeń",
+        "statusy zgłoszeń",
+        "SLA"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze obsługi zgłoszeń dotyczących dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze obsługi zgłoszeń dotyczących dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze obsługi zgłoszeń dotyczących dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze obsługi zgłoszeń dotyczących dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze obsługi zgłoszeń dotyczących dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "obsługi zgłoszeń dotyczących dostępności"
+    },
+    {
+      "id": "Q62",
+      "dimension_id": "support",
+      "decision_id": "W3",
+      "short_name": "Zdolność naprawcza",
+      "text": "Czy organizacja ma zdolność do usuwania problemów dostępności?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S12"
+        ],
+        "systemic": [
+          "SYS11",
+          "SYS12"
+        ],
+        "operational": [
+          "OP8",
+          "OP12"
+        ]
+      },
+      "evidence_examples": [
+        "plany naprawcze",
+        "zasoby wykonawcze",
+        "realizowane działania naprawcze"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze zdolności organizacji do usuwania problemów dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze zdolności organizacji do usuwania problemów dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze zdolności organizacji do usuwania problemów dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze zdolności organizacji do usuwania problemów dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze zdolności organizacji do usuwania problemów dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "zdolności organizacji do usuwania problemów dostępności"
+    },
+    {
+      "id": "Q63",
+      "dimension_id": "support",
+      "decision_id": "W3",
+      "short_name": "Dostępność w budżecie",
+      "text": "Czy dostępność jest uwzględniana w planowaniu budżetu i zasobów projektowych lub utrzymaniowych?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S11",
+          "S10"
+        ],
+        "systemic": [
+          "SYS11",
+          "SYS15"
+        ],
+        "operational": [
+          "OP11"
+        ]
+      },
+      "evidence_examples": [
+        "budżet roczny",
+        "rezerwy projektowe",
+        "plany finansowe"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze uwzględnienia dostępności w planowaniu budżetu i zasobów brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze uwzględnienia dostępności w planowaniu budżetu i zasobów podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze uwzględnienia dostępności w planowaniu budżetu i zasobów działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze uwzględnienia dostępności w planowaniu budżetu i zasobów działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze uwzględnienia dostępności w planowaniu budżetu i zasobów działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "uwzględnienia dostępności w planowaniu budżetu i zasobów"
+    },
+    {
+      "id": "Q64",
+      "dimension_id": "support",
+      "decision_id": "W3",
+      "short_name": "Priorytetyzacja działań naprawczych",
+      "text": "Czy organizacja potrafi ustalać priorytety naprawy problemów dostępności na podstawie ryzyka i wpływu na użytkowników?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S9",
+          "S14"
+        ],
+        "systemic": [
+          "SYS11",
+          "SYS12"
+        ],
+        "operational": [
+          "OP8",
+          "OP9"
+        ]
+      },
+      "evidence_examples": [
+        "matryca priorytetów",
+        "backlog",
+        "kryteria eskalacji"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze priorytetyzacji działań naprawczych brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze priorytetyzacji działań naprawczych podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze priorytetyzacji działań naprawczych działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze priorytetyzacji działań naprawczych działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze priorytetyzacji działań naprawczych działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "priorytetyzacji działań naprawczych"
+    },
+    {
+      "id": "Q65",
+      "dimension_id": "support",
+      "decision_id": "W2",
+      "short_name": "Eskalacja problemów",
+      "text": "Czy istnieje mechanizm eskalacji problemów dostępności, których nie można rozwiązać na poziomie operacyjnym?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13",
+          "S14"
+        ],
+        "systemic": [
+          "SYS5",
+          "SYS15"
+        ],
+        "operational": [
+          "OP9",
+          "OP10"
+        ]
+      },
+      "evidence_examples": [
+        "ścieżka eskalacji",
+        "decyzje kierownicze",
+        "rejestr problemów"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W obszarze eskalacji problemów dostępności brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "W obszarze eskalacji problemów dostępności podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W obszarze eskalacji problemów dostępności działania są wdrażane i stosowane w części procesów lub obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "W obszarze eskalacji problemów dostępności działania są włączone w procesy i stosowane w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "W obszarze eskalacji problemów dostępności działania są systemowe, spójne i stale doskonalone."
+        }
+      ],
+      "area_label": "eskalacji problemów dostępności"
+    }
+  ]
+}

@@ -1,0 +1,1063 @@
+{
+  "management_and_culture": {
+    "Q01": {
+      "low": {
+        "strategic": "Włączyć dostępność cyfrową do systemu zarządzania organizacją jako jeden z obszarów odpowiedzialności kierownictwa.",
+        "systematic": "Określić sposób uwzględniania dostępności w planowaniu, podejmowaniu decyzji i nadzorze nad działaniami.",
+        "operational": "Rozpocząć przegląd stanu dostępności i wskazać obszary wymagające działań."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć uwzględnianie dostępności na wszystkie kluczowe procesy zarządcze.",
+        "operational": "Ujednolicić sposób uwzględniania dostępności w planach i decyzjach w różnych obszarach organizacji."
+      },
+      "high": {
+        "systematic": "Objąć dostępność stałym nadzorem kierowniczym oraz cyklicznymi przeglądami."
+      }
+    },
+
+    "Q02": {
+      "low": {
+        "strategic": "Określić model odpowiedzialności za dostępność cyfrową w organizacji.",
+        "systematic": "Zdefiniować role oraz przypisać im zakres odpowiedzialności i uprawnień.",
+        "operational": "Wyznaczyć koordynatora dostępności i określić jego podstawowe zadania."
+      },
+      "medium": {
+        "systematic": "Ujednolicić przypisanie odpowiedzialności za dostępność w różnych obszarach organizacji."
+      },
+      "high": {
+        "systematic": "Powiązać odpowiedzialność za dostępność z systemem nadzoru oraz oceną realizacji zadań."
+      }
+    },
+
+    "Q03": {
+      "low": {
+        "strategic": "Włączyć dostępność cyfrową do planowania działań i projektów.",
+        "systematic": "Określić zasady uwzględniania dostępności w planowaniu i przygotowaniu działań.",
+        "operational": "Wprowadzić wymóg uwzględniania dostępności w nowych projektach i zadaniach."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć stosowanie zasad planowania działań z uwzględnieniem dostępności na wszystkie obszary działalności."
+      },
+      "high": {
+        "systematic": "Powiązać planowanie działań z celami i miernikami dotyczącymi dostępności."
+      }
+    },
+
+    "Q04": {
+      "low": {
+        "strategic": "Wprowadzić obowiązek monitorowania dostępności jako element nadzoru nad działaniem organizacji.",
+        "systematic": "Zdefiniować wskaźniki oraz sposób przeglądu poziomu dostępności.",
+        "operational": "Przeprowadzić pierwszy przegląd dostępności wybranych obszarów."
+      },
+      "medium": {
+        "systematic": "Ujednolicić sposób monitorowania i objąć nim wszystkie kluczowe obszary działalności."
+      },
+      "high": {
+        "systematic": "Wykorzystywać wyniki monitoringu do planowania działań oraz podejmowania decyzji zarządczych."
+      }
+    },
+
+    "Q05": {
+      "low": {
+        "strategic": "Ująć dostępność cyfrową w dokumentach kierunkowych i strategicznych organizacji.",
+        "systematic": "Określić cele i kierunki działań w zakresie dostępności.",
+        "operational": "Wprowadzić zapisy dotyczące dostępności do wybranych dokumentów organizacyjnych."
+      },
+      "medium": {
+        "systematic": "Ujednolicić zapisy dotyczące dostępności w dokumentach strategicznych i operacyjnych."
+      },
+      "high": {
+        "systematic": "Regularnie aktualizować dokumenty w oparciu o doświadczenia oraz wyniki monitoringu."
+      }
+    },
+
+    "Q06": {
+      "low": {
+        "strategic": "Wprowadzić regularne przeglądy dostępności na poziomie kierownictwa.",
+        "systematic": "Określić cykl raportowania oraz analiz stanu dostępności.",
+        "operational": "Przygotować pierwszy raport dotyczący stanu dostępności w organizacji."
+      },
+      "medium": {
+        "systematic": "Ujednolicić raportowanie i analizy w całej organizacji."
+      },
+      "high": {
+        "systematic": "Powiązać wyniki analiz z podejmowaniem decyzji zarządczych i planowaniem działań."
+      }
+    },
+
+    "Q07": {
+      "low": {
+        "strategic": "Wprowadzić zasadę uwzględniania dostępności w decyzjach organizacyjnych.",
+        "systematic": "Określić momenty decyzyjne wymagające uwzględnienia dostępności.",
+        "operational": "Wprowadzić wymóg uwzględniania dostępności w procesie podejmowania decyzji."
+      },
+      "medium": {
+        "systematic": "Ujednolicić stosowanie tej zasady w różnych obszarach organizacji."
+      },
+      "high": {
+        "systematic": "Uwzględniać dostępność jako standardowy element podejmowania decyzji."
+      }
+    },
+
+    "Q08": {
+      "low": {
+        "strategic": "Zapewnić zasoby niezbędne do prowadzenia działań związanych z dostępnością cyfrową.",
+        "systematic": "Włączyć planowanie zasobów dla dostępności do procesów zarządczych organizacji.",
+        "operational": "Określić minimalne zasoby potrzebne do realizacji najpilniejszych działań."
+      },
+      "medium": {
+        "systematic": "Uporządkować planowanie i przydzielanie zasobów dla dostępności we wszystkich obszarach działalności.",
+        "operational": "Uzupełnić braki zasobowe ograniczające realizację działań dostępnościowych."
+      },
+      "high": {
+        "systematic": "Objąć planowanie i wykorzystanie zasobów dla dostępności stałym nadzorem kierowniczym."
+      }
+    },
+
+    "Q09": {
+      "low": {
+        "strategic": "Uznać budowanie świadomości dostępności oraz postaw sprzyjających inkluzji za element odpowiedzialności organizacji.",
+        "systematic": "Zaplanować działania wspierające rozumienie dostępności i potrzeb użytkowników oraz pracowników.",
+        "operational": "Rozpocząć podstawowe działania komunikacyjne i uświadamiające dotyczące dostępności."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć działania budujące świadomość na większą część organizacji i nadać im regularny charakter.",
+        "operational": "Ujednolicić działania komunikacyjne dotyczące dostępności w różnych obszarach organizacji."
+      },
+      "high": {
+        "systematic": "Utrwalać kulturę dostępności jako stały element działania organizacji."
+      }
+    },
+
+    "Q10": {
+      "low": {
+        "strategic": "Włączyć doskonalenie działań dostępnościowych oparte na doświadczeniach i danych do sposobu zarządzania organizacją.",
+        "systematic": "Określić sposób analizowania problemów i wniosków oraz ich przekładania na działania usprawniające.",
+        "operational": "Rozpocząć zbieranie doświadczeń i danych oraz wykorzystywać je do wskazywania działań naprawczych."
+      },
+      "medium": {
+        "systematic": "Uporządkować analizę doświadczeń i danych tak, aby prowadziła do planowania zmian i ulepszeń.",
+        "operational": "Wprowadzić prosty cykl doskonalenia: identyfikacja problemu, analiza, decyzja, ocena efektu."
+      },
+      "high": {
+        "systematic": "Włączyć ciągłe doskonalenie oparte na danych i doświadczeniach do stałych mechanizmów zarządzania."
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "personnel": {
+    "Q11": {
+      "low": {
+        "strategic": "Włączyć dostępność i inkluzję do zasad zarządzania personelem.",
+        "systematic": "Określić sposób uwzględniania dostępności w organizacji środowiska pracy.",
+        "operational": "Zidentyfikować obszary, w których środowisko pracy nie jest dostępne dla pracowników."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć działania na rzecz dostępnego środowiska pracy na różne obszary organizacji.",
+        "operational": "Wprowadzić rozwiązania poprawiające dostępność środowiska pracy w wybranych obszarach."
+      },
+      "high": {
+        "systematic": "Zarządzać dostępnym i inkluzyjnym środowiskiem pracy jako stałym elementem funkcjonowania organizacji."
+      }
+    },
+
+    "Q12": {
+      "low": {
+        "strategic": "Zapewnić powiązanie odpowiedzialności za dostępność z realnym wpływem na decyzje i działania.",
+        "systematic": "Określić sposób przypisywania odpowiedzialności i uprawnień w organizacji.",
+        "operational": "Wskazać osoby lub role mające wpływ na zapewnianie dostępności."
+      },
+      "medium": {
+        "systematic": "Ujednolicić powiązanie odpowiedzialności i uprawnień w różnych obszarach organizacji.",
+        "operational": "Rozszerzyć zakres odpowiedzialności na kolejne role i zespoły."
+      },
+      "high": {
+        "systematic": "Zarządzać odpowiedzialnością za dostępność jako elementem systemu zarządzania organizacją."
+      }
+    },
+
+    "Q13": {
+      "low": {
+        "strategic": "Zapewnić koordynację działań związanych z dostępnością w organizacji.",
+        "systematic": "Określić zasady współpracy i przepływu informacji między obszarami.",
+        "operational": "Rozpocząć koordynację działań w wybranych obszarach."
+      },
+      "medium": {
+        "systematic": "Ujednolicić koordynację działań w całej organizacji.",
+        "operational": "Rozszerzyć współpracę między zespołami i obszarami."
+      },
+      "high": {
+        "systematic": "Zarządzać koordynacją działań jako elementem systemu zarządzania dostępnością."
+      }
+    },
+
+    "Q14": {
+      "low": {
+        "strategic": "Zapewnić jednoznaczne określenie ról związanych z dostępnością.",
+        "systematic": "Zdefiniować zadania i odpowiedzialności dla poszczególnych ról.",
+        "operational": "Rozpocząć przypisywanie zadań związanych z dostępnością do wybranych ról."
+      },
+      "medium": {
+        "systematic": "Ujednolicić opisy ról i zakresy odpowiedzialności w całej organizacji.",
+        "operational": "Rozszerzyć stosowanie opisów ról na kolejne stanowiska."
+      },
+      "high": {
+        "systematic": "Zarządzać rolami i odpowiedzialnościami jako elementem systemu organizacyjnego."
+      }
+    },
+
+    "Q15": {
+      "low": {
+        "strategic": "Powiązać dostępność z procesami organizacyjnymi, a nie tylko z działaniami pojedynczych osób.",
+        "systematic": "Określić, w jakich procesach dostępność powinna być uwzględniana.",
+        "operational": "Wprowadzić uwzględnianie dostępności do wybranych procesów."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć powiązanie dostępności z procesami w całej organizacji.",
+        "operational": "Ujednolicić sposób uwzględniania dostępności w procesach."
+      },
+      "high": {
+        "systematic": "Zarządzać dostępnością jako elementem procesów organizacyjnych."
+      }
+    },
+
+    "Q16": {
+      "low": {
+        "strategic": "Uwzględnić dostępność w zakresach obowiązków pracowników i zespołów.",
+        "systematic": "Określić sposób przypisywania obowiązków związanych z dostępnością.",
+        "operational": "Wprowadzić dostępność do zakresów obowiązków wybranych ról."
+      },
+      "medium": {
+        "systematic": "Ujednolicić uwzględnianie dostępności w zakresach obowiązków w całej organizacji.",
+        "operational": "Rozszerzyć stosowanie na większą liczbę stanowisk."
+      },
+      "high": {
+        "systematic": "Zarządzać obowiązkami związanymi z dostępnością jako elementem systemu organizacji pracy."
+      }
+    },
+
+    "Q17": {
+      "low": {
+        "strategic": "Zapewnić pracownikom warunki do realizacji działań związanych z dostępnością.",
+        "systematic": "Określić potrzeby w zakresie czasu, zasobów i wsparcia.",
+        "operational": "Zidentyfikować bariery ograniczające działania pracowników."
+      },
+      "medium": {
+        "systematic": "Ujednolicić zapewnianie warunków pracy w różnych obszarach organizacji.",
+        "operational": "Rozszerzyć dostęp do zasobów i wsparcia dla pracowników."
+      },
+      "high": {
+        "systematic": "Zarządzać warunkami pracy jako elementem systemu zapewniania dostępności."
+      }
+    },
+
+    "Q18": {
+      "low": {
+        "strategic": "Zapewnić współpracę między obszarami organizacji w zakresie dostępności.",
+        "systematic": "Określić zasady współpracy między działami i zespołami.",
+        "operational": "Rozpocząć współpracę między wybranymi zespołami."
+      },
+      "medium": {
+        "systematic": "Ujednolicić współpracę między działami w całej organizacji.",
+        "operational": "Rozszerzyć współpracę na wszystkie kluczowe obszary."
+      },
+      "high": {
+        "systematic": "Zarządzać współpracą międzyobszarową jako elementem systemu działania organizacji."
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+{
+  "competencies": {
+    "Q19": {
+      "low": {
+        "strategic": "Określić wymagania kompetencyjne w zakresie dostępności dla kluczowych ról w organizacji.",
+        "systematic": "Powiązać wymagania kompetencyjne z rolami i zadaniami wykonywanymi w organizacji.",
+        "operational": "Zidentyfikować podstawowe potrzeby kompetencyjne pracowników."
+      },
+      "medium": {
+        "systematic": "Ujednolicić wymagania kompetencyjne dla podobnych ról w różnych obszarach organizacji.",
+        "operational": "Dopasować wymagania kompetencyjne do większej liczby stanowisk."
+      },
+      "high": {
+        "systematic": "Zarządzać wymaganiami kompetencyjnymi jako elementem systemu funkcjonowania organizacji."
+      }
+    },
+
+    "Q20": {
+      "low": {
+        "strategic": "Wprowadzić systemowe podejście do rozwijania kompetencji w zakresie dostępności.",
+        "systematic": "Określić plan i zakres działań rozwojowych oraz szkoleń.",
+        "operational": "Rozpocząć prowadzenie podstawowych szkoleń z zakresu dostępności."
+      },
+      "medium": {
+        "systematic": "Ujednolicić system rozwoju kompetencji w różnych obszarach organizacji.",
+        "operational": "Rozszerzyć zakres i dostępność działań szkoleniowych."
+      },
+      "high": {
+        "systematic": "Zarządzać rozwojem kompetencji jako elementem systemu rozwoju organizacji."
+      }
+    },
+
+    "Q21": {
+      "low": {
+        "strategic": "Zapewnić, aby pracownicy byli przygotowani do stosowania wymagań dostępności w praktyce.",
+        "systematic": "Określić sposoby wspierania stosowania wiedzy w codziennej pracy.",
+        "operational": "Rozpocząć stosowanie zasad dostępności w wybranych działaniach."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć wsparcie dla stosowania dostępności w praktyce na różne obszary organizacji.",
+        "operational": "Wspierać pracowników w stosowaniu zasad w codziennej pracy."
+      },
+      "high": {
+        "systematic": "Zarządzać stosowaniem kompetencji jako elementem jakości działań organizacji."
+      }
+    },
+
+    "Q22": {
+      "low": {
+        "strategic": "Zapewnić aktualność wiedzy w zakresie dostępności w organizacji.",
+        "systematic": "Określić sposób aktualizowania wiedzy, materiałów i źródeł informacji.",
+        "operational": "Rozpocząć aktualizowanie wiedzy w wybranych obszarach."
+      },
+      "medium": {
+        "systematic": "Ujednolicić sposób aktualizowania wiedzy w całej organizacji.",
+        "operational": "Rozszerzyć działania aktualizacyjne."
+      },
+      "high": {
+        "systematic": "Zarządzać aktualnością wiedzy jako elementem systemu kompetencji organizacji."
+      }
+    },
+
+    "Q23": {
+      "low": {
+        "strategic": "Dostosować rozwój kompetencji w zakresie dostępności do różnych ról w organizacji.",
+        "systematic": "Określić zakres kompetencji wymaganych dla poszczególnych grup pracowników.",
+        "operational": "Rozpocząć różnicowanie działań rozwojowych w zależności od roli."
+      },
+      "medium": {
+        "systematic": "Ujednolicić podejście do kompetencji dla podobnych ról w organizacji.",
+        "operational": "Rozszerzyć dopasowanie działań rozwojowych do ról i zadań."
+      },
+      "high": {
+        "systematic": "Zarządzać kompetencjami w powiązaniu z rolami i odpowiedzialnościami w organizacji."
+      }
+    },
+
+    "Q24": {
+      "low": {
+        "strategic": "Włączyć dostępność do procesu wprowadzania nowych pracowników.",
+        "systematic": "Określić zakres wiedzy i umiejętności przekazywanych na etapie onboardingu.",
+        "operational": "Rozpocząć przekazywanie podstawowych informacji o dostępności nowym pracownikom."
+      },
+      "medium": {
+        "systematic": "Ujednolicić onboarding w zakresie dostępności w całej organizacji.",
+        "operational": "Rozszerzyć zakres przekazywanych informacji i materiałów."
+      },
+      "high": {
+        "systematic": "Zarządzać onboardingiem jako elementem systemu rozwoju kompetencji."
+      }
+    },
+
+    "Q25": {
+      "low": {
+        "strategic": "Zapewnić pracownikom dostęp do materiałów wspierających stosowanie dostępności.",
+        "systematic": "Określić zakres i formy materiałów wspierających oraz sposób ich udostępniania.",
+        "operational": "Udostępnić podstawowe instrukcje, wytyczne i materiały."
+      },
+      "medium": {
+        "systematic": "Ujednolicić materiały oraz sposób ich udostępniania w całej organizacji.",
+        "operational": "Rozszerzyć dostęp do materiałów wspierających pracowników."
+      },
+      "high": {
+        "systematic": "Zarządzać zasobami wiedzy jako elementem systemu kompetencji."
+      }
+    },
+
+    "Q26": {
+      "low": {
+        "strategic": "Zapewnić rozwój kompetencji specjalistycznych w zakresie dostępności.",
+        "systematic": "Określić sposób budowania kompetencji eksperckich w organizacji.",
+        "operational": "Rozpocząć rozwijanie kompetencji specjalistycznych w wybranych obszarach."
+      },
+      "medium": {
+        "systematic": "Ujednolicić rozwój kompetencji specjalistycznych w różnych obszarach.",
+        "operational": "Rozszerzyć dostęp do wiedzy specjalistycznej."
+      },
+      "high": {
+        "systematic": "Zarządzać kompetencjami eksperckimi jako elementem zdolności organizacji."
+      }
+    },
+
+    "Q27": {
+      "low": {
+        "strategic": "Zapewnić świadomość stosowania wymagań dostępności w odpowiednich sytuacjach.",
+        "systematic": "Określić, w jakich działaniach i rolach dostępność powinna być stosowana.",
+        "operational": "Rozpocząć stosowanie dostępności w wybranych działaniach."
+      },
+      "medium": {
+        "systematic": "Ujednolicić rozumienie i stosowanie dostępności w różnych obszarach organizacji.",
+        "operational": "Rozszerzyć stosowanie dostępności na kolejne działania i role."
+      },
+      "high": {
+        "systematic": "Zarządzać stosowaniem dostępności jako elementem jakości działań organizacji."
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+{
+  "communications": {
+    "Q28": {
+      "low": {
+        "strategic": "Ustalić wspólne standardy dostępnej informacji i komunikacji obowiązujące w całej organizacji.",
+        "systematic": "Określić zasady tworzenia, redakcji i udostępniania informacji cyfrowych w głównych kanałach komunikacji.",
+        "operational": "Przygotować podstawowy zestaw zasad publikowania dostępnych treści i udostępnić go osobom odpowiedzialnym za komunikację."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć standardy na wszystkie główne rodzaje treści i kanały komunikacji oraz ujednolicić ich stosowanie.",
+        "operational": "Uzupełnić istniejące zasady o brakujące obszary, takie jak dokumenty, multimedia i komunikacja wewnętrzna."
+      },
+      "high": {
+        "systematic": "Regularnie aktualizować standardy komunikacji i powiązać je z nadzorem nad jakością treści."
+      }
+    },
+
+    "Q29": {
+      "low": {
+        "strategic": "Włączyć dostępność do procesu tworzenia, redakcji i publikacji informacji jako stały wymóg organizacyjny.",
+        "systematic": "Opisać proces przygotowania i publikacji treści tak, aby dostępność była uwzględniana na wszystkich etapach.",
+        "operational": "Wskazać etapy procesu, na których należy sprawdzać i uwzględniać dostępność treści."
+      },
+      "medium": {
+        "systematic": "Ujednolicić proces tworzenia i publikacji treści w różnych obszarach organizacji.",
+        "operational": "Rozszerzyć stosowanie zasad dostępności na te etapy procesu, które dotąd były pomijane."
+      },
+      "high": {
+        "systematic": "Objąć cały proces tworzenia i publikacji treści regularnym przeglądem jakości oraz spójności działań."
+      }
+    },
+
+    "Q30": {
+      "low": {
+        "strategic": "Uznać czytelność, zrozumiałość i dostępność informacji za podstawowe wymagania jakości komunikacji organizacji.",
+        "systematic": "Wprowadzić zasady przygotowywania treści z myślą o różnych odbiorcach, w tym o osobach z niepełnosprawnościami.",
+        "operational": "Rozpocząć stosowanie podstawowych zasad czytelnej, prostej i zrozumiałej komunikacji w najważniejszych treściach."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć stosowanie zasad czytelności i zrozumiałości na większą część publikowanych treści.",
+        "operational": "Przejrzeć najczęściej publikowane komunikaty i uprościć je pod względem języka, struktury i użyteczności."
+      },
+      "high": {
+        "systematic": "Doskonalić komunikację w oparciu o doświadczenia odbiorców i dostosowywać ją do różnych sytuacji oraz grup użytkowników."
+      }
+    },
+
+    "Q31": {
+      "low": {
+        "strategic": "Wprowadzić wymaganie przygotowywania dokumentów, formularzy, prezentacji i innych materiałów zgodnie z zasadami dostępności.",
+        "systematic": "Określić wspólne wymagania dla materiałów publikowanych przez organizację w różnych formatach.",
+        "operational": "Poprawić dostępność najczęściej publikowanych materiałów i usunąć najbardziej podstawowe bariery."
+      },
+      "medium": {
+        "systematic": "Ujednolicić sposób przygotowywania materiałów w różnych formatach i obszarach działania.",
+        "operational": "Rozszerzyć stosowanie zasad dostępności na większą część dokumentów, formularzy i prezentacji."
+      },
+      "high": {
+        "systematic": "Utrzymywać wysoki poziom dostępności materiałów w całej organizacji i obejmować nim nowe formaty oraz typy publikacji."
+      }
+    },
+
+    "Q32": {
+      "low": {
+        "strategic": "Zapewnić organizacji wspólne zasoby wspierające tworzenie dostępnych treści i materiałów.",
+        "systematic": "Zbudować zestaw szablonów, wzorów i instrukcji dla najczęściej tworzonych treści.",
+        "operational": "Przygotować podstawowe szablony dokumentów i krótkie instrukcje dla osób tworzących treści."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć zestaw wzorów i instrukcji na kolejne typy materiałów oraz większą część organizacji.",
+        "operational": "Ułatwić pracownikom dostęp do szablonów i materiałów pomocniczych w codziennej pracy."
+      },
+      "high": {
+        "systematic": "Regularnie aktualizować szablony i instrukcje oraz dostosowywać je do zmieniających się potrzeb organizacji."
+      }
+    },
+
+    "Q33": {
+      "low": {
+        "strategic": "Włączyć dostępność do wymagań dotyczących narzędzi i środowisk wykorzystywanych do tworzenia i publikowania treści.",
+        "systematic": "Określić, jakie funkcje, ustawienia i konfiguracje narzędzi mają wspierać utrzymanie dostępności komunikacji.",
+        "operational": "Włączyć podstawowe ustawienia i rozwiązania wspierające dostępność w używanych narzędziach."
+      },
+      "medium": {
+        "systematic": "Ujednolicić sposób wykorzystania narzędzi i środowisk pracy w różnych zespołach.",
+        "operational": "Rozszerzyć wsparcie narzędziowe na więcej procesów i obszarów komunikacji."
+      },
+      "high": {
+        "systematic": "Zarządzać narzędziami i konfiguracją środowiska pracy tak, aby stale wspierały jakość oraz dostępność komunikacji."
+      }
+    },
+
+    "Q34": {
+      "low": {
+        "strategic": "Wprowadzić zasadę obowiązkowej weryfikacji treści i materiałów przed publikacją.",
+        "systematic": "Określić sposób kontroli jakości komunikacji przed publikacją, obejmujący dostępność i użyteczność treści.",
+        "operational": "Uruchomić podstawowy przegląd treści przed publikacją z wykorzystaniem prostych kryteriów i checklist."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć weryfikację na wszystkie kluczowe treści i materiały publikowane przez organizację.",
+        "operational": "Ujednolicić sposób sprawdzania treści przed publikacją w różnych kanałach i zespołach."
+      },
+      "high": {
+        "systematic": "Włączyć kontrolę jakości komunikacji do stałego procesu publikacji i doskonalić jej kryteria."
+      }
+    },
+
+    "Q35": {
+      "low": {
+        "strategic": "Uznać informacje zwrotne odbiorców za jedno ze źródeł doskonalenia komunikacji organizacji.",
+        "systematic": "Wprowadzić sposób zbierania, analizowania i wykorzystywania informacji zwrotnych dotyczących dostępności i zrozumiałości komunikacji.",
+        "operational": "Rozpocząć przyjmowanie i porządkowanie informacji zwrotnych od użytkowników oraz pracowników."
+      },
+      "medium": {
+        "systematic": "Ujednolicić sposób wykorzystania informacji zwrotnych w różnych kanałach komunikacji.",
+        "operational": "Analizować powtarzające się uwagi i wprowadzać na ich podstawie poprawki w treściach oraz materiałach."
+      },
+      "high": {
+        "systematic": "Wykorzystywać informacje zwrotne do aktualizowania standardów, procesów i priorytetów w obszarze komunikacji."
+      }
+    },
+
+    "Q36": {
+      "low": {
+        "strategic": "Przyjąć zasadę spójnego stosowania wymagań dostępności we wszystkich głównych kanałach komunikacji organizacji.",
+        "systematic": "Określić wspólne wymagania dla WWW, BIP, dokumentów, mediów społecznościowych i komunikacji wewnętrznej.",
+        "operational": "Ujednolicić podstawowe zasady komunikacji w najważniejszych kanałach organizacji."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć spójne stosowanie wymagań dostępności na kolejne kanały i formaty komunikacji.",
+        "operational": "Porównać sposób publikacji i jakość komunikacji w różnych kanałach oraz usunąć najważniejsze niespójności."
+      },
+      "high": {
+        "systematic": "Utrzymywać spójność wymagań dostępności także przy zmianach kanałów, narzędzi i form komunikacji."
+      }
+    },
+
+    "Q37": {
+      "low": {
+        "strategic": "Włączyć dostępność multimediów i alternatywnych form przekazu do standardów komunikacji organizacji.",
+        "systematic": "Określić, kiedy i w jakiej formie organizacja zapewnia napisy, transkrypcje, audiodeskrypcję lub inne alternatywy.",
+        "operational": "Wprowadzić podstawowe alternatywne formy przekazu dla najważniejszych materiałów multimedialnych."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć i ujednolicić stosowanie alternatywnych form przekazu w różnych typach komunikatów i materiałów.",
+        "operational": "Zapewnić alternatywne formy przekazu dla większej części publikowanych materiałów multimedialnych."
+      },
+      "high": {
+        "systematic": "Utrzymywać dostępność multimediów jako stały element komunikacji i doskonalić jakość stosowanych rozwiązań."
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+{
+  "tik_lifecycle": {
+    "Q38": {
+      "low": {
+        "strategic": "Włączyć dostępność do projektowania usług cyfrowych jako jeden z podstawowych wymogów jakości.",
+        "systematic": "Określić zasady uwzględniania dostępności na etapie projektowania usług.",
+        "operational": "Uwzględniać wymagania dostępności przy projektowaniu nowych usług i zmian."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć stosowanie zasad projektowania dostępnych usług na wszystkie obszary organizacji.",
+        "operational": "Ujednolicić podejście do projektowania usług w różnych zespołach."
+      },
+      "high": {
+        "systematic": "Utrzymywać dostępność jako stały element projektowania i rozwijać ją w oparciu o doświadczenia użytkowników."
+      }
+    },
+
+    "Q39": {
+      "low": {
+        "strategic": "Wprowadzić obowiązek definiowania wymagań dostępności przed rozpoczęciem prac.",
+        "systematic": "Określić sposób zapisywania i przekazywania wymagań dostępności w projektach.",
+        "operational": "Dodawać wymagania dostępności do dokumentacji nowych projektów."
+      },
+      "medium": {
+        "systematic": "Ujednolicić sposób definiowania wymagań dostępności we wszystkich projektach.",
+        "operational": "Rozszerzyć stosowanie wymagań na wszystkie nowe inicjatywy."
+      },
+      "high": {
+        "systematic": "Zarządzać wymaganiami dostępności jako stałym elementem dokumentacji projektowej."
+      }
+    },
+
+    "Q40": {
+      "low": {
+        "strategic": "Włączyć dostępność do rozwoju systemów IT i aplikacji jako wymóg obowiązkowy.",
+        "systematic": "Określić zasady uwzględniania dostępności w pracach rozwojowych i utrzymaniowych.",
+        "operational": "Uwzględniać dostępność przy wprowadzaniu zmian w systemach."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć stosowanie zasad dostępności na wszystkie systemy i projekty IT.",
+        "operational": "Ujednolicić sposób pracy zespołów IT w zakresie dostępności."
+      },
+      "high": {
+        "systematic": "Zarządzać dostępnością jako integralnym elementem rozwoju i utrzymania systemów."
+      }
+    },
+
+    "Q41": {
+      "low": {
+        "strategic": "Wprowadzić obowiązek testowania dostępności w procesie rozwoju usług i systemów.",
+        "systematic": "Określić sposób i zakres testowania dostępności w projektach.",
+        "operational": "Przeprowadzić pierwsze testy dostępności wybranych rozwiązań."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć testowanie dostępności na wszystkie kluczowe rozwiązania.",
+        "operational": "Ujednolicić sposób prowadzenia testów w różnych zespołach."
+      },
+      "high": {
+        "systematic": "Włączyć testowanie dostępności jako stały element procesu wytwarzania i wdrażania."
+      }
+    },
+
+    "Q42": {
+      "low": {
+        "strategic": "Wprowadzić obowiązek usuwania problemów dostępności jako element jakości usług.",
+        "systematic": "Określić sposób rejestrowania, priorytetyzacji i usuwania problemów dostępności.",
+        "operational": "Rozpocząć usuwanie najważniejszych problemów dostępności."
+      },
+      "medium": {
+        "systematic": "Ujednolicić sposób obsługi problemów w różnych obszarach organizacji.",
+        "operational": "Rozszerzyć działania naprawcze na kolejne obszary."
+      },
+      "high": {
+        "systematic": "Zarządzać problemami dostępności jako elementem ciągłego doskonalenia."
+      }
+    },
+
+    "Q43": {
+      "low": {
+        "strategic": "Włączyć potrzeby różnych użytkowników do analizy i projektowania usług cyfrowych.",
+        "systematic": "Określić sposób uwzględniania różnorodnych potrzeb użytkowników.",
+        "operational": "Uwzględniać potrzeby użytkowników w analizie nowych usług."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć analizę potrzeb użytkowników na wszystkie projekty.",
+        "operational": "Ujednolicić sposób uwzględniania różnych grup użytkowników."
+      },
+      "high": {
+        "systematic": "Systemowo wykorzystywać wiedzę o użytkownikach w projektowaniu usług."
+      }
+    },
+
+    "Q44": {
+      "low": {
+        "strategic": "Włączyć dostępność do projektowania doświadczenia użytkownika i interfejsów.",
+        "systematic": "Określić zasady projektowania dostępnych interfejsów i rozwiązań UX.",
+        "operational": "Uwzględniać dostępność przy projektowaniu interfejsów."
+      },
+      "medium": {
+        "systematic": "Ujednolicić zasady projektowania doświadczenia użytkownika w różnych projektach.",
+        "operational": "Rozszerzyć stosowanie zasad dostępności UX na więcej rozwiązań."
+      },
+      "high": {
+        "systematic": "Zarządzać projektowaniem doświadczenia użytkownika jako elementem systemu zapewniania dostępności."
+      }
+    },
+
+    "Q45": {
+      "low": {
+        "strategic": "Wprowadzić obowiązek dokumentowania wymagań dostępności w projektach.",
+        "systematic": "Określić sposób zapisywania wymagań dostępności w dokumentacji projektowej.",
+        "operational": "Dodawać wymagania dostępności do dokumentacji projektów."
+      },
+      "medium": {
+        "systematic": "Ujednolicić dokumentowanie wymagań dostępności w różnych projektach.",
+        "operational": "Rozszerzyć zakres dokumentowania dostępności."
+      },
+      "high": {
+        "systematic": "Zarządzać dokumentacją dostępności jako elementem systemu jakości."
+      }
+    },
+
+    "Q46": {
+      "low": {
+        "strategic": "Wprowadzić stosowanie różnych metod testowania dostępności.",
+        "systematic": "Określić zestaw metod testowania dostępności (np. automatyczne i manualne).",
+        "operational": "Rozszerzyć testowanie o dodatkowe metody."
+      },
+      "medium": {
+        "systematic": "Ujednolicić stosowanie różnych metod testowania dostępności w projektach.",
+        "operational": "Zapewnić stosowanie kilku metod w większej liczbie projektów."
+      },
+      "high": {
+        "systematic": "Zarządzać testowaniem dostępności jako procesem obejmującym różne metody i scenariusze."
+      }
+    },
+
+    "Q47": {
+      "low": {
+        "strategic": "Włączyć użytkowników do oceny i rozwoju usług cyfrowych.",
+        "systematic": "Określić sposób angażowania użytkowników w testowanie i ocenę usług.",
+        "operational": "Przeprowadzić pierwsze testy z udziałem użytkowników."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć udział użytkowników w różnych projektach.",
+        "operational": "Ujednolicić sposób angażowania użytkowników."
+      },
+      "high": {
+        "systematic": "Systemowo wykorzystywać udział użytkowników w projektowaniu i ocenie usług."
+      }
+    },
+
+    "Q48": {
+      "low": {
+        "strategic": "Wprowadzić zasadę zapobiegania pogarszaniu dostępności w wyniku zmian w systemach i usługach.",
+        "systematic": "Określić mechanizmy kontroli zmian, które pozwalają wykrywać i ograniczać ryzyko pogorszenia dostępności.",
+        "operational": "Rozpocząć sprawdzanie wpływu zmian na dostępność przed ich wdrożeniem."
+      },
+      "medium": {
+        "systematic": "Ujednolicić sposób zapobiegania pogarszaniu dostępności w różnych systemach i usługach.",
+        "operational": "Rozszerzyć stosowanie działań zapobiegawczych na większą część zmian i wdrożeń."
+      },
+      "high": {
+        "systematic": "Zarządzać zapobieganiem regresji dostępności jako stałym elementem systemu jakości i kontroli zmian."
+      }
+    },
+
+    "Q49": {
+      "low": {
+        "strategic": "Włączyć dostępność do procesów migracji, wycofywania systemów i zmian technologicznych.",
+        "systematic": "Określić zasady zapewniania dostępności w sytuacjach przejścia między rozwiązaniami oraz przy zmianach technologicznych.",
+        "operational": "Uwzględniać dostępność przy planowaniu migracji, wycofywania systemów i działań przejściowych."
+      },
+      "medium": {
+        "systematic": "Ujednolicić sposób uwzględniania dostępności w procesach migracji i zmian technologicznych w całej organizacji.",
+        "operational": "Rozszerzyć stosowanie zasad na kolejne migracje i działania przejściowe."
+      },
+      "high": {
+        "systematic": "Zarządzać dostępnością jako stałym elementem migracji, wycofywania systemów i zmian technologicznych."
+      }
+    }
+  }
+}
+
+
+{
+  "procurement": {
+    "Q50": {
+      "low": {
+        "strategic": "Włączyć wymagania dostępności do standardów zakupów i zamówień publicznych.",
+        "systematic": "Określić sposób uwzględniania dostępności w dokumentacji zakupowej.",
+        "operational": "Rozpocząć stosowanie podstawowych wymagań dostępności w nowych zamówieniach."
+      },
+      "medium": {
+        "systematic": "Ujednolicić stosowanie wymagań dostępności w różnych postępowaniach.",
+        "operational": "Rozszerzyć stosowanie wymagań na wszystkie istotne zamówienia."
+      },
+      "high": {
+        "systematic": "Zarządzać wymaganiami dostępności jako stałym elementem polityki zakupowej."
+      }
+    },
+
+    "Q51": {
+      "low": {
+        "strategic": "Wprowadzić obowiązek egzekwowania wymagań dostępności od wykonawców.",
+        "systematic": "Określić mechanizmy weryfikacji i egzekwowania wymagań w trakcie realizacji umów.",
+        "operational": "Rozpocząć weryfikację spełniania wymagań przez wykonawców."
+      },
+      "medium": {
+        "systematic": "Ujednolicić sposób egzekwowania wymagań w różnych zamówieniach.",
+        "operational": "Rozszerzyć weryfikację na większą liczbę projektów."
+      },
+      "high": {
+        "systematic": "Zarządzać relacją z wykonawcami w sposób zapewniający trwałe spełnianie wymagań dostępności."
+      }
+    },
+
+    "Q52": {
+      "low": {
+        "strategic": "Wprowadzić obowiązek uwzględniania dostępności przy odbiorze produktów i usług.",
+        "systematic": "Określić zasady i kryteria odbioru uwzględniające dostępność.",
+        "operational": "Rozpocząć sprawdzanie dostępności przy odbiorze wybranych rozwiązań."
+      },
+      "medium": {
+        "systematic": "Ujednolicić sposób odbioru w całej organizacji.",
+        "operational": "Rozszerzyć ocenę dostępności na wszystkie odbiory."
+      },
+      "high": {
+        "systematic": "Zarządzać odbiorem jako elementem systemu jakości i dostępności."
+      }
+    },
+
+    "Q53": {
+      "low": {
+        "strategic": "Zapewnić stosowanie spójnych zapisów dotyczących dostępności w dokumentacji zakupowej.",
+        "systematic": "Opracować standardowe klauzule i wzory zapisów dotyczących dostępności.",
+        "operational": "Wprowadzić podstawowe zapisy dostępności do dokumentów zamówieniowych."
+      },
+      "medium": {
+        "systematic": "Ujednolicić stosowanie zapisów w całej organizacji.",
+        "operational": "Rozszerzyć stosowanie wzorów na wszystkie postępowania."
+      },
+      "high": {
+        "systematic": "Aktualizować i rozwijać wzory zapisów w oparciu o doświadczenia i zmiany przepisów."
+      }
+    },
+
+    "Q54": {
+      "low": {
+        "strategic": "Wprowadzić obowiązek przedstawiania dowodów spełnienia wymagań dostępności przez wykonawców.",
+        "systematic": "Określić wymagane dokumenty i formy potwierdzenia zgodności.",
+        "operational": "Rozpocząć wymaganie podstawowych dowodów dostępności."
+      },
+      "medium": {
+        "systematic": "Ujednolicić sposób oceny dowodów dostępności.",
+        "operational": "Rozszerzyć wymagania dotyczące dokumentów."
+      },
+      "high": {
+        "systematic": "Zarządzać dowodami dostępności jako elementem oceny jakości dostaw."
+      }
+    },
+
+    "Q55": {
+      "low": {
+        "strategic": "Uwzględnić dostępność jako kryterium oceny ofert lub warunek wyboru rozwiązania.",
+        "systematic": "Określić sposób uwzględniania dostępności w ocenie ofert.",
+        "operational": "Wprowadzić dostępność jako kryterium w wybranych postępowaniach."
+      },
+      "medium": {
+        "systematic": "Ujednolicić stosowanie kryteriów dostępności.",
+        "operational": "Rozszerzyć stosowanie kryteriów na kolejne zamówienia."
+      },
+      "high": {
+        "systematic": "Zarządzać oceną ofert z uwzględnieniem dostępności jako kluczowego czynnika jakości."
+      }
+    },
+
+    "Q56": {
+      "low": {
+        "strategic": "Zapewnić organizacji zdolność do oceny dostępności produktów i usług.",
+        "systematic": "Określić sposób zapewnienia kompetencji lub wsparcia eksperckiego.",
+        "operational": "Zapewnić podstawowe wsparcie przy ocenie dostępności."
+      },
+      "medium": {
+        "systematic": "Ujednolicić sposób korzystania ze wsparcia eksperckiego.",
+        "operational": "Rozszerzyć dostęp do kompetencji."
+      },
+      "high": {
+        "systematic": "Zarządzać kompetencjami oceny dostępności jako elementem systemu zakupowego."
+      }
+    },
+
+    "Q57": {
+      "low": {
+        "strategic": "Włączyć wymagania dostępności do zakupów systemów używanych wewnętrznie.",
+        "systematic": "Określić zasady stosowania wymagań dostępności w zakupach wewnętrznych.",
+        "operational": "Uwzględniać dostępność przy wyborze narzędzi i systemów dla pracowników."
+      },
+      "medium": {
+        "systematic": "Ujednolicić stosowanie wymagań w zakupach wewnętrznych.",
+        "operational": "Rozszerzyć wymagania na wszystkie systemy."
+      },
+      "high": {
+        "systematic": "Zarządzać dostępnością środowiska pracy jako elementem jakości organizacji."
+      }
+    },
+
+    "Q58": {
+      "low": {
+        "strategic": "Zapewnić uwzględnianie dostępności w całym cyklu zamówienia.",
+        "systematic": "Określić powiązania między wymaganiami, oceną ofert, realizacją i odbiorem.",
+        "operational": "Powiązać podstawowe elementy procesu zamówienia z wymaganiami dostępności."
+      },
+      "medium": {
+        "systematic": "Ujednolicić podejście do dostępności w całym cyklu zamówienia.",
+        "operational": "Rozszerzyć spójność działań na kolejne postępowania."
+      },
+      "high": {
+        "systematic": "Zarządzać dostępnością jako elementem całego cyklu zakupowego."
+      }
+    },
+
+    "Q59": {
+      "low": {
+        "strategic": "Zapewnić monitorowanie realizacji wymagań dostępności w zamówieniach.",
+        "systematic": "Określić sposób śledzenia realizacji wymagań w trakcie trwania umów.",
+        "operational": "Rozpocząć monitorowanie wybranych realizacji."
+      },
+      "medium": {
+        "systematic": "Ujednolicić monitorowanie realizacji wymagań.",
+        "operational": "Rozszerzyć monitoring na wszystkie kluczowe zamówienia."
+      },
+      "high": {
+        "systematic": "Zarządzać monitoringiem jako elementem nadzoru nad jakością dostaw."
+      }
+    }
+  }
+}
+
+
+{
+  "support": {
+    "Q60": {
+      "low": {
+        "strategic": "Zapewnić dostępne kanały zgłaszania problemów związanych z dostępnością.",
+        "systematic": "Określić sposoby zgłaszania problemów dostępne dla różnych użytkowników.",
+        "operational": "Uruchomić podstawowy kanał zgłoszeń."
+      },
+      "medium": {
+        "systematic": "Ujednolicić kanały zgłoszeń w całej organizacji.",
+        "operational": "Rozszerzyć dostępność kanałów zgłoszeń."
+      },
+      "high": {
+        "systematic": "Zarządzać kanałami zgłoszeń jako elementem systemu komunikacji."
+      }
+    },
+
+    "Q61": {
+      "low": {
+        "strategic": "Wprowadzić uporządkowany sposób obsługi zgłoszeń.",
+        "systematic": "Określić odpowiedzialności i sposób obsługi zgłoszeń.",
+        "operational": "Rozpocząć rejestrowanie zgłoszeń."
+      },
+      "medium": {
+        "systematic": "Ujednolicić obsługę zgłoszeń.",
+        "operational": "Rozszerzyć stosowanie zasad obsługi."
+      },
+      "high": {
+        "systematic": "Zarządzać obsługą zgłoszeń jako elementem systemu jakości."
+      }
+    },
+
+    "Q62": {
+      "low": {
+        "strategic": "Zapewnić możliwość uzyskania wsparcia w zakresie dostępności.",
+        "systematic": "Określić sposób organizacji wsparcia.",
+        "operational": "Rozpocząć udzielanie wsparcia."
+      },
+      "medium": {
+        "systematic": "Rozszerzyć dostęp do wsparcia.",
+        "operational": "Ujednolicić sposób udzielania pomocy."
+      },
+      "high": {
+        "systematic": "Zarządzać wsparciem jako elementem działania organizacji."
+      }
+    },
+
+    "Q63": {
+      "low": {
+        "strategic": "Zapewnić dostęp do materiałów pomocniczych dla użytkowników.",
+        "systematic": "Określić zakres materiałów i instrukcji.",
+        "operational": "Przygotować podstawowe materiały."
+      },
+      "medium": {
+        "systematic": "Ujednolicić materiały pomocnicze.",
+        "operational": "Rozszerzyć ich dostępność."
+      },
+      "high": {
+        "systematic": "Zarządzać materiałami jako elementem wsparcia użytkowników."
+      }
+    },
+
+    "Q64": {
+      "low": {
+        "strategic": "Zapewnić wsparcie alternatywne w przypadku niedostępności usług.",
+        "systematic": "Określić zasady udzielania wsparcia zastępczego.",
+        "operational": "Zapewnić wsparcie w wybranych przypadkach."
+      },
+      "medium": {
+        "systematic": "Ujednolicić wsparcie alternatywne.",
+        "operational": "Rozszerzyć jego stosowanie."
+      },
+      "high": {
+        "systematic": "Zarządzać wsparciem alternatywnym jako elementem systemu dostępności."
+      }
+    },
+
+    "Q65": {
+      "low": {
+        "strategic": "Wykorzystywać zgłoszenia jako źródło wiedzy o barierach.",
+        "systematic": "Określić sposób analizy zgłoszeń.",
+        "operational": "Rozpocząć analizę zgłoszeń."
+      },
+      "medium": {
+        "systematic": "Ujednolicić analizę zgłoszeń.",
+        "operational": "Wykorzystywać wyniki analiz."
+      },
+      "high": {
+        "systematic": "Zarządzać analizą jako elementem doskonalenia usług."
+      }
+    },
+
+    "Q66": {
+      "low": {
+        "strategic": "Zapewnić wsparcie dla pracowników w korzystaniu z narzędzi cyfrowych.",
+        "systematic": "Określić sposób zgłaszania potrzeb pracowników.",
+        "operational": "Rozpocząć udzielanie wsparcia pracownikom."
+      },
+      "medium": {
+        "systematic": "Ujednolicić wsparcie dla pracowników.",
+        "operational": "Rozszerzyć dostęp do wsparcia."
+      },
+      "high": {
+        "systematic": "Zarządzać wsparciem jako elementem środowiska pracy."
+      }
+    },
+
+    "Q67": {
+      "low": {
+        "strategic": "Zapewnić powiązanie wsparcia z działaniami naprawczymi.",
+        "systematic": "Określić sposób przekazywania informacji o problemach do odpowiednich zespołów.",
+        "operational": "Rozpocząć przekazywanie zgłoszeń do działań naprawczych."
+      },
+      "medium": {
+        "systematic": "Ujednolicić powiązanie wsparcia z działaniami naprawczymi.",
+        "operational": "Rozszerzyć wykorzystanie zgłoszeń w poprawie usług."
+      },
+      "high": {
+        "systematic": "Zarządzać powiązaniem wsparcia i doskonalenia jako elementem systemu organizacji."
+      }
+    }
+  }
+}

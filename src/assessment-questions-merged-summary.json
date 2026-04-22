@@ -1,0 +1,8 @@
+{
+  "output_file": "/mnt/data/assessment-questions-merged.json",
+  "schema_version": "1.1-merged",
+  "question_count": 67,
+  "questions_with_recommendations": 67,
+  "missing_recommendations": [],
+  "top_level_recommendations_mode": "embedded_per_question"
+}

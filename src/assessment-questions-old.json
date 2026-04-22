@@ -1,0 +1,4338 @@
+{
+  "schema_version": "1.1",
+  "tool_name": "Accessibility Maturity Self-Assessment",
+  "tool_variant": "managerial",
+  "language": "pl-PL",
+  "description": "Zaktualizowany model danych dla arkusza samooceny dojrzałości dostępności, oparty na wymiarach W3C Accessibility Maturity Model oraz modelu decyzji zarządczych.",
+  "notes": [
+    "Plik uwzględnia korekty zakresu wszystkich wymiarów przepracowane w rozmowie.",
+    "Wymiar 'Komunikacja' został rozszerzony do 'Informacje i komunikacja'.",
+    "Wymiar 'Pracownicy' został zastąpiony wymiarem 'Personel'.",
+    "Aby uniknąć kolizji po rozszerzeniu wymiaru Zaopatrzenie do 10 pytań, pytania wymiaru Wsparcie zostały przenumerowane na Q60-Q67.",
+    "Sekcja pattern rules została wyczyszczona do ponownej kalibracji po pilotażu."
+  ],
+  "scoring": {
+    "scale": [
+      {
+        "value": 0,
+        "label": "poziom początkowy",
+        "description": "Brak działań lub działania mają charakter incydentalny i nieuporządkowany."
+      },
+      {
+        "value": 1,
+        "label": "poziom porządkowania",
+        "description": "Podejmowane są pierwsze działania. Organizacja określa zasady i odpowiedzialności."
+      },
+      {
+        "value": 2,
+        "label": "poziom integracji (częściowy)",
+        "description": "Działania są wdrażane i stosowane w części procesów lub obszarów."
+      },
+      {
+        "value": 3,
+        "label": "poziom integracji",
+        "description": "Działania są włączone w procesy i stosowane w większości przypadków."
+      },
+      {
+        "value": 4,
+        "label": "poziom dojrzałości",
+        "description": "Działania są systemowe, spójne i stale doskonalone."
+      }
+    ],
+    "dimension_thresholds": [
+      {
+        "min": 0.0,
+        "max": 1.49,
+        "label": "poziom początkowy"
+      },
+      {
+        "min": 1.5,
+        "max": 2.49,
+        "label": "poziom porządkowania"
+      },
+      {
+        "min": 2.5,
+        "max": 3.49,
+        "label": "poziom integracji"
+      },
+      {
+        "min": 3.5,
+        "max": 4.0,
+        "label": "poziom dojrzałości"
+      }
+    ]
+  },
+  "dimensions": [
+    {
+      "id": "oversight_culture",
+      "name_pl": "Zarządzanie i kultura organizacyjna",
+      "name_en": "Oversight and Culture",
+      "description": "Strategia, odpowiedzialność, nadzór, zasoby, kultura inkluzywna i ciągłe doskonalenie dostępności."
+    },
+    {
+      "id": "personnel",
+      "name_pl": "Personel",
+      "name_en": "Personnel",
+      "description": "Inkluzywne środowisko pracy, dostępne procesy HR, równe szanse rozwoju oraz włączenie pracowników w działania na rzecz dostępności."
+    },
+    {
+      "id": "knowledge_skills",
+      "name_pl": "Wiedza i umiejętności",
+      "name_en": "Knowledge & Skills",
+      "description": "Kompetencje pracowników i kompetencje organizacji: rozwój wiedzy, jej praktyczne stosowanie oraz systemowe zarządzanie kompetencjami."
+    },
+    {
+      "id": "communications",
+      "name_pl": "Informacje i komunikacja",
+      "name_en": "Information and Communications",
+      "description": "Dostępność treści, dokumentów, formularzy, multimediów i komunikacji w różnych kanałach zewnętrznych oraz wewnętrznych."
+    },
+    {
+      "id": "ict_lifecycle",
+      "name_pl": "Cykl życia TIK",
+      "name_en": "ICT Lifecycle",
+      "description": "Projektowanie, rozwój, konfiguracja, testowanie, wdrażanie, utrzymanie, migracja i wycofywanie usług cyfrowych oraz systemów z uwzględnieniem dostępności."
+    },
+    {
+      "id": "procurement",
+      "name_pl": "Zakupy i zamówienia publiczne",
+      "name_en": "Procurement",
+      "description": "Wymagania, ocena, umowy, odbiór i monitoring realizacji zamówień pod kątem zapewniania dostępności cyfrowej."
+    },
+    {
+      "id": "support",
+      "name_pl": "Wsparcie",
+      "name_en": "Support",
+      "description": "Dostępne kanały pomocy, obsługa zgłoszeń, alternatywne formy dostępu, wsparcie dla pracowników oraz doskonalenie działań na podstawie doświadczeń użytkowników."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "S1",
+      "group": "strategic",
+      "name_pl": "Ustalenie kierunku i włączenie dostępności do zarządzania"
+    },
+    {
+      "id": "S2",
+      "group": "strategic",
+      "name_pl": "Określenie odpowiedzialności i mandatu działania"
+    },
+    {
+      "id": "S3",
+      "group": "strategic",
+      "name_pl": "Monitoring, nadzór i doskonalenie działań"
+    },
+    {
+      "id": "P1",
+      "group": "personnel",
+      "name_pl": "Zapewnienie dostępnego i inkluzywnego środowiska pracy"
+    },
+    {
+      "id": "P2",
+      "group": "personnel",
+      "name_pl": "Zapewnienie dostępnych procesów HR i równych szans rozwoju"
+    },
+    {
+      "id": "P3",
+      "group": "personnel",
+      "name_pl": "Włączenie pracowników i współpraca na rzecz dostępności"
+    },
+    {
+      "id": "K1",
+      "group": "competence",
+      "name_pl": "Zapewnienie kompetencji adekwatnych do ról"
+    },
+    {
+      "id": "K2",
+      "group": "competence",
+      "name_pl": "Zapewnienie praktycznego stosowania wiedzy i zasobów"
+    },
+    {
+      "id": "K3",
+      "group": "competence",
+      "name_pl": "Systemowe zarządzanie kompetencjami organizacji"
+    },
+    {
+      "id": "I1",
+      "group": "information",
+      "name_pl": "Ustalenie standardów informacji i komunikacji"
+    },
+    {
+      "id": "I2",
+      "group": "information",
+      "name_pl": "Włączenie dostępności do procesu tworzenia i publikacji informacji"
+    },
+    {
+      "id": "I3",
+      "group": "information",
+      "name_pl": "Kontrola jakości i doskonalenie komunikacji"
+    },
+    {
+      "id": "U1",
+      "group": "services",
+      "name_pl": "Uwzględnienie dostępności i potrzeb użytkowników w projektowaniu usług"
+    },
+    {
+      "id": "U2",
+      "group": "services",
+      "name_pl": "Projektowanie UX/UI i angażowanie użytkowników"
+    },
+    {
+      "id": "T1",
+      "group": "it",
+      "name_pl": "Wymagania i jakość w rozwoju, konfiguracji i integracji"
+    },
+    {
+      "id": "T2",
+      "group": "it",
+      "name_pl": "Systemowe testowanie dostępności"
+    },
+    {
+      "id": "T3",
+      "group": "it",
+      "name_pl": "Utrzymanie dostępności i zapobieganie regresji"
+    },
+    {
+      "id": "T4",
+      "group": "it",
+      "name_pl": "Zarządzanie migracją, wycofywaniem i zmianą technologiczną"
+    },
+    {
+      "id": "Z1",
+      "group": "procurement",
+      "name_pl": "Wymagania i standardy dostępności w zamówieniach"
+    },
+    {
+      "id": "Z2",
+      "group": "procurement",
+      "name_pl": "Ocena ofert i dowodów dostępności"
+    },
+    {
+      "id": "Z3",
+      "group": "procurement",
+      "name_pl": "Zapisy umowne, odbiór i egzekwowanie wymagań"
+    },
+    {
+      "id": "Z4",
+      "group": "procurement",
+      "name_pl": "Monitoring realizacji umów i systemy wewnętrzne"
+    },
+    {
+      "id": "W1",
+      "group": "support",
+      "name_pl": "Dostępne kanały pomocy i zgłoszeń"
+    },
+    {
+      "id": "W2",
+      "group": "support",
+      "name_pl": "Skuteczne udzielanie pomocy i alternatywny dostęp"
+    },
+    {
+      "id": "W3",
+      "group": "support",
+      "name_pl": "Wsparcie dla pracowników i doskonalenie na podstawie zgłoszeń"
+    }
+  ],
+  "recommendation_library": {
+    "strategic": {
+      "S1": "Określić dostępność jako element zarządzania organizacją.",
+      "S2": "Włączyć dostępność do strategii, celów i planów działania.",
+      "S3": "Ustanowić jasny kierunek działań w zakresie dostępności.",
+      "S4": "Określić odpowiedzialność za dostępność na poziomie organizacji.",
+      "S5": "Przypisać role i zakresy odpowiedzialności.",
+      "S6": "Zapewnić, aby odpowiedzialność była powiązana z realnymi uprawnieniami.",
+      "S7": "Wprowadzić system monitorowania dostępności.",
+      "S8": "Zapewnić regularne przeglądy i raportowanie.",
+      "S9": "Wykorzystywać wyniki monitoringu do podejmowania decyzji.",
+      "S10": "Zapewnić zasoby niezbędne do realizacji działań.",
+      "S11": "Uwzględnić dostępność w planowaniu budżetu.",
+      "S12": "Zapewnić zdolność organizacji do usuwania problemów.",
+      "S13": "Włączyć dostępność do podejmowania decyzji organizacyjnych.",
+      "S14": "Traktować dostępność jako element zarządzania ryzykiem.",
+      "S15": "Zapewnić spójność działań w całej organizacji."
+    },
+    "systemic": {
+      "SYS1": "Ustanowić standardy działania obowiązujące w całej organizacji.",
+      "SYS2": "Określić wymagania dostępności w danym obszarze.",
+      "SYS3": "Zapewnić jednolite stosowanie standardów.",
+      "SYS4": "Włączyć dostępność do istniejących procesów.",
+      "SYS5": "Zmodyfikować procedury tak, aby uwzględniały dostępność.",
+      "SYS6": "Zapewnić, aby dostępność była elementem codziennych działań.",
+      "SYS7": "Wprowadzić mechanizmy weryfikacji dostępności.",
+      "SYS8": "Zapewnić kontrolę jakości przed publikacją lub wdrożeniem.",
+      "SYS9": "Określić odpowiedzialność za weryfikację.",
+      "SYS10": "Uwzględnić dostępność na wszystkich etapach cyklu życia.",
+      "SYS11": "Zapewnić ciągłość działań w czasie.",
+      "SYS12": "Zapobiegać ponownemu powstawaniu problemów.",
+      "SYS13": "Zapewnić współpracę między obszarami organizacji.",
+      "SYS14": "Zintegrować działania związane z dostępnością.",
+      "SYS15": "Zapewnić spójność decyzji i działań.",
+      "SYS16": "Wprowadzić mechanizmy egzekwowania wymagań dostępności.",
+      "SYS17": "Zapewnić kontrolę realizacji wymagań przez wykonawców.",
+      "SYS18": "Uwzględnić dostępność w odbiorze produktów i usług.",
+      "SYS19": "Zapewnić dostęp do wiedzy i materiałów wspierających.",
+      "SYS20": "Wprowadzić system aktualizacji wiedzy.",
+      "SYS21": "Powiązać wiedzę z praktyką działania."
+    },
+    "operational": {
+      "OP1": "Opracować wytyczne, instrukcje i checklisty.",
+      "OP2": "Przygotować szablony dostępnych dokumentów.",
+      "OP3": "Udostępnić narzędzia wspierające dostępność.",
+      "OP4": "Wprowadzić konkretne działania w codziennej pracy.",
+      "OP5": "Zapewnić stosowanie wymagań w praktyce.",
+      "OP6": "Uprościć działania poprzez gotowe rozwiązania.",
+      "OP7": "Wprowadzić testy dostępności.",
+      "OP8": "Usuwać zidentyfikowane problemy.",
+      "OP9": "Prowadzić rejestr problemów.",
+      "OP10": "Uruchomić kanały zgłaszania problemów.",
+      "OP11": "Zapewnić wsparcie dla pracowników.",
+      "OP12": "Ułatwić rozwiązywanie problemów w praktyce.",
+      "OP13": "Przeprowadzić szkolenia ukierunkowane na praktykę.",
+      "OP14": "Dostosować szkolenia do ról pracowników.",
+      "OP15": "Wspierać wdrażanie wiedzy w działaniu."
+    }
+  },
+  "rule_templates": {
+    "by_answer": [
+      {
+        "id": "R1",
+        "when": {
+          "answer_equals": 0
+        },
+        "priority": "high",
+        "generate": {
+          "include_recommendation_types": [
+            "strategic",
+            "systemic",
+            "operational"
+          ],
+          "message_template": "W organizacji nie funkcjonuje obszar: {{question.short_name}}. Brakuje decyzji oraz mechanizmów umożliwiających systemowe działanie."
+        }
+      },
+      {
+        "id": "R2",
+        "when": {
+          "answer_equals": 1
+        },
+        "priority": "high",
+        "generate": {
+          "include_recommendation_types": [
+            "systemic",
+            "operational"
+          ],
+          "include_strategic_if_decision_group_in": [
+            "strategic",
+            "support",
+            "procurement"
+          ],
+          "message_template": "Działania w obszarze {{question.short_name}} mają charakter incydentalny i wymagają uporządkowania."
+        }
+      },
+      {
+        "id": "R3",
+        "when": {
+          "answer_equals": 2
+        },
+        "priority": "medium",
+        "generate": {
+          "include_recommendation_types": [
+            "systemic",
+            "operational"
+          ],
+          "message_template": "Działania w obszarze {{question.short_name}} są częściowe i niespójne. Wymagają domknięcia i integracji."
+        }
+      },
+      {
+        "id": "R4",
+        "when": {
+          "answer_equals": 3
+        },
+        "priority": "low",
+        "generate": {
+          "include_recommendation_types": [
+            "systemic"
+          ],
+          "message_template": "Działania w obszarze {{question.short_name}} są wdrożone, ale wymagają utrwalenia."
+        }
+      },
+      {
+        "id": "R5",
+        "when": {
+          "answer_equals": 4
+        },
+        "priority": "none",
+        "generate": {
+          "include_recommendation_types": [],
+          "message_template": "Obszar {{question.short_name}} funkcjonuje w sposób dojrzały."
+        }
+      }
+    ],
+    "patterns": []
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S1",
+      "short_name": "Dostępność w zarządzaniu",
+      "text": "Czy kierownictwo włączyło dostępność do zarządzania organizacją?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S1"
+        ],
+        "systemic": [
+          "SYS1"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "strategia lub polityka",
+        "plan działań",
+        "decyzje kierownictwa"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Dostępność nie jest uwzględniana w zarządzaniu organizacją."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Dostępność pojawia się incydentalnie, bez jasnego kierunku działania."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Dostępność jest uwzględniana w wybranych działaniach lub obszarach organizacji."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Dostępność jest elementem zarządzania w większości obszarów organizacji."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Dostępność jest trwałym, świadomie zarządzanym elementem funkcjonowania organizacji."
+        }
+      ],
+      "area_label": "włączenia dostępności do zarządzania organizacją",
+      "recommendations_by_level": {
+        "0": "Wprowadzić temat dostępności na poziom kierownictwa i uznać go za element zarządzania.",
+        "1": "Określić kierunek działań i włączyć dostępność do wybranych działań organizacji.",
+        "2": "Włączyć dostępność do standardowych procesów zarządzania w większej części organizacji.",
+        "3": "Utrwalić dostępność jako stały element zarządzania oraz doskonalić ten sposób działania."
+      }
+    },
+    {
+      "id": "Q02",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S2",
+      "short_name": "Odpowiedzialność kierownicza",
+      "text": "Czy odpowiedzialność za dostępność jest jasno określona, w tym na poziomie kierowniczym?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S1"
+        ],
+        "systemic": [
+          "SYS1"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "zakresy obowiązków",
+        "regulaminy",
+        "matryca odpowiedzialności"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Brak jasno przypisanej odpowiedzialności za dostępność."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Odpowiedzialność istnieje, ale jest nieformalna, niejasna lub słabo rozumiana."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Odpowiedzialność jest określona tylko w części organizacji albo nie działa jeszcze spójnie."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Odpowiedzialność za dostępność jest jasno określona i działa w praktyce."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Odpowiedzialność jest spójna, egzekwowana i osadzona w strukturze organizacyjnej."
+        }
+      ],
+      "area_label": "odpowiedzialności za dostępność",
+      "recommendations_by_level": {
+        "0": "Wskazać osoby odpowiedzialne za dostępność, w tym na poziomie kierowniczym.",
+        "1": "Uporządkować zakresy odpowiedzialności i zakomunikować je w organizacji.",
+        "2": "Zapewnić konsekwentne stosowanie przypisanych odpowiedzialności w całej organizacji.",
+        "3": "Włączyć odpowiedzialność za dostępność do stałego systemu zarządzania i nadzoru."
+      }
+    },
+    {
+      "id": "Q03",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S1",
+      "short_name": "Planowanie działań",
+      "text": "Czy dostępność jest uwzględniana w planowaniu działań, projektów i usług?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "karty projektów",
+        "procedury planowania",
+        "wzory briefów"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Dostępność nie jest uwzględniana w planowaniu działań, projektów ani usług."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Dostępność jest uwzględniana sporadycznie, zależnie od osób lub sytuacji."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Dostępność jest uwzględniana w części projektów, działań lub usług."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Dostępność jest standardowo uwzględniana w planowaniu większości działań."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Dostępność jest stałym elementem planowania strategicznego i operacyjnego organizacji."
+        }
+      ],
+      "area_label": "planowania działań z uwzględnieniem dostępności",
+      "recommendations_by_level": {
+        "0": "Uwzględnić dostępność w pojedynczych działaniach, projektach lub usługach.",
+        "1": "Rozszerzyć uwzględnianie dostępności na większą część planowanych działań.",
+        "2": "Ustandaryzować uwzględnianie dostępności w planowaniu projektów i usług.",
+        "3": "Zintegrować dostępność z planowaniem strategicznym i operacyjnym całej organizacji."
+      }
+    },
+    {
+      "id": "Q04",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S3",
+      "short_name": "Monitoring dostępności",
+      "text": "Czy organizacja monitoruje poziom dostępności i postępy działań?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "raporty okresowe",
+        "wskaźniki",
+        "harmonogram przeglądów"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Organizacja nie monitoruje poziomu dostępności ani postępów działań."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Monitoring ma charakter incydentalny i nie tworzy stałego obrazu sytuacji."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Monitoring jest prowadzony nieregularnie albo tylko w części obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Monitoring jest regularny, uporządkowany i wspiera ocenę postępów."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Monitoring jest systemowy, powiązany z decyzjami i stale doskonalony."
+        }
+      ],
+      "area_label": "monitorowania dostępności i postępów działań",
+      "recommendations_by_level": {
+        "0": "Rozpocząć podstawowy monitoring poziomu dostępności i postępów działań.",
+        "1": "Uporządkować monitoring oraz rozszerzyć go na większą część organizacji.",
+        "2": "Zapewnić regularność i porównywalność monitoringu w całej organizacji.",
+        "3": "Powiązać monitoring z podejmowaniem decyzji oraz doskonaleniem działań."
+      }
+    },
+    {
+      "id": "Q05",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S1",
+      "short_name": "Dostępność w dokumentach kierunkowych",
+      "text": "Czy dostępność jest elementem strategii, polityk lub dokumentów kierunkowych?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S1"
+        ],
+        "systemic": [
+          "SYS1"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "strategia",
+        "polityka organizacji",
+        "plan roczny"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Dokumenty kierunkowe organizacji nie odnoszą się do dostępności."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Dostępność pojawia się marginalnie lub niespójnie w pojedynczych dokumentach."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Dostępność jest ujęta w wybranych dokumentach, ale nie tworzy spójnego systemu."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Dostępność jest elementem polityk, strategii lub innych dokumentów kierunkowych."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Dostępność jest spójnym i utrwalonym elementem systemu dokumentów organizacji."
+        }
+      ],
+      "area_label": "uwzględnienia dostępności w dokumentach kierunkowych",
+      "recommendations_by_level": {
+        "0": "Wprowadzić podstawowe odniesienia do dostępności do dokumentów kierunkowych.",
+        "1": "Rozszerzyć obecność dostępności w kolejnych dokumentach organizacji.",
+        "2": "Ująć dostępność w najważniejszych politykach i strategii organizacji.",
+        "3": "Zapewnić spójność całego systemu dokumentów oraz regularnie go aktualizować."
+      }
+    },
+    {
+      "id": "Q06",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S3",
+      "short_name": "Przeglądy kierownicze",
+      "text": "Czy kierownictwo regularnie analizuje stan dostępności i postępy działań?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "protokoły narad",
+        "raporty dla kierownictwa",
+        "cykliczne przeglądy"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Kierownictwo nie analizuje stanu dostępności ani postępów działań."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Analizy mają charakter sporadyczny i doraźny."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Analizy są prowadzone, ale nieregularnie lub bez stałego rytmu zarządczego."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Kierownictwo regularnie analizuje stan dostępności i postępy działań."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Analizy są systemowe, wpływają na decyzje i wspierają ciągłe doskonalenie."
+        }
+      ],
+      "area_label": "przeglądów kierowniczych dotyczących dostępności",
+      "recommendations_by_level": {
+        "0": "Wprowadzić podstawowe przeglądy kierownicze dotyczące dostępności.",
+        "1": "Uporządkować zakres analiz i zwiększyć ich regularność.",
+        "2": "Zapewnić stały rytm przeglądów kierowniczych oraz wykorzystanie ich wyników.",
+        "3": "Powiązać przeglądy z decyzjami, priorytetami i doskonaleniem działań."
+      }
+    },
+    {
+      "id": "Q07",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S1",
+      "short_name": "Dostępność jako kryterium decyzji",
+      "text": "Czy dostępność jest uwzględniana przy podejmowaniu istotnych decyzji organizacyjnych?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S1"
+        ],
+        "systemic": [
+          "SYS1"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "notatki decyzyjne",
+        "wymagania w procedurach",
+        "uzasadnienia decyzji"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Dostępność nie jest uwzględniana przy podejmowaniu istotnych decyzji organizacyjnych."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Dostępność jest uwzględniana sporadycznie lub zależy od konkretnej osoby."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Dostępność jest uwzględniana w części decyzji, ale nie tworzy jeszcze standardu."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Dostępność jest uwzględniana w większości istotnych decyzji organizacyjnych."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Dostępność jest stałym, świadomie stosowanym kryterium podejmowania decyzji."
+        }
+      ],
+      "area_label": "uwzględniania dostępności w decyzjach organizacyjnych",
+      "recommendations_by_level": {
+        "0": "Zacząć uwzględniać dostępność przy podejmowaniu wybranych decyzji organizacyjnych.",
+        "1": "Rozszerzyć uwzględnianie dostępności na większą część decyzji.",
+        "2": "Ustandaryzować uwzględnianie dostępności przy podejmowaniu istotnych decyzji.",
+        "3": "Włączyć dostępność jako trwałe kryterium jakości i odpowiedzialności organizacyjnej."
+      }
+    },
+    {
+      "id": "Q08",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S3",
+      "short_name": "Zapewnienie zasobów",
+      "text": "Czy organizacja zapewnia zasoby (czas, kompetencje, środki) niezbędne do realizacji działań związanych z dostępnością?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S1"
+        ],
+        "systemic": [
+          "SYS1"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "budżet",
+        "alokacja czasu",
+        "plany zatrudnienia"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Organizacja nie zapewnia zasobów potrzebnych do działań związanych z dostępnością."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Zasoby są zapewniane przypadkowo lub tylko doraźnie."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Zasoby są zapewniane częściowo, ale nie w sposób stabilny i przewidywalny."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Zasoby są zapewnione w większości obszarów potrzebnych do działania."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Zasoby są planowane, stabilne i wspierają trwałe zapewnianie dostępności."
+        }
+      ],
+      "area_label": "zapewnienia zasobów dla działań związanych z dostępnością",
+      "recommendations_by_level": {
+        "0": "Zapewnić minimalne zasoby potrzebne do rozpoczęcia działań.",
+        "1": "Uporządkować dostępność zasobów i rozszerzyć je na ważniejsze obszary.",
+        "2": "Zapewnić stabilność zasobów w większości działań związanych z dostępnością.",
+        "3": "Włączyć planowanie zasobów do stałego zarządzania organizacją."
+      }
+    },
+    {
+      "id": "Q09",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S1",
+      "short_name": "Kultura i świadomość",
+      "text": "Czy w organizacji prowadzone są działania budujące świadomość dostępności i postawy sprzyjające inkluzji?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "kampanie wewnętrzne",
+        "wydarzenia",
+        "komunikacja wewnętrzna"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W organizacji nie prowadzi się działań budujących świadomość dostępności ani postaw sprzyjających inkluzji."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Działania są sporadyczne i mają ograniczony zasięg."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Działania są prowadzone w części organizacji, ale nie są jeszcze regularne ani spójne."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Działania są prowadzone regularnie i wzmacniają kulturę dostępności."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Kultura dostępności jest widoczna, utrwalona i wspierana przez organizację w sposób ciągły."
+        }
+      ],
+      "area_label": "budowania świadomości dostępności i postaw sprzyjających inkluzji",
+      "recommendations_by_level": {
+        "0": "Rozpocząć podstawowe działania uświadamiające dotyczące dostępności i inkluzji.",
+        "1": "Rozszerzyć zakres działań na większą część organizacji.",
+        "2": "Zapewnić regularność i widoczność działań budujących kulturę dostępności.",
+        "3": "Utrwalać kulturę dostępności i rozwijać ją jako element tożsamości organizacji."
+      }
+    },
+    {
+      "id": "Q10",
+      "dimension_id": "oversight_culture",
+      "decision_id": "S3",
+      "short_name": "Uczenie się i doskonalenie",
+      "text": "Czy organizacja wykorzystuje doświadczenia i dane do doskonalenia działań związanych z dostępnością?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "analizy problemów",
+        "wnioski z przeglądów",
+        "plany usprawnień"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Organizacja nie wykorzystuje doświadczeń ani danych do doskonalenia działań związanych z dostępnością."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Działania mają charakter doraźny i nie wynikają z uporządkowanej analizy."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Pojawiają się próby analizy doświadczeń i danych, ale bez stałego przełożenia na działania."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Analiza doświadczeń i danych wpływa na poprawę działań związanych z dostępnością."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Doskonalenie jest systemowe, ciągłe i oparte na danych oraz doświadczeniach organizacji."
+        }
+      ],
+      "area_label": "wykorzystywania doświadczeń i danych do doskonalenia dostępności",
+      "recommendations_by_level": {
+        "0": "Zacząć analizować doświadczenia i dostępne dane dotyczące dostępności.",
+        "1": "Uporządkować analizę problemów oraz zacząć wyciągać z niej wnioski.",
+        "2": "Wykorzystywać wyniki analiz do planowania zmian i ulepszeń.",
+        "3": "Wprowadzić ciągłe doskonalenie oparte na danych i doświadczeniach organizacji."
+      }
+    },
+    {
+      "id": "Q11",
+      "dimension_id": "personnel",
+      "decision_id": "P1",
+      "short_name": "Dostępne środowisko pracy",
+      "text": "Czy organizacja zapewnia pracownikom dostępne środowisko pracy, w tym dostępne narzędzia, dokumenty i procesy wewnętrzne?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "intranet",
+        "systemy HR",
+        "narzędzia pracy"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Środowisko pracy zawiera bariery utrudniające wykonywanie obowiązków przez pracowników."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Dostępność środowiska pracy jest poprawiana doraźnie, głównie w reakcji na problemy."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Wybrane narzędzia i procesy są dostępne, ale występują istotne niespójności i luki."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Środowisko pracy jest w większości dostępne i umożliwia wykonywanie obowiązków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Środowisko pracy jest systemowo dostępne i projektowane z uwzględnieniem różnych potrzeb pracowników."
+        }
+      ],
+      "area_label": "dostępnego środowiska pracy",
+      "recommendations_by_level": {
+        "0": "Zidentyfikować i usunąć najważniejsze bariery w środowisku pracy.",
+        "1": "Uporządkować dostępność kluczowych narzędzi, dokumentów i procesów.",
+        "2": "Zapewnić większą spójność dostępności środowiska pracy.",
+        "3": "Włączyć dostępność do standardów projektowania i rozwoju środowiska pracy."
+      }
+    },
+    {
+      "id": "Q12",
+      "dimension_id": "personnel",
+      "decision_id": "P1",
+      "short_name": "Zgłaszanie barier przez pracowników",
+      "text": "Czy pracownicy wiedzą, jak zgłaszać bariery dostępności w środowisku pracy oraz potrzeby dotyczące usprawnień?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "procedura zgłaszania",
+        "komunikaty dla pracowników",
+        "formularz wewnętrzny"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Pracownicy nie wiedzą, jak zgłaszać bariery dostępności ani potrzeby usprawnień."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Możliwość zgłoszenia istnieje, ale jest mało znana lub trudna do wykorzystania."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Pracownicy częściowo wiedzą, jak zgłaszać problemy, ale proces nie jest jeszcze powszechnie rozumiany."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Sposób zgłaszania jest znany i stosowany przez pracowników."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Zgłaszanie barier i potrzeb jest łatwe, dostępne i naturalnym elementem pracy."
+        }
+      ],
+      "area_label": "zgłaszania barier i potrzeb dotyczących usprawnień",
+      "recommendations_by_level": {
+        "0": "Wskazać podstawowy sposób zgłaszania barier i potrzeb usprawnień.",
+        "1": "Zakomunikować pracownikom sposób zgłaszania i jego znaczenie.",
+        "2": "Uporządkować i ujednolicić proces zgłaszania w całej organizacji.",
+        "3": "Ułatwić i upowszechnić zgłaszanie jako naturalny element kultury pracy."
+      }
+    },
+    {
+      "id": "Q13",
+      "dimension_id": "personnel",
+      "decision_id": "P1",
+      "short_name": "Racjonalne usprawnienia",
+      "text": "Czy organizacja posiada działający sposób rozpatrywania potrzeb pracowników związanych z dostępnością i racjonalnymi usprawnieniami?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "procedura usprawnień",
+        "rejestr zgłoszeń",
+        "decyzje organizacyjne"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Brak mechanizmu reagowania na potrzeby pracowników związane z dostępnością i usprawnieniami."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Reagowanie odbywa się indywidualnie, doraźnie i niespójnie."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Istnieją podstawowe rozwiązania, ale działają nieregularnie albo tylko w części sytuacji."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Proces jest uporządkowany i działa w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Proces jest systemowy, szybki, przewidywalny i wspiera realne potrzeby pracowników."
+        }
+      ],
+      "area_label": "rozpatrywania potrzeb pracowników związanych z dostępnością i usprawnieniami",
+      "recommendations_by_level": {
+        "0": "Wprowadzić podstawowy sposób reagowania na potrzeby pracowników związane z dostępnością.",
+        "1": "Uporządkować podejście do rozpatrywania potrzeb i usprawnień.",
+        "2": "Zapewnić powtarzalność działania i większą przewidywalność procesu.",
+        "3": "Skrócić czas reakcji i uczynić proces stabilnym oraz przewidywalnym."
+      }
+    },
+    {
+      "id": "Q14",
+      "dimension_id": "personnel",
+      "decision_id": "P2",
+      "short_name": "Dostępna rekrutacja i onboarding",
+      "text": "Czy procesy rekrutacji i wdrażania do pracy są prowadzone w sposób dostępny i uwzględniają potrzeby kandydatów oraz nowych pracowników?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "ogłoszenia rekrutacyjne",
+        "materiały onboardingowe",
+        "procedury HR"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Procesy rekrutacji i wdrażania do pracy nie uwzględniają dostępności ani potrzeb kandydatów i nowych pracowników."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Uwzględnianie dostępności jest sporadyczne i zależy od konkretnej sytuacji."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Dostępność jest uwzględniana w części przypadków, ale nie stanowi jeszcze standardu."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Procesy są w większości dostępne i uwzględniają potrzeby kandydatów oraz nowych pracowników."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Procesy są systemowo dostępne, inkluzywne i dobrze przygotowane organizacyjnie."
+        }
+      ],
+      "area_label": "dostępnej rekrutacji i wdrażania do pracy",
+      "recommendations_by_level": {
+        "0": "Uwzględnić dostępność w wybranych elementach rekrutacji i wdrażania do pracy.",
+        "1": "Rozszerzyć dostępność procesów na większą część działań HR.",
+        "2": "Ustandaryzować dostępność rekrutacji i onboardingu.",
+        "3": "Zapewnić pełną inkluzywność procesów i regularnie je doskonalić."
+      }
+    },
+    {
+      "id": "Q15",
+      "dimension_id": "personnel",
+      "decision_id": "P2",
+      "short_name": "Równy dostęp do rozwoju",
+      "text": "Czy pracownicy, w tym pracownicy z niepełnosprawnościami, mają równy dostęp do rozwoju zawodowego, udziału w projektach i możliwości awansu?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "oferta szkoleń",
+        "analizy awansów",
+        "udział w projektach"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Występują istotne bariery w dostępie do rozwoju zawodowego, projektów lub awansu."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Dostęp do rozwoju jest możliwy, ale nierówny i zależny od sytuacji."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Dostęp jest częściowo wyrównany, ale nadal występują zauważalne bariery lub nierówności."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Dostęp do rozwoju zawodowego, projektów i awansu jest w większości równy."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Równość dostępu jest monitorowana i zapewniana systemowo."
+        }
+      ],
+      "area_label": "równego dostępu do rozwoju zawodowego, projektów i awansu",
+      "recommendations_by_level": {
+        "0": "Zidentyfikować bariery w dostępie do rozwoju, projektów i awansu.",
+        "1": "Ograniczyć nierówności i poprawić dostępność kluczowych ścieżek rozwoju.",
+        "2": "Zapewnić większą równość dostępu w całej organizacji.",
+        "3": "Monitorować równość szans i stale doskonalić działania w tym obszarze."
+      }
+    },
+    {
+      "id": "Q16",
+      "dimension_id": "personnel",
+      "decision_id": "P3",
+      "short_name": "Włączenie pracowników",
+      "text": "Czy organizacja włącza pracowników, w tym pracowników z niepełnosprawnościami, w identyfikowanie barier i doskonalenie dostępności cyfrowej?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "konsultacje z pracownikami",
+        "testy z udziałem pracowników",
+        "kanały zgłaszania uwag"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Pracownicy nie są angażowani w identyfikowanie barier ani doskonalenie dostępności cyfrowej."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Zaangażowanie pracowników ma charakter sporadyczny i incydentalny."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Zaangażowanie istnieje, ale nie jest jeszcze systemowe ani przewidywalne."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Pracownicy są regularnie angażowani w identyfikowanie barier i doskonalenie dostępności."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Zaangażowanie pracowników jest planowe i realnie wpływa na działania organizacji."
+        }
+      ],
+      "area_label": "włączania pracowników w identyfikowanie barier i doskonalenie dostępności",
+      "recommendations_by_level": {
+        "0": "Zacząć zbierać opinie pracowników dotyczące barier i dostępności.",
+        "1": "Uporządkować sposób angażowania pracowników w identyfikowanie problemów.",
+        "2": "Zapewnić regularność angażowania pracowników w działania dotyczące dostępności.",
+        "3": "Włączyć pracowników do procesów decyzyjnych i doskonalenia działań."
+      }
+    },
+    {
+      "id": "Q17",
+      "dimension_id": "personnel",
+      "decision_id": "P3",
+      "short_name": "Role i obowiązki",
+      "text": "Czy role i obowiązki związane z dostępnością są przypisane do odpowiednich stanowisk i procesów w różnych częściach organizacji?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "opisy stanowisk",
+        "matryca ról",
+        "mapa procesów"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Brak przypisanych ról i obowiązków związanych z dostępnością."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Role są nieformalne lub zależą od pojedynczych osób."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Role istnieją w części organizacji, ale nie są jeszcze spójne ani konsekwentne."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Role są jasno określone i stosowane w praktyce."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Role są systemowe, spójne i zakorzenione w całej organizacji."
+        }
+      ],
+      "area_label": "przypisania ról i obowiązków związanych z dostępnością",
+      "recommendations_by_level": {
+        "0": "Wskazać podstawowe role i obowiązki związane z dostępnością.",
+        "1": "Uporządkować zakres ról i rozszerzyć ich obecność w organizacji.",
+        "2": "Zapewnić konsekwentne stosowanie przypisanych ról i obowiązków.",
+        "3": "Ustandaryzować role w całej organizacji i regularnie je doskonalić."
+      }
+    },
+    {
+      "id": "Q18",
+      "dimension_id": "personnel",
+      "decision_id": "P3",
+      "short_name": "Współpraca między działami",
+      "text": "Czy różne działy organizacji współpracują w sprawach dostępności pracowników i dostępności środowiska pracy?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "zespół międzydziałowy",
+        "spotkania koordynacyjne",
+        "wspólne procedury"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Brak współpracy między działami w sprawach dostępności pracowników i środowiska pracy."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Współpraca ma charakter sporadyczny i zależy od bieżących potrzeb."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Współpraca istnieje, ale jest niespójna i nie obejmuje jeszcze wszystkich potrzebnych obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Współpraca jest regularna, uporządkowana i wspiera rozwiązywanie problemów."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Współpraca jest systemowa, dobrze skoordynowana i stale wzmacniana."
+        }
+      ],
+      "area_label": "współpracy między działami w sprawach dostępności pracowników i środowiska pracy",
+      "recommendations_by_level": {
+        "0": "Zainicjować współpracę między działami w sprawach dostępności pracowników.",
+        "1": "Uporządkować zasady współpracy i rozszerzyć ją na potrzebne obszary.",
+        "2": "Zapewnić regularność i przewidywalność współpracy między działami.",
+        "3": "Wzmocnić koordynację, skuteczność i trwałość współpracy."
+      }
+    },
+    {
+      "id": "Q19",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K1",
+      "short_name": "Wiedza adekwatna do roli",
+      "text": "Czy pracownicy mają wiedzę o dostępności adekwatną do swoich ról?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "matryca kompetencji",
+        "wyniki szkoleń",
+        "ocena potrzeb"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Pracownicy nie posiadają wiedzy o dostępności lub jest ona przypadkowa."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Podstawowa wiedza występuje u części pracowników."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Wiedza jest obecna w wybranych rolach, ale jest niespójna i niepełna."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Większość pracowników posiada wiedzę adekwatną do swoich ról."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Wiedza jest powszechna, dopasowana do ról i utrzymywana w czasie."
+        }
+      ],
+      "area_label": "wiedzy o dostępności adekwatnej do ról",
+      "recommendations_by_level": {
+        "0": "Wprowadzić podstawowe działania edukacyjne dotyczące dostępności.",
+        "1": "Określić wymagania kompetencyjne dla kluczowych ról.",
+        "2": "Uzupełnić luki kompetencyjne w większej części organizacji.",
+        "3": "Utrzymywać i aktualizować poziom wiedzy adekwatny do ról."
+      }
+    },
+    {
+      "id": "Q20",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K1",
+      "short_name": "Systemowy rozwój kompetencji",
+      "text": "Czy organizacja rozwija kompetencje dostępności poprzez zaplanowane i systematyczne działania?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "plan szkoleń",
+        "harmonogram działań rozwojowych",
+        "raporty z realizacji"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Brak zaplanowanych i systematycznych działań rozwijających kompetencje dostępności."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Działania rozwojowe mają charakter incydentalny."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Istnieją działania rozwojowe, ale są niespójne lub obejmują tylko część potrzeb."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Działania są zaplanowane i realizowane regularnie."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Działania są systemowe, oparte na potrzebach i powiązane z celami organizacji."
+        }
+      ],
+      "area_label": "systemowego rozwoju kompetencji dostępności",
+      "recommendations_by_level": {
+        "0": "Rozpocząć zaplanowane działania rozwijające kompetencje dostępności.",
+        "1": "Uporządkować działania i rozszerzyć je na większą część organizacji.",
+        "2": "Zaplanować cykliczne działania rozwojowe i zapewnić ich regularność.",
+        "3": "Powiązać rozwój kompetencji z potrzebami i celami organizacji."
+      }
+    },
+    {
+      "id": "Q21",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K2",
+      "short_name": "Stosowanie wymagań w praktyce",
+      "text": "Czy pracownicy potrafią stosować wymagania dostępności w praktyce?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1",
+          "OP4"
+        ]
+      },
+      "evidence_examples": [
+        "wyniki kontroli jakości",
+        "analiza błędów",
+        "przykłady poprawnych wdrożeń"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Wymagania dostępności nie są stosowane w praktyce."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Stosowanie wymagań jest sporadyczne i zależy od konkretnej osoby lub sytuacji."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Stosowanie wymagań jest częściowe i niespójne."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Wymagania są stosowane w większości działań praktycznych."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Wymagania są stosowane konsekwentnie, poprawnie i wspierają jakość działań."
+        }
+      ],
+      "area_label": "praktycznego stosowania wymagań dostępności",
+      "recommendations_by_level": {
+        "0": "Wprowadzić podstawowe stosowanie wymagań dostępności w praktyce.",
+        "1": "Uporządkować praktykę stosowania wymagań w wybranych obszarach.",
+        "2": "Zwiększyć spójność stosowania wymagań w codziennej pracy.",
+        "3": "Doskonalić jakość i poprawność stosowania wymagań w całej organizacji."
+      }
+    },
+    {
+      "id": "Q22",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K1",
+      "short_name": "Aktualizacja wiedzy",
+      "text": "Czy wiedza o dostępności jest regularnie aktualizowana?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "aktualizacje materiałów",
+        "cykliczne szkolenia",
+        "komunikaty merytoryczne"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Wiedza o dostępności nie jest aktualizowana."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Aktualizacja wiedzy ma charakter sporadyczny."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Wiedza jest aktualizowana nieregularnie lub tylko w części obszarów."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Wiedza jest regularnie aktualizowana."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Aktualizacja wiedzy jest systemowa i reaguje na zmiany prawne, techniczne i organizacyjne."
+        }
+      ],
+      "area_label": "aktualizacji wiedzy o dostępności",
+      "recommendations_by_level": {
+        "0": "Wprowadzić podstawowe działania aktualizujące wiedzę o dostępności.",
+        "1": "Uporządkować aktualizację wiedzy i zwiększyć jej zakres.",
+        "2": "Zapewnić regularność aktualizacji wiedzy w organizacji.",
+        "3": "Powiązać aktualizację wiedzy ze zmianami w otoczeniu i praktyce działania."
+      }
+    },
+    {
+      "id": "Q23",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K1",
+      "short_name": "Działania rozwojowe dla ról",
+      "text": "Czy działania rozwojowe są dostosowane do różnych ról?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "programy modułowe",
+        "ścieżki szkoleniowe",
+        "opisy grup docelowych"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Działania rozwojowe nie są dostosowane do różnych ról."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Dostosowanie jest minimalne i obejmuje tylko podstawowe grupy pracowników."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Dostosowanie istnieje dla części ról, ale nie obejmuje jeszcze całości potrzeb."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Działania rozwojowe są dostosowane do większości ról."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Dostosowanie działań rozwojowych jest systemowe, precyzyjne i odpowiada rzeczywistym potrzebom ról."
+        }
+      ],
+      "area_label": "dostosowania działań rozwojowych do różnych ról",
+      "recommendations_by_level": {
+        "0": "Rozróżnić podstawowe grupy ról wymagające odmiennych działań rozwojowych.",
+        "1": "Rozszerzyć dopasowanie działań rozwojowych do większej liczby ról.",
+        "2": "Objąć większość ról odpowiednio dopasowanymi działaniami rozwojowymi.",
+        "3": "Precyzyjnie dopasowywać rozwój kompetencji do potrzeb każdej roli."
+      }
+    },
+    {
+      "id": "Q24",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K1",
+      "short_name": "Onboarding dostępności",
+      "text": "Czy nowe osoby są przygotowywane do uwzględniania dostępności w swojej pracy?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "program wdrożeniowy",
+        "materiały onboardingowe",
+        "checklista HR"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Nowe osoby nie są przygotowywane do uwzględniania dostępności w swojej pracy."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Przygotowanie nowych osób ma charakter sporadyczny."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Nowe osoby są przygotowywane tylko w części przypadków albo w ograniczonym zakresie."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Przygotowanie nowych osób do uwzględniania dostępności jest standardem."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Przygotowanie jest systemowe, dopasowane do ról i wspiera szybkie wejście w praktykę działania."
+        }
+      ],
+      "area_label": "przygotowania nowych osób do uwzględniania dostępności",
+      "recommendations_by_level": {
+        "0": "Wprowadzić podstawowe przygotowanie nowych osób do uwzględniania dostępności.",
+        "1": "Uporządkować onboarding i rozszerzyć go na większą część nowych osób.",
+        "2": "Ustandaryzować przygotowanie nowych osób w całej organizacji.",
+        "3": "Dopasować onboarding do ról i systemowo rozwijać jego jakość."
+      }
+    },
+    {
+      "id": "Q25",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K2",
+      "short_name": "Materiały i narzędzia",
+      "text": "Czy pracownicy mają dostęp do materiałów i narzędzi wspierających stosowanie dostępności w codziennej pracy?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1",
+          "OP4"
+        ]
+      },
+      "evidence_examples": [
+        "intranet",
+        "repozytorium materiałów",
+        "narzędzia testowe"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Pracownicy nie mają dostępu do materiałów ani narzędzi wspierających stosowanie dostępności."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Materiały lub narzędzia są dostępne w ograniczonym zakresie."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Materiały i narzędzia są dostępne częściowo, ale nie tworzą jeszcze spójnego wsparcia."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Materiały i narzędzia są dostępne i realnie wspierają codzienną pracę."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Zasoby są kompletne, aktualne, łatwo dostępne i dobrze wykorzystywane."
+        }
+      ],
+      "area_label": "materiałów i narzędzi wspierających stosowanie dostępności",
+      "recommendations_by_level": {
+        "0": "Przygotować podstawowe materiały i narzędzia wspierające stosowanie dostępności.",
+        "1": "Rozszerzyć dostępność zasobów dla większej liczby pracowników i ról.",
+        "2": "Ułatwić korzystanie z zasobów i włączyć je do codziennej pracy.",
+        "3": "Zapewnić aktualność, kompletność i łatwą dostępność zasobów."
+      }
+    },
+    {
+      "id": "Q26",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K2",
+      "short_name": "Kompetencje specjalistyczne",
+      "text": "Czy organizacja rozwija specjalistyczne kompetencje potrzebne do rozwiązywania trudniejszych problemów dostępności?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S1"
+        ],
+        "systemic": [
+          "SYS1"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "plan rozwoju specjalistów",
+        "udział w szkoleniach eksperckich",
+        "sieć ekspertów"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Brak kompetencji specjalistycznych potrzebnych do rozwiązywania trudniejszych problemów dostępności."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Kompetencje specjalistyczne pojawiają się incydentalnie i nie są rozwijane planowo."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Kompetencje specjalistyczne istnieją w ograniczonym zakresie."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Kompetencje specjalistyczne są dostępne i wykorzystywane w organizacji."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Kompetencje specjalistyczne są rozwijane systemowo i wzmacniają zdolność organizacji do działania."
+        }
+      ],
+      "area_label": "rozwoju kompetencji specjalistycznych",
+      "recommendations_by_level": {
+        "0": "Zidentyfikować potrzeby dotyczące kompetencji specjalistycznych.",
+        "1": "Rozwinąć podstawowe kompetencje specjalistyczne w najważniejszych obszarach.",
+        "2": "Zapewnić dostęp do specjalistów i wykorzystanie ich kompetencji w praktyce.",
+        "3": "Rozwijać kompetencje specjalistyczne systemowo i długofalowo."
+      }
+    },
+    {
+      "id": "Q27",
+      "dimension_id": "knowledge_skills",
+      "decision_id": "K3",
+      "short_name": "Zarządzanie kompetencjami",
+      "text": "Czy organizacja rozpoznaje i rozwija kompetencje potrzebne do zapewniania dostępności (np. poprzez analizę luk i planowanie działań)?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "analizy luk kompetencyjnych",
+        "plan szkoleń",
+        "roczne raporty kompetencyjne"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Organizacja nie rozpoznaje potrzeb kompetencyjnych związanych z zapewnianiem dostępności."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Rozpoznanie potrzeb kompetencyjnych ma charakter sporadyczny."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Rozpoznanie kompetencji jest częściowe i nie zawsze przekłada się na działania."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Organizacja systematycznie rozpoznaje potrzeby kompetencyjne i rozwija odpowiednie kompetencje."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Rozpoznawanie i rozwój kompetencji są systemowe, planowe i powiązane z działaniami organizacji."
+        }
+      ],
+      "area_label": "rozpoznawania i rozwijania kompetencji potrzebnych do zapewniania dostępności",
+      "recommendations_by_level": {
+        "0": "Zacząć identyfikować potrzeby kompetencyjne związane z dostępnością.",
+        "1": "Uporządkować analizę kompetencji i luk rozwojowych.",
+        "2": "Wprowadzić systematyczne podejście do rozpoznawania i rozwijania kompetencji.",
+        "3": "Powiązać zarządzanie kompetencjami z planowaniem i zarządzaniem organizacji."
+      }
+    },
+    {
+      "id": "Q28",
+      "dimension_id": "communications",
+      "decision_id": "I1",
+      "short_name": "Standardy komunikacji",
+      "text": "Czy organizacja posiada jasne standardy i zasady tworzenia oraz udostępniania dostępnych informacji cyfrowych?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S1"
+        ],
+        "systemic": [
+          "SYS1"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "standard redakcyjny",
+        "wytyczne publikacyjne",
+        "polityka komunikacji"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Organizacja nie posiada wspólnych zasad tworzenia i udostępniania dostępnych informacji cyfrowych."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Istnieją pojedyncze zasady lub ustalenia, ale są niepełne, rozproszone albo stosowane wybiórczo."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Standardy i zasady zostały określone dla części treści lub kanałów komunikacji, ale nie obejmują całości działań organizacji."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Organizacja posiada jasne i stosowane w praktyce standardy tworzenia oraz udostępniania dostępnych informacji cyfrowych."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Standardy są spójne, aktualne, obejmują wszystkie główne kanały komunikacji i są regularnie doskonalone."
+        }
+      ],
+      "area_label": "standardów i zasad tworzenia oraz udostępniania dostępnych informacji cyfrowych",
+      "recommendations_by_level": {
+        "0": "Opracować podstawowe zasady dostępnego tworzenia i udostępniania informacji cyfrowych.",
+        "1": "Uporządkować i rozszerzyć zasady na różne rodzaje treści i kanały komunikacji.",
+        "2": "Wprowadzić standardy do codziennej praktyki organizacji.",
+        "3": "Regularnie aktualizować i rozwijać standardy na podstawie doświadczeń i zmian wymagań."
+      }
+    },
+    {
+      "id": "Q29",
+      "dimension_id": "communications",
+      "decision_id": "I2",
+      "short_name": "Proces tworzenia i publikacji treści",
+      "text": "Czy proces tworzenia, redakcji i publikacji treści uwzględnia dostępność na wszystkich etapach?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "procedura publikacji",
+        "schemat akceptacji",
+        "mapa procesu"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Dostępność nie jest uwzględniana w procesie tworzenia, redakcji i publikacji treści."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Dostępność bywa uwzględniana na wybranych etapach, ale zależy to od osób lub sytuacji."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Dostępność jest uwzględniana w części procesu, ale nie we wszystkich etapach i nie zawsze spójnie."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Proces tworzenia, redakcji i publikacji treści uwzględnia dostępność w sposób uporządkowany i powtarzalny."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Dostępność jest naturalną częścią całego procesu, od przygotowania treści po publikację i aktualizację."
+        }
+      ],
+      "area_label": "uwzględniania dostępności w procesie tworzenia, redakcji i publikacji treści",
+      "recommendations_by_level": {
+        "0": "Wskazać etapy procesu, na których dostępność powinna być uwzględniana.",
+        "1": "Rozszerzyć uwzględnianie dostępności na kolejne etapy procesu.",
+        "2": "Uporządkować i ujednolicić proces tworzenia, redakcji i publikacji treści.",
+        "3": "Trwale włączyć dostępność do całego cyklu życia treści."
+      }
+    },
+    {
+      "id": "Q30",
+      "dimension_id": "communications",
+      "decision_id": "I2",
+      "short_name": "Czytelność i zrozumiałość treści",
+      "text": "Czy publikowane treści są przygotowywane w sposób czytelny, zrozumiały i dostępny dla różnych odbiorców?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1",
+          "OP4"
+        ]
+      },
+      "evidence_examples": [
+        "próbki treści",
+        "zasady prostego języka",
+        "przeglądy jakości"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Publikowane treści często są trudne do odczytania, zrozumienia lub wykorzystania przez część odbiorców."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Czytelność i zrozumiałość są uwzględniane sporadycznie lub tylko w części publikowanych treści."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Treści w części przypadków są przygotowywane w sposób czytelny i zrozumiały, ale organizacja nie robi tego jeszcze konsekwentnie."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Publikowane treści są zwykle czytelne, zrozumiałe i przygotowywane z myślą o różnych odbiorcach."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Czytelność, zrozumiałość i dostępność są stałymi cechami komunikacji organizacji, także w sytuacjach bardziej złożonych."
+        }
+      ],
+      "area_label": "czytelności, zrozumiałości i dostępności publikowanych treści",
+      "recommendations_by_level": {
+        "0": "Zacząć stosować podstawowe zasady czytelnej i zrozumiałej komunikacji.",
+        "1": "Upowszechnić te zasady w większej części publikowanych treści.",
+        "2": "Zapewnić ich konsekwentne stosowanie w codziennej praktyce.",
+        "3": "Doskonalić komunikację pod kątem różnych grup odbiorców i różnych sytuacji."
+      }
+    },
+    {
+      "id": "Q31",
+      "dimension_id": "communications",
+      "decision_id": "I2",
+      "short_name": "Dostępność materiałów",
+      "text": "Czy dokumenty, formularze, prezentacje i inne materiały publikowane przez organizację są przygotowywane zgodnie z zasadami dostępności?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1",
+          "OP4"
+        ]
+      },
+      "evidence_examples": [
+        "próbki dokumentów",
+        "formularze",
+        "wyniki kontroli"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Materiały publikowane przez organizację często nie spełniają podstawowych zasad dostępności."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Dostępność materiałów jest uwzględniana tylko w części przypadków albo dopiero po wystąpieniu problemów."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Część materiałów jest przygotowywana zgodnie z zasadami dostępności, ale występują istotne niespójności."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Materiały są zwykle przygotowywane zgodnie z zasadami dostępności w różnych formatach i rodzajach publikacji."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Organizacja zapewnia wysoki i stabilny poziom dostępności materiałów publikowanych w różnych formach i kontekstach."
+        }
+      ],
+      "area_label": "dostępności dokumentów, formularzy, prezentacji i innych materiałów",
+      "recommendations_by_level": {
+        "0": "Poprawić dostępność najczęściej publikowanych materiałów.",
+        "1": "Rozszerzyć stosowanie zasad dostępności na większą część materiałów.",
+        "2": "Ujednolicić sposób przygotowywania materiałów w różnych formatach.",
+        "3": "Utrzymywać wysoki standard i obejmować nim wszystkie typy materiałów."
+      }
+    },
+    {
+      "id": "Q32",
+      "dimension_id": "communications",
+      "decision_id": "I1",
+      "short_name": "Szablony, wzory i instrukcje",
+      "text": "Czy organizacja posiada szablony, wzory i instrukcje, które ułatwiają tworzenie dostępnych treści i materiałów?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1",
+          "OP4"
+        ]
+      },
+      "evidence_examples": [
+        "szablony DOCX",
+        "szablony prezentacji",
+        "instrukcje redakcyjne"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Organizacja nie posiada szablonów, wzorów ani instrukcji wspierających tworzenie dostępnych treści."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Istnieją pojedyncze materiały pomocnicze, ale mają ograniczony zakres lub są mało używane."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Szablony, wzory i instrukcje są dostępne dla części treści lub części pracowników."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Organizacja posiada i wykorzystuje użyteczne szablony, wzory oraz instrukcje wspierające codzienną pracę."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Szablony, wzory i instrukcje są spójne, aktualne, łatwo dostępne i realnie ułatwiają utrzymanie jakości komunikacji."
+        }
+      ],
+      "area_label": "szablonów, wzorów i instrukcji wspierających tworzenie dostępnych treści",
+      "recommendations_by_level": {
+        "0": "Przygotować podstawowe wzory i instrukcje dla najczęściej tworzonych materiałów.",
+        "1": "Rozszerzyć ich zakres i dostępność dla większej części organizacji.",
+        "2": "Wprowadzić ich regularne stosowanie w codziennej pracy.",
+        "3": "Utrzymywać aktualność i dopasowywać zasoby do potrzeb użytkowników wewnętrznych."
+      }
+    },
+    {
+      "id": "Q33",
+      "dimension_id": "communications",
+      "decision_id": "I2",
+      "short_name": "Narzędzia i środowisko publikacji",
+      "text": "Czy narzędzia i środowiska wykorzystywane do tworzenia i publikowania treści pomagają utrzymać dostępność komunikacji?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1",
+          "OP4"
+        ]
+      },
+      "evidence_examples": [
+        "konfiguracja CMS",
+        "narzędzia redakcyjne",
+        "ustawienia edytorów"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Narzędzia i środowiska pracy nie wspierają utrzymania dostępności, a czasem utrudniają jej zapewnienie."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Wybrane narzędzia lub ustawienia wspierają dostępność, ale dzieje się to w ograniczonym zakresie."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Wsparcie narzędziowe istnieje dla części procesów lub zespołów, lecz nie jest jeszcze spójne."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Narzędzia i środowiska pracy w większości przypadków wspierają tworzenie i publikowanie dostępnych treści."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Organizacja świadomie dobiera i konfiguruje narzędzia tak, aby systemowo wspierały dostępność komunikacji."
+        }
+      ],
+      "area_label": "narzędzi i środowisk wspierających dostępność komunikacji",
+      "recommendations_by_level": {
+        "0": "Włączyć podstawowe ustawienia i rozwiązania wspierające dostępność komunikacji.",
+        "1": "Rozszerzyć wsparcie narzędziowe na więcej procesów i zespołów.",
+        "2": "Ujednolicić narzędzia i sposób ich wykorzystania.",
+        "3": "Zarządzać narzędziami tak, aby trwale wspierały jakość i dostępność komunikacji."
+      }
+    },
+    {
+      "id": "Q34",
+      "dimension_id": "communications",
+      "decision_id": "I3",
+      "short_name": "Weryfikacja przed publikacją",
+      "text": "Czy treści i materiały są sprawdzane przed publikacją pod kątem dostępności i jakości komunikacji?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "checklisty weryfikacyjne",
+        "etap kontroli",
+        "raporty sprawdzające"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Treści i materiały nie są sprawdzane przed publikacją pod kątem dostępności ani jakości komunikacji."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Sprawdzanie odbywa się sporadycznie lub tylko dla części materiałów."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Istnieje praktyka sprawdzania, ale nie obejmuje wszystkich kluczowych treści lub nie jest stosowana konsekwentnie."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Treści i materiały są regularnie sprawdzane przed publikacją według ustalonych zasad."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Sprawdzanie przed publikacją jest stałym elementem procesu i obejmuje zarówno dostępność, jak i użyteczność komunikacji."
+        }
+      ],
+      "area_label": "weryfikacji treści i materiałów przed publikacją",
+      "recommendations_by_level": {
+        "0": "Wprowadzić podstawowy przegląd przed publikacją.",
+        "1": "Rozszerzyć zakres sprawdzania na większą część materiałów.",
+        "2": "Ustalić i wdrożyć spójne zasady kontroli jakości przed publikacją.",
+        "3": "Rozwinąć kontrolę tak, aby obejmowała także praktyczną użyteczność komunikacji."
+      }
+    },
+    {
+      "id": "Q35",
+      "dimension_id": "communications",
+      "decision_id": "I3",
+      "short_name": "Informacja zwrotna o komunikacji",
+      "text": "Czy organizacja zbiera i wykorzystuje informacje zwrotne dotyczące dostępności i zrozumiałości komunikacji?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "formularze kontaktowe",
+        "analiza zgłoszeń",
+        "wnioski z obsługi"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Organizacja nie zbiera informacji zwrotnych dotyczących dostępności ani zrozumiałości komunikacji."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Informacje zwrotne pojawiają się okazjonalnie, ale nie są systematycznie wykorzystywane."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Organizacja zbiera część informacji zwrotnych i czasem wykorzystuje je do wprowadzania zmian."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Informacje zwrotne są zbierane i wykorzystywane do poprawy komunikacji w uporządkowany sposób."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Organizacja systematycznie analizuje informacje zwrotne i wykorzystuje je do doskonalenia standardów, procesów oraz treści."
+        }
+      ],
+      "area_label": "zbierania i wykorzystania informacji zwrotnych dotyczących komunikacji",
+      "recommendations_by_level": {
+        "0": "Zacząć przyjmować i odnotowywać informacje zwrotne od odbiorców.",
+        "1": "Uporządkować sposób zbierania i wykorzystywania informacji zwrotnych.",
+        "2": "Włączyć feedback do stałego doskonalenia komunikacji.",
+        "3": "Wykorzystywać informacje zwrotne także do aktualizacji standardów i procesów."
+      }
+    },
+    {
+      "id": "Q36",
+      "dimension_id": "communications",
+      "decision_id": "I2",
+      "short_name": "Spójność kanałów komunikacji",
+      "text": "Czy wymagania dostępności są stosowane spójnie w różnych kanałach komunikacji, w tym w WWW, BIP, dokumentach, mediach społecznościowych i komunikacji wewnętrznej?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "wspólne standardy",
+        "przeglądy kanałów",
+        "wytyczne kanałowe"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Wymagania dostępności nie są stosowane spójnie w różnych kanałach komunikacji."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Spójność występuje tylko w wybranych kanałach lub zależy od konkretnych osób."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "W części kanałów komunikacji wymagania są stosowane poprawnie, ale organizacja nie zapewnia jeszcze spójności całościowej."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Wymagania dostępności są stosowane spójnie w głównych kanałach komunikacji organizacji."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Organizacja utrzymuje wysoki poziom spójności komunikacji dostępnej we wszystkich istotnych kanałach i formatach."
+        }
+      ],
+      "area_label": "spójnego stosowania wymagań dostępności w różnych kanałach komunikacji",
+      "recommendations_by_level": {
+        "0": "Ujednolicić podstawowe wymagania dla najważniejszych kanałów komunikacji.",
+        "1": "Rozszerzyć ich stosowanie na kolejne kanały komunikacji.",
+        "2": "Zapewnić spójność między głównymi kanałami komunikacji.",
+        "3": "Utrzymywać spójność także przy zmianach, nowych kanałach i nowych formatach."
+      }
+    },
+    {
+      "id": "Q37",
+      "dimension_id": "communications",
+      "decision_id": "I3",
+      "short_name": "Multimedia i alternatywne formy przekazu",
+      "text": "Czy organizacja zapewnia dostępność multimediów oraz alternatywnych form przekazu tam, gdzie są one potrzebne?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1",
+          "OP4"
+        ]
+      },
+      "evidence_examples": [
+        "materiały wideo",
+        "transkrypcje",
+        "audiodeskrypcja"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Organizacja nie zapewnia dostępności multimediów ani alternatywnych form przekazu."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Dostępność multimediów i alternatywne formy przekazu pojawiają się sporadycznie."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Alternatywne formy przekazu są zapewniane w części przypadków, ale nie ma jeszcze spójnego podejścia."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Organizacja zwykle zapewnia dostępność multimediów i odpowiednie alternatywne formy przekazu tam, gdzie są potrzebne."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Dostępność multimediów i alternatywne formy przekazu są stałym, przewidywalnym i dobrze zorganizowanym elementem komunikacji."
+        }
+      ],
+      "area_label": "dostępności multimediów oraz alternatywnych form przekazu",
+      "recommendations_by_level": {
+        "0": "Wprowadzić podstawowe alternatywne formy przekazu dla najważniejszych materiałów.",
+        "1": "Rozszerzyć ich stosowanie na więcej typów multimediów i komunikatów.",
+        "2": "Uporządkować i ustandaryzować stosowanie alternatywnych form przekazu.",
+        "3": "Zapewnić przewidywalność, jakość i trwałość tych rozwiązań."
+      }
+    },
+    {
+      "id": "Q38",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "U1",
+      "short_name": "Projektowanie usług cyfrowych",
+      "text": "Czy dostępność jest uwzględniana w projektowaniu usług cyfrowych?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "briefy projektowe",
+        "wymagania funkcjonalne",
+        "makiety i opisy UX"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Usługi cyfrowe są projektowane bez uwzględniania dostępności."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Dostępność pojawia się sporadycznie w projektowaniu usług cyfrowych."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Dostępność jest uwzględniana w części projektów lub elementów usług."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Dostępność jest standardowym elementem projektowania usług cyfrowych."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Projektowanie usług cyfrowych systemowo uwzględnia dostępność od samego początku."
+        }
+      ],
+      "area_label": "uwzględniania dostępności w projektowaniu usług cyfrowych",
+      "recommendations_by_level": {
+        "0": "Wprowadzić dostępność do wybranych projektów usług cyfrowych.",
+        "1": "Rozszerzyć uwzględnianie dostępności na większą część projektów i usług.",
+        "2": "Ustandaryzować podejście do projektowania usług z uwzględnieniem dostępności.",
+        "3": "Włączyć dostępność jako stały element projektowania usług cyfrowych."
+      }
+    },
+    {
+      "id": "Q39",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "T1",
+      "short_name": "Wymagania przed projektem",
+      "text": "Czy wymagania dostępności są definiowane przed rozpoczęciem projektu lub prac rozwojowych?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "wymagania projektowe",
+        "brief",
+        "checklista startowa"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Wymagania dostępności nie są określane przed rozpoczęciem projektu lub prac rozwojowych."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Wymagania pojawiają się sporadycznie i nie tworzą stałego standardu."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Wymagania są określane w części projektów, ale nie w sposób spójny."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Wymagania dostępności są standardowym elementem przygotowania projektów."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Wymagania są jasno określone, spójne i stosowane we wszystkich projektach."
+        }
+      ],
+      "area_label": "definiowania wymagań dostępności przed rozpoczęciem projektu lub prac rozwojowych",
+      "recommendations_by_level": {
+        "0": "Wprowadzić podstawowe wymagania dostępności na etapie przygotowania projektu.",
+        "1": "Rozszerzyć stosowanie wymagań na większą część projektów.",
+        "2": "Ustandaryzować definiowanie wymagań dostępności przed rozpoczęciem prac.",
+        "3": "Zapewnić spójność i powszechność wymagań we wszystkich projektach."
+      }
+    },
+    {
+      "id": "Q40",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "T1",
+      "short_name": "Rozwój, konfiguracja i integracja",
+      "text": "Czy dostępność jest uwzględniana w rozwoju, konfiguracji i integracji systemów oraz usług cyfrowych?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "standard developerski",
+        "wymagania techniczne",
+        "zasady integracji"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Dostępność nie jest uwzględniana w rozwoju, konfiguracji ani integracji systemów oraz usług cyfrowych."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Uwzględnianie dostępności jest sporadyczne i zależy od konkretnej sytuacji."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Dostępność jest uwzględniana w części działań rozwojowych, konfiguracyjnych lub integracyjnych."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Dostępność jest uwzględniana w większości działań rozwojowych, konfiguracyjnych i integracyjnych."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Dostępność jest integralną częścią rozwoju, konfiguracji i integracji systemów oraz usług cyfrowych."
+        }
+      ],
+      "area_label": "uwzględniania dostępności w rozwoju, konfiguracji i integracji",
+      "recommendations_by_level": {
+        "0": "Uwzględniać dostępność w wybranych działaniach rozwojowych, konfiguracyjnych i integracyjnych.",
+        "1": "Rozszerzyć uwzględnianie dostępności na większą część tych działań.",
+        "2": "Ujednolicić podejście do dostępności w rozwoju, konfiguracji i integracji.",
+        "3": "Włączyć dostępność do stałych standardów technicznych i projektowych."
+      }
+    },
+    {
+      "id": "Q41",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "T2",
+      "short_name": "Systemowe testowanie dostępności",
+      "text": "Czy testowanie dostępności jest prowadzone w sposób systemowy, z wykorzystaniem różnych metod (np. automatycznych i manualnych)?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "raporty testów",
+        "plan testów",
+        "wyniki testów manualnych i automatycznych"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Testy dostępności nie są prowadzone."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Testy są prowadzone sporadycznie i w ograniczonym zakresie."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Testy są prowadzone, ale obejmują tylko część przypadków lub ograniczony zestaw metod."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Testy są regularne i obejmują różne metody sprawdzania dostępności."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Testowanie jest systemowe, wieloetapowe, powtarzalne i włączone w proces rozwoju usług oraz systemów."
+        }
+      ],
+      "area_label": "systemowego testowania dostępności z wykorzystaniem różnych metod",
+      "recommendations_by_level": {
+        "0": "Wprowadzić podstawowe testy dostępności do procesu rozwoju i zmian.",
+        "1": "Rozszerzyć zakres testowania na więcej elementów i sytuacji.",
+        "2": "Wprowadzić różne metody testowania i stosować je regularnie.",
+        "3": "Zintegrować testy dostępności z całym procesem rozwoju i kontroli jakości."
+      }
+    },
+    {
+      "id": "Q42",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "T3",
+      "short_name": "Systemowe usuwanie problemów",
+      "text": "Czy problemy dostępności są usuwane w sposób uporządkowany i systemowy?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1",
+          "OP4"
+        ]
+      },
+      "evidence_examples": [
+        "backlog",
+        "zgłoszenia naprawcze",
+        "potwierdzenia wdrożenia poprawek"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Problemy dostępności nie są usuwane albo są ignorowane."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Problemy są usuwane doraźnie i bez uporządkowanego podejścia."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Usuwanie problemów jest częściowo uporządkowane, ale nie jest jeszcze w pełni przewidywalne."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Usuwanie problemów jest systemowe i przewidywalne w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Usuwanie problemów jest szybkie, systemowe i oparte na świadomych priorytetach."
+        }
+      ],
+      "area_label": "systemowego usuwania problemów dostępności",
+      "recommendations_by_level": {
+        "0": "Zacząć reagować na problemy dostępności i usuwać najważniejsze bariery.",
+        "1": "Uporządkować proces napraw i rozszerzyć go na większą część problemów.",
+        "2": "Zapewnić powtarzalność i przewidywalność usuwania problemów.",
+        "3": "Wprowadzić priorytetyzację i zwiększyć skuteczność działań naprawczych."
+      }
+    },
+    {
+      "id": "Q43",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "U1",
+      "short_name": "Analiza potrzeb użytkowników",
+      "text": "Czy potrzeby różnych użytkowników są uwzględniane na etapie analizy potrzeb?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "analiza potrzeb",
+        "persony",
+        "wymagania biznesowe"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Potrzeby różnych użytkowników nie są uwzględniane na etapie analizy potrzeb."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Są uwzględniane sporadycznie lub w bardzo ograniczonym zakresie."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Są uwzględniane w części analiz, ale nie w sposób spójny."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Są regularnie uwzględniane w analizie potrzeb."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Są uwzględniane systemowo i wpływają na decyzje projektowe oraz usługowe."
+        }
+      ],
+      "area_label": "uwzględniania potrzeb różnych użytkowników na etapie analizy potrzeb",
+      "recommendations_by_level": {
+        "0": "Uwzględnić podstawowe potrzeby różnych użytkowników na etapie analizy potrzeb.",
+        "1": "Rozszerzyć analizę potrzeb o większą różnorodność użytkowników.",
+        "2": "Ustandaryzować uwzględnianie potrzeb użytkowników w analizie.",
+        "3": "Włączyć potrzeby różnych użytkowników do procesu decyzyjnego i projektowego."
+      }
+    },
+    {
+      "id": "Q44",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "U2",
+      "short_name": "Dostępność w UX/UI",
+      "text": "Czy dostępność jest uwzględniana w projektowaniu doświadczenia użytkownika i architektury interfejsu?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "makiety",
+        "design system",
+        "wytyczne UX"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Dostępność nie jest uwzględniana w projektowaniu doświadczenia użytkownika ani architektury interfejsu."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Jest uwzględniana sporadycznie lub wybiórczo."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Jest uwzględniana częściowo, ale nie we wszystkich istotnych elementach interfejsu i doświadczenia użytkownika."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Jest uwzględniana systemowo w projektowaniu doświadczenia użytkownika i architektury interfejsu."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Jest integralnym elementem projektowania UX/UI i kształtowania doświadczenia użytkownika."
+        }
+      ],
+      "area_label": "uwzględniania dostępności w projektowaniu doświadczenia użytkownika i architektury interfejsu",
+      "recommendations_by_level": {
+        "0": "Uwzględniać podstawowe zasady dostępnego UX/UI w wybranych projektach.",
+        "1": "Rozszerzyć ich stosowanie na większą część projektowanych interfejsów i usług.",
+        "2": "Ustandaryzować projektowanie UX/UI z uwzględnieniem dostępności.",
+        "3": "Włączyć dostępność do wszystkich praktyk projektowania doświadczenia użytkownika."
+      }
+    },
+    {
+      "id": "Q45",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "T1",
+      "short_name": "Dostępność jako kryterium jakości",
+      "text": "Czy dostępność jest uwzględniana jako kryterium jakości przy podejmowaniu decyzji o wdrożeniu lub publikacji usług i systemów?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "bramki jakości",
+        "kryteria akceptacji",
+        "decyzje o wdrożeniu"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Dostępność nie jest uwzględniana jako kryterium jakości przy podejmowaniu decyzji o wdrożeniu lub publikacji."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Jest uwzględniana sporadycznie albo tylko po wystąpieniu problemów."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Jest uwzględniana w części decyzji, ale nie tworzy jeszcze stałego standardu jakości."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Jest uwzględniana regularnie przy podejmowaniu decyzji o wdrożeniu lub publikacji."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Jest stałym i świadomie stosowanym kryterium jakości oraz decyzji wdrożeniowych."
+        }
+      ],
+      "area_label": "uwzględniania dostępności jako kryterium jakości przy wdrożeniu lub publikacji",
+      "recommendations_by_level": {
+        "0": "Zacząć uwzględniać dostępność przy podejmowaniu wybranych decyzji o wdrożeniu lub publikacji.",
+        "1": "Rozszerzyć zakres decyzji, w których bierze się pod uwagę dostępność.",
+        "2": "Ustandaryzować kryteria jakości związane z dostępnością.",
+        "3": "Włączyć dostępność jako stały warunek jakości i dopuszczenia do wdrożenia."
+      }
+    },
+    {
+      "id": "Q46",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "U2",
+      "short_name": "Udział użytkowników w ocenie",
+      "text": "Czy użytkownicy lub ich przedstawiciele są angażowani w ocenę dostępności usług i systemów?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "testy z użytkownikami",
+        "konsultacje",
+        "warsztaty"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Użytkownicy ani ich przedstawiciele nie są angażowani w ocenę dostępności usług i systemów."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Użytkownicy są angażowani sporadycznie."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Użytkownicy są angażowani w części przypadków, ale nie jest to jeszcze praktyka systemowa."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Użytkownicy są regularnie angażowani w ocenę dostępności usług i systemów."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Angażowanie użytkowników jest systemowe i realnie wpływa na decyzje dotyczące usług i systemów."
+        }
+      ],
+      "area_label": "angażowania użytkowników w ocenę dostępności usług i systemów",
+      "recommendations_by_level": {
+        "0": "Zacząć angażować użytkowników lub ich przedstawicieli w ocenę dostępności.",
+        "1": "Rozszerzyć udział użytkowników na większą część usług i systemów.",
+        "2": "Zapewnić regularność angażowania użytkowników w ocenę dostępności.",
+        "3": "Włączyć udział użytkowników do procesów decyzyjnych i doskonalenia usług."
+      }
+    },
+    {
+      "id": "Q47",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "T3",
+      "short_name": "Dostępność w utrzymaniu i zmianach",
+      "text": "Czy dostępność jest uwzględniana w utrzymaniu, aktualizacjach i zmianach usług oraz systemów?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "procedury change",
+        "checklista release",
+        "przeglądy po zmianie"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Dostępność nie jest uwzględniana w utrzymaniu, aktualizacjach ani zmianach usług oraz systemów."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Jest uwzględniana sporadycznie lub dopiero po pojawieniu się problemów."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Jest uwzględniana częściowo, ale nie w sposób spójny i przewidywalny."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Jest uwzględniana regularnie w utrzymaniu, aktualizacjach i zmianach."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Jest stałym elementem utrzymania i rozwoju usług oraz systemów."
+        }
+      ],
+      "area_label": "uwzględniania dostępności w utrzymaniu, aktualizacjach i zmianach",
+      "recommendations_by_level": {
+        "0": "Uwzględniać dostępność w wybranych zmianach i aktualizacjach.",
+        "1": "Rozszerzyć zakres działań uwzględniających dostępność po wdrożeniu.",
+        "2": "Ustandaryzować podejście do dostępności w utrzymaniu i zmianach.",
+        "3": "Włączyć dostępność na stałe do utrzymania i rozwoju usług oraz systemów."
+      }
+    },
+    {
+      "id": "Q48",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "T3",
+      "short_name": "Zapobieganie regresji",
+      "text": "Czy organizacja zapobiega pogarszaniu dostępności w wyniku zmian w systemach i usługach?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "testy regresji",
+        "bramki jakości",
+        "analiza incydentów"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Brak kontroli nad pogarszaniem dostępności w wyniku zmian."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Organizacja reaguje dopiero po wystąpieniu pogorszenia dostępności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Istnieją częściowe działania zapobiegawcze, ale nie są one jeszcze spójne."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Zapobieganie pogarszaniu dostępności jest uporządkowane i stosowane w praktyce."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Organizacja skutecznie zapobiega regresji dostępności i utrzymuje jej osiągnięty poziom."
+        }
+      ],
+      "area_label": "zapobiegania pogarszaniu dostępności w wyniku zmian",
+      "recommendations_by_level": {
+        "0": "Zacząć reagować na sytuacje pogarszania dostępności po zmianach.",
+        "1": "Wprowadzić podstawowe zabezpieczenia przed pogarszaniem dostępności.",
+        "2": "Uporządkować proces zapobiegania regresji dostępności.",
+        "3": "Zapewnić stałą kontrolę i skuteczne zapobieganie regresji dostępności."
+      }
+    },
+    {
+      "id": "Q49",
+      "dimension_id": "ict_lifecycle",
+      "decision_id": "T4",
+      "short_name": "Migracje i wycofywanie",
+      "text": "Czy organizacja zapewnia dostępność w procesach migracji, wycofywania systemów i zmian technologicznych?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "plan migracji",
+        "dokumentacja zmian",
+        "rozwiązania przejściowe"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Dostępność nie jest uwzględniana w procesach migracji, wycofywania systemów ani zmian technologicznych."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Jest uwzględniana sporadycznie i bez spójnego podejścia."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Jest uwzględniana w części przypadków, ale nie stanowi jeszcze stałego elementu działania."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Jest uwzględniana regularnie w procesach migracji, wycofywania systemów i zmian technologicznych."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Jest stałym elementem zarządzania zmianą technologiczną i przejściami między rozwiązaniami."
+        }
+      ],
+      "area_label": "zapewnienia dostępności w procesach migracji, wycofywania systemów i zmian technologicznych",
+      "recommendations_by_level": {
+        "0": "Uwzględniać dostępność w wybranych procesach migracji i zmian technologicznych.",
+        "1": "Rozszerzyć zakres działań związanych z dostępnością przy zmianach technologicznych.",
+        "2": "Ustandaryzować podejście do dostępności w migracjach i wycofywaniu systemów.",
+        "3": "Włączyć dostępność do stałego zarządzania zmianą technologiczną."
+      }
+    },
+    {
+      "id": "Q50",
+      "dimension_id": "procurement",
+      "decision_id": "Z1",
+      "short_name": "Wymagania w dokumentacji",
+      "text": "Czy wymagania dostępności są jasno określane w dokumentacji zamówień?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S1"
+        ],
+        "systemic": [
+          "SYS1"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "OPZ",
+        "SWZ",
+        "wzory dokumentacji zamówieniowej"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Wymagania dostępności nie są uwzględniane w dokumentacji zamówień."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Wymagania pojawiają się sporadycznie lub w ograniczonym zakresie."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Wymagania są uwzględniane w części zamówień, ale niespójnie."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Wymagania dostępności są standardowym elementem dokumentacji zamówień."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Wymagania są jasne, spójne i stosowane we wszystkich typach zamówień."
+        }
+      ],
+      "area_label": "jasnego określania wymagań dostępności w dokumentacji zamówień",
+      "recommendations_by_level": {
+        "0": "Wprowadzić podstawowe wymagania dostępności do dokumentacji zamówień.",
+        "1": "Rozszerzyć ich stosowanie na większą część zamówień.",
+        "2": "Ustandaryzować zapisy dotyczące dostępności w dokumentacji.",
+        "3": "Zapewnić spójność wymagań we wszystkich postępowaniach."
+      }
+    },
+    {
+      "id": "Q51",
+      "dimension_id": "procurement",
+      "decision_id": "Z3",
+      "short_name": "Egzekwowanie wymagań od wykonawców",
+      "text": "Czy wymagania dostępności są egzekwowane od wykonawców?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "wezwania do uzupełnień",
+        "protokoły kontroli",
+        "korespondencja z wykonawcą"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Wymagania dostępności nie są egzekwowane od wykonawców."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Egzekwowanie wymagań ma charakter sporadyczny."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Wymagania są egzekwowane w części przypadków, ale nie systemowo."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Wymagania dostępności są regularnie egzekwowane od wykonawców."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Egzekwowanie jest systemowe, konsekwentne i przewidywalne."
+        }
+      ],
+      "area_label": "egzekwowania wymagań dostępności od wykonawców",
+      "recommendations_by_level": {
+        "0": "Reagować na oczywiste niezgodności i brak realizacji wymagań.",
+        "1": "Wprowadzić podstawowe zasady egzekwowania wymagań dostępności.",
+        "2": "Uporządkować proces egzekwowania wymagań od wykonawców.",
+        "3": "Zapewnić konsekwencję i przewidywalność działań wobec wykonawców."
+      }
+    },
+    {
+      "id": "Q52",
+      "dimension_id": "procurement",
+      "decision_id": "Z1",
+      "short_name": "Standardy i wzory zapisów",
+      "text": "Czy organizacja stosuje spójne standardy i wzory zapisów dotyczących dostępności w zamówieniach i umowach?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "wzory zapisów",
+        "biblioteka klauzul",
+        "instrukcja dla zamawiających"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Brak standardów i wzorów zapisów dotyczących dostępności w zamówieniach i umowach."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Istnieją pojedyncze zapisy, ale są niespójne i nie tworzą wspólnego standardu."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Standardy istnieją dla części zamówień lub umów, ale nie są jeszcze powszechnie stosowane."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Standardy i wzory zapisów są stosowane w większości zamówień i umów."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Standardy są spójne, aktualne i stosowane we wszystkich zamówieniach i umowach."
+        }
+      ],
+      "area_label": "spójnych standardów i wzorów zapisów dotyczących dostępności",
+      "recommendations_by_level": {
+        "0": "Przygotować podstawowe wzory zapisów dotyczących dostępności.",
+        "1": "Uporządkować ich stosowanie i rozszerzyć je na większą część dokumentacji.",
+        "2": "Wprowadzić standardy do większości postępowań i umów.",
+        "3": "Utrzymywać i aktualizować standardy w całym systemie zamówień."
+      }
+    },
+    {
+      "id": "Q53",
+      "dimension_id": "procurement",
+      "decision_id": "Z3",
+      "short_name": "Zapisy umowne",
+      "text": "Czy umowy z wykonawcami zawierają zapisy zapewniające utrzymanie dostępności oraz usuwanie niezgodności?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "umowy",
+        "postanowienia o poprawkach",
+        "plany naprawcze"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Umowy nie zawierają zapisów dotyczących utrzymania dostępności ani usuwania niezgodności."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Zapisy są ogólne i trudne do egzekwowania."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Zapisy istnieją, ale nie zawsze są stosowane albo nie zapewniają skutecznej ochrony interesu organizacji."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Zapisy są konkretne i stosowane w praktyce."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Zapisy są spójne, precyzyjne i skutecznie egzekwowane przez organizację."
+        }
+      ],
+      "area_label": "zapisów umownych zapewniających utrzymanie dostępności i usuwanie niezgodności",
+      "recommendations_by_level": {
+        "0": "Wprowadzić podstawowe zapisy umowne dotyczące utrzymania dostępności i usuwania niezgodności.",
+        "1": "Doprecyzować zapisy tak, aby można było je realnie egzekwować.",
+        "2": "Zapewnić ich konsekwentne stosowanie w praktyce zamówień.",
+        "3": "Wzmocnić egzekwowalność zapisów oraz ich spójność w całej organizacji."
+      }
+    },
+    {
+      "id": "Q54",
+      "dimension_id": "procurement",
+      "decision_id": "Z2",
+      "short_name": "Dowody od wykonawców",
+      "text": "Czy wykonawcy są zobowiązani do przedstawiania dowodów spełnienia wymagań dostępności?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "ACR/VPAT",
+        "oświadczenia",
+        "raporty z testów"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Od wykonawców nie są wymagane żadne dowody spełnienia wymagań dostępności."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Dowody są wymagane sporadycznie lub tylko w wyjątkowych sytuacjach."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Dowody są wymagane w części zamówień, ale nie tworzy to jeszcze stałego standardu."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Dowody są standardowym elementem postępowań zakupowych."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Dowody są wymagane, analizowane i porównywane w sposób systemowy."
+        }
+      ],
+      "area_label": "pozyskiwania dowodów spełnienia wymagań dostępności od wykonawców",
+      "recommendations_by_level": {
+        "0": "Wprowadzić wymaganie przedstawiania dowodów spełnienia wymagań dostępności.",
+        "1": "Rozszerzyć stosowanie tego wymagania na większą część zamówień.",
+        "2": "Ustandaryzować wymagania dotyczące dowodów dostępności.",
+        "3": "Rozwinąć analizę i porównywanie dowodów w procesie zamówień."
+      }
+    },
+    {
+      "id": "Q55",
+      "dimension_id": "procurement",
+      "decision_id": "Z2",
+      "short_name": "Dostępność jako kryterium oceny",
+      "text": "Czy dostępność jest uwzględniana jako kryterium oceny ofert lub warunek wyboru rozwiązania?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S1"
+        ],
+        "systemic": [
+          "SYS1"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "kryteria oceny",
+        "matryca oceny",
+        "wytyczne dla komisji"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Dostępność nie jest uwzględniana jako kryterium oceny ofert ani warunek wyboru rozwiązania."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Dostępność jest uwzględniana sporadycznie."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Dostępność jest uwzględniana w części postępowań, ale nie stanowi jeszcze stałego standardu."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Dostępność jest uwzględniana regularnie jako kryterium oceny ofert lub warunek wyboru rozwiązania."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Dostępność jest stałym i świadomie stosowanym kryterium jakości w procesie wyboru."
+        }
+      ],
+      "area_label": "uwzględniania dostępności jako kryterium oceny ofert lub warunku wyboru rozwiązania",
+      "recommendations_by_level": {
+        "0": "Uwzględniać dostępność w ocenie wybranych ofert i rozwiązań.",
+        "1": "Rozszerzyć jej stosowanie na większą liczbę postępowań.",
+        "2": "Ustandaryzować kryteria oceny związane z dostępnością.",
+        "3": "Włączyć dostępność jako kluczowy element oceny jakości i wyboru rozwiązań."
+      }
+    },
+    {
+      "id": "Q56",
+      "dimension_id": "procurement",
+      "decision_id": "Z2",
+      "short_name": "Udział osób z kompetencjami dostępności",
+      "text": "Czy w procesie zamówień uczestniczą osoby posiadające kompetencje w zakresie dostępności (np. ekspert)?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "skład komisji",
+        "wsparcie eksperta",
+        "protokół oceny"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "W procesie zamówień nie uczestniczą osoby posiadające kompetencje w zakresie dostępności."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Udział takich osób ma charakter sporadyczny."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Osoby posiadające kompetencje w zakresie dostępności uczestniczą tylko w części postępowań."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Ich udział jest regularny i wspiera proces zamówień."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Ich udział jest systemowy, zaplanowany i stanowi stały element procesu zamówień."
+        }
+      ],
+      "area_label": "udziału osób posiadających kompetencje w zakresie dostępności w procesie zamówień",
+      "recommendations_by_level": {
+        "0": "Zapewnić podstawowe wsparcie eksperckie w zakresie dostępności w procesie zamówień.",
+        "1": "Rozszerzyć udział osób posiadających odpowiednie kompetencje na większą część postępowań.",
+        "2": "Ustalić ich rolę i regularny udział w procesie zamówień.",
+        "3": "Włączyć ekspertów lub osoby kompetentne systemowo do całego procesu zakupowego."
+      }
+    },
+    {
+      "id": "Q57",
+      "dimension_id": "procurement",
+      "decision_id": "Z4",
+      "short_name": "Systemy wewnętrzne",
+      "text": "Czy wymagania dostępności są stosowane również przy zakupie lub rozwoju systemów używanych wewnętrznie przez pracowników?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "strategic",
+      "recommendation_refs": {
+        "strategic": [
+          "S1"
+        ],
+        "systemic": [
+          "SYS1"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "zamówienia na ERP/HR",
+        "wymagania wewnętrzne",
+        "protokoły odbioru"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Wymagania dostępności nie są stosowane przy zakupie ani rozwoju systemów używanych wewnętrznie przez pracowników."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Są stosowane sporadycznie lub tylko w nielicznych przypadkach."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Są stosowane w części przypadków, ale nie w sposób spójny."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Są stosowane regularnie przy zakupie lub rozwoju systemów używanych wewnętrznie."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Są stosowane systemowo we wszystkich istotnych zakupach i działaniach rozwojowych dotyczących systemów wewnętrznych."
+        }
+      ],
+      "area_label": "stosowania wymagań dostępności przy zakupie lub rozwoju systemów używanych wewnętrznie",
+      "recommendations_by_level": {
+        "0": "Uwzględnić dostępność w wybranych zakupach lub działaniach rozwojowych dotyczących systemów wewnętrznych.",
+        "1": "Rozszerzyć zakres stosowania wymagań dostępności na większą część systemów wewnętrznych.",
+        "2": "Ujednolicić podejście do dostępności w zamówieniach i rozwoju systemów wewnętrznych.",
+        "3": "Włączyć dostępność do wszystkich istotnych zakupów i działań dotyczących systemów wewnętrznych."
+      }
+    },
+    {
+      "id": "Q58",
+      "dimension_id": "procurement",
+      "decision_id": "Z3",
+      "short_name": "Odbiór z weryfikacją dostępności",
+      "text": "Czy odbiór produktów lub usług obejmuje weryfikację dostępności na podstawie określonych kryteriów?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "protokoły odbioru",
+        "checklisty odbiorowe",
+        "raporty zgodności"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Odbiór produktów lub usług nie uwzględnia weryfikacji dostępności."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Weryfikacja dostępności przy odbiorze występuje sporadycznie."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Weryfikacja dostępności jest prowadzona w części przypadków, ale bez pełnej spójności."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Weryfikacja dostępności jest regularnym elementem odbioru produktów lub usług."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Weryfikacja dostępności przy odbiorze jest systemowa i prowadzona według ustalonych kryteriów."
+        }
+      ],
+      "area_label": "weryfikacji dostępności przy odbiorze produktów lub usług",
+      "recommendations_by_level": {
+        "0": "Wprowadzić podstawową weryfikację dostępności przy odbiorze produktów lub usług.",
+        "1": "Rozszerzyć zakres weryfikacji na większą część odbiorów.",
+        "2": "Ustandaryzować odbiór z uwzględnieniem dostępności.",
+        "3": "Zapewnić spójność i jakość odbioru na podstawie jasnych kryteriów."
+      }
+    },
+    {
+      "id": "Q59",
+      "dimension_id": "procurement",
+      "decision_id": "Z4",
+      "short_name": "Monitoring realizacji umowy",
+      "text": "Czy organizacja monitoruje dostępność produktów i usług w trakcie realizacji umowy i reaguje na problemy?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "rejestr incydentów",
+        "raporty monitorowania",
+        "korespondencja z wykonawcą"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Organizacja nie monitoruje dostępności produktów i usług w trakcie realizacji umowy."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Monitorowanie ma charakter sporadyczny i pojawia się głównie po wystąpieniu problemów."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Monitorowanie jest prowadzone w części przypadków, ale nie stanowi jeszcze stałej praktyki."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Monitorowanie jest regularne i organizacja reaguje na wykryte problemy."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Monitorowanie jest systemowe, powiązane z działaniami naprawczymi i wzmacnia jakość realizacji umowy."
+        }
+      ],
+      "area_label": "monitorowania dostępności produktów i usług w trakcie realizacji umowy",
+      "recommendations_by_level": {
+        "0": "Zacząć reagować na zgłoszenia i problemy pojawiające się w trakcie realizacji umowy.",
+        "1": "Wprowadzić podstawowe monitorowanie dostępności w wybranych umowach.",
+        "2": "Uporządkować proces monitorowania i reagowania na problemy.",
+        "3": "Powiązać monitoring z zarządzaniem jakością oraz egzekwowaniem wymagań."
+      }
+    },
+    {
+      "id": "Q60",
+      "dimension_id": "support",
+      "decision_id": "W1",
+      "short_name": "Widoczność pomocy",
+      "text": "Czy użytkownik lub pracownik wie, gdzie i jak może uzyskać pomoc w sprawie dostępności cyfrowej?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "strona WWW",
+        "BIP",
+        "komunikacja wewnętrzna"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Informacje o możliwości uzyskania pomocy nie są dostępne lub są praktycznie niewidoczne."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Istnieją podstawowe informacje o wsparciu, ale są niepełne, rozproszone lub trudne do znalezienia."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Informacje o wsparciu są dostępne w części kanałów, ale nie są spójne ani konsekwentnie prezentowane."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Informacje o wsparciu są dostępne, zrozumiałe i spójne w głównych kanałach komunikacji."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Informacje o wsparciu są łatwe do znalezienia, dostosowane do różnych użytkowników i aktywnie komunikowane."
+        }
+      ],
+      "area_label": "widoczności i zrozumiałości informacji o pomocy w sprawie dostępności cyfrowej",
+      "recommendations_by_level": {
+        "0": "Wskazać jeden jasny punkt kontaktu i opublikować informację o wsparciu.",
+        "1": "Uporządkować i ujednolicić komunikaty o wsparciu w różnych kanałach.",
+        "2": "Zapewnić spójność i widoczność informacji o wsparciu w całej organizacji.",
+        "3": "Dostosować komunikaty o wsparciu do różnych potrzeb użytkowników i pracowników."
+      }
+    },
+    {
+      "id": "Q61",
+      "dimension_id": "support",
+      "decision_id": "W1",
+      "short_name": "Dostępne zgłaszanie problemów",
+      "text": "Czy zgłoszenie problemu dostępności można przekazać w sposób prosty i dostępny?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "formularz zgłoszeń",
+        "adres e-mail",
+        "telefon lub inny kanał kontaktu"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Brak realnej możliwości zgłoszenia problemu dostępności."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Zgłoszenie jest możliwe, ale trudne lub niedostępne dla części użytkowników."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Zgłoszenie działa w podstawowej formie, ale nie jest jeszcze w pełni dostępne lub wygodne."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Zgłoszenie jest proste i dostępne dla większości użytkowników."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Zgłoszenie jest możliwe różnymi kanałami, dostosowanymi do różnych potrzeb użytkowników."
+        }
+      ],
+      "area_label": "prostoty i dostępności mechanizmu zgłaszania problemu dostępności",
+      "recommendations_by_level": {
+        "0": "Uruchomić podstawowy kanał zgłaszania problemów dostępności.",
+        "1": "Poprawić dostępność i czytelność procesu zgłoszenia problemu.",
+        "2": "Uprościć i ustandaryzować zgłaszanie problemów dostępności.",
+        "3": "Zapewnić alternatywne kanały zgłaszania dostosowane do różnych potrzeb."
+      }
+    },
+    {
+      "id": "Q62",
+      "dimension_id": "support",
+      "decision_id": "W1",
+      "short_name": "Uporządkowana obsługa zgłoszeń",
+      "text": "Czy po zgłoszeniu problemu użytkownik lub pracownik otrzymuje pomoc w przewidywalny i uporządkowany sposób?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "workflow zgłoszeń",
+        "statusy zgłoszeń",
+        "SLA"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Zgłoszenia są ignorowane lub obsługiwane przypadkowo."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Zgłoszenia są obsługiwane, ale bez jasnych zasad i przewidywalności."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Istnieją podstawowe zasady obsługi, ale ich stosowanie jest niespójne."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Obsługa zgłoszeń jest uporządkowana i przewidywalna."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Obsługa jest monitorowana, mierzona i stale doskonalona."
+        }
+      ],
+      "area_label": "uporządkowanej i przewidywalnej obsługi zgłoszeń dotyczących dostępności",
+      "recommendations_by_level": {
+        "0": "Wskazać osoby odpowiedzialne za obsługę zgłoszeń dotyczących dostępności.",
+        "1": "Określić podstawowe zasady i terminy reakcji na zgłoszenia.",
+        "2": "Zapewnić konsekwentne stosowanie zasad obsługi zgłoszeń.",
+        "3": "Wprowadzić monitoring jakości i terminowości obsługi zgłoszeń."
+      }
+    },
+    {
+      "id": "Q63",
+      "dimension_id": "support",
+      "decision_id": "W2",
+      "short_name": "Pomoc w skorzystaniu z usługi",
+      "text": "Czy organizacja potrafi pomóc użytkownikowi w skorzystaniu z usługi cyfrowej mimo wystąpienia bariery?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1",
+          "OP4"
+        ]
+      },
+      "evidence_examples": [
+        "procedury asysty",
+        "przypadki wsparcia użytkownika",
+        "instrukcje dla pracowników obsługi"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Użytkownik pozostaje bez pomocy w skorzystaniu z usługi cyfrowej."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Pomoc jest incydentalna i zależy od dobrej woli lub indywidualnego zaangażowania."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Pomoc jest możliwa, ale nie zawsze skuteczna lub dostępna."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Pomoc jest skuteczna w większości przypadków."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Pomoc jest systemowa, szybka i niezależna od pojedynczych osób."
+        }
+      ],
+      "area_label": "realnej pomocy w skorzystaniu z usługi cyfrowej mimo wystąpienia bariery",
+      "recommendations_by_level": {
+        "0": "Wprowadzić minimalny sposób reagowania na sytuacje, w których użytkownik napotyka barierę.",
+        "1": "Ustalić typowe scenariusze pomocy w skorzystaniu z usługi.",
+        "2": "Zwiększyć skuteczność i dostępność pomocy dla użytkowników.",
+        "3": "Ustandaryzować pomoc tak, aby nie zależała od pojedynczych osób."
+      }
+    },
+    {
+      "id": "Q64",
+      "dimension_id": "support",
+      "decision_id": "W2",
+      "short_name": "Alternatywny sposób dostępu",
+      "text": "Czy organizacja zapewnia alternatywny sposób dostępu lub odpowiednie usprawnienie, gdy standardowa ścieżka jest niedostępna?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1",
+          "OP4"
+        ]
+      },
+      "evidence_examples": [
+        "procedura alternatywnego dostępu",
+        "przykłady usprawnień",
+        "opis ścieżek zastępczych"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Brak alternatywnych sposobów dostępu lub odpowiednich usprawnień."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Alternatywy są zapewniane sporadycznie i nieprzewidywalnie."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Alternatywy istnieją w części przypadków, ale nie są jeszcze standardem działania."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Alternatywy są stosowane systemowo w typowych sytuacjach."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Alternatywy są standardem działania i szybko dostępne dla osób, które ich potrzebują."
+        }
+      ],
+      "area_label": "zapewnienia alternatywnego sposobu dostępu lub odpowiedniego usprawnienia",
+      "recommendations_by_level": {
+        "0": "Wprowadzić możliwość alternatywnego załatwienia sprawy lub skorzystania z usługi.",
+        "1": "Określić typowe scenariusze i sposoby działania w przypadku barier.",
+        "2": "Ustandaryzować stosowanie alternatyw i usprawnień.",
+        "3": "Zapewnić szybkość, przewidywalność i trwałość tych rozwiązań."
+      }
+    },
+    {
+      "id": "Q65",
+      "dimension_id": "support",
+      "decision_id": "W2",
+      "short_name": "Materiały pomocnicze dla użytkowników",
+      "text": "Czy użytkownik może skorzystać z dostępnych instrukcji, wyjaśnień i materiałów pomocniczych ułatwiających korzystanie z usługi lub narzędzia cyfrowego?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "operational",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1",
+          "OP4"
+        ]
+      },
+      "evidence_examples": [
+        "FAQ",
+        "instrukcje",
+        "materiały wideo lub tekstowe"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Brak materiałów pomocniczych albo są one niedostępne."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Materiały istnieją, ale są niepełne lub trudne w użyciu."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Materiały są częściowo dostępne i użyteczne, ale nie tworzą jeszcze spójnego wsparcia."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Materiały są dostępne i pomocne w głównych obszarach działania organizacji."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Materiały są dostępne, aktualne i dostosowane do różnych potrzeb użytkowników."
+        }
+      ],
+      "area_label": "dostępnych instrukcji, wyjaśnień i materiałów pomocniczych dla użytkowników",
+      "recommendations_by_level": {
+        "0": "Przygotować podstawowe instrukcje i materiały pomocnicze.",
+        "1": "Poprawić ich dostępność, strukturę i użyteczność.",
+        "2": "Rozszerzyć zakres materiałów oraz zapewnić ich stosowanie w głównych obszarach.",
+        "3": "Dostosować materiały do różnych grup użytkowników i regularnie je aktualizować."
+      }
+    },
+    {
+      "id": "Q66",
+      "dimension_id": "support",
+      "decision_id": "W3",
+      "short_name": "Wsparcie dla pracowników",
+      "text": "Czy pracownik może uzyskać pomoc w korzystaniu z narzędzi cyfrowych i w zgłaszaniu swoich potrzeb dostępnościowych?",
+      "target_maturity_level": 3,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "punkt kontaktu dla pracowników",
+        "kanał zgłaszania potrzeb",
+        "instrukcje dla przełożonych"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Pracownicy nie mają realnego wsparcia w korzystaniu z narzędzi cyfrowych ani zgłaszaniu potrzeb dostępnościowych."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Wsparcie jest dostępne w ograniczonym zakresie i bywa trudne do uzyskania."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Wsparcie jest dostępne w części przypadków, ale nie jest jeszcze przewidywalne i spójne."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Pracownicy mogą uzyskać wsparcie w większości sytuacji."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Wsparcie jest systemowe, przewidywalne i uwzględnia indywidualne potrzeby pracowników."
+        }
+      ],
+      "area_label": "wsparcia dla pracowników w korzystaniu z narzędzi cyfrowych i zgłaszaniu potrzeb dostępnościowych",
+      "recommendations_by_level": {
+        "0": "Zapewnić podstawowy punkt kontaktu i sposób uzyskania wsparcia dla pracowników.",
+        "1": "Rozszerzyć dostępność wsparcia oraz jego zakres.",
+        "2": "Zapewnić skuteczność i przewidywalność wsparcia dla pracowników.",
+        "3": "Uwzględniać indywidualne potrzeby i rozwijać wsparcie jako stały element organizacji pracy."
+      }
+    },
+    {
+      "id": "Q67",
+      "dimension_id": "support",
+      "decision_id": "W3",
+      "short_name": "Doskonalenie systemu wsparcia",
+      "text": "Czy organizacja wykorzystuje zgłoszenia i doświadczenia użytkowników do ulepszania usług i systemu wsparcia?",
+      "target_maturity_level": 4,
+      "dominant_recommendation_type": "systemic",
+      "recommendation_refs": {
+        "strategic": [
+          "S13"
+        ],
+        "systemic": [
+          "SYS4"
+        ],
+        "operational": [
+          "OP1"
+        ]
+      },
+      "evidence_examples": [
+        "analiza zgłoszeń",
+        "wnioski z obsługi",
+        "plany usprawnień"
+      ],
+      "answers": [
+        {
+          "value": 0,
+          "label": "poziom początkowy",
+          "text": "Zgłoszenia i doświadczenia użytkowników nie są analizowane ani wykorzystywane do ulepszania usług i systemu wsparcia."
+        },
+        {
+          "value": 1,
+          "label": "poziom porządkowania",
+          "text": "Zgłoszenia są rozpatrywane pojedynczo, bez szerszej analizy i wykorzystania wniosków."
+        },
+        {
+          "value": 2,
+          "label": "poziom integracji (częściowy)",
+          "text": "Powtarzające się problemy są zauważane, ale analiza nie ma jeszcze stałego przełożenia na zmiany."
+        },
+        {
+          "value": 3,
+          "label": "poziom integracji",
+          "text": "Analiza zgłoszeń wpływa na poprawę usług i systemu wsparcia."
+        },
+        {
+          "value": 4,
+          "label": "poziom dojrzałości",
+          "text": "Analiza jest systemowa i napędza ciągłe doskonalenie usług oraz systemu wsparcia."
+        }
+      ],
+      "area_label": "wykorzystania zgłoszeń i doświadczeń użytkowników do ulepszania usług i systemu wsparcia",
+      "recommendations_by_level": {
+        "0": "Zacząć rejestrować i przeglądać zgłoszenia oraz doświadczenia użytkowników.",
+        "1": "Identyfikować powtarzające się problemy i wyciągać z nich podstawowe wnioski.",
+        "2": "Wykorzystywać dane ze zgłoszeń do wprowadzania zmian w usługach i wsparciu.",
+        "3": "Włączyć analizę zgłoszeń do stałego zarządzania i ciągłego doskonalenia."
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "output_file": "/mnt/data/assessment-questions-clean.json",
+  "question_count": 67,
+  "dimension_count": 7,
+  "decision_count": 25,
+  "removed_top_level_keys": [
+    "recommendation_library",
+    "rule_templates"
+  ],
+  "removed_question_level_keys": [
+    "dominant_recommendation_type",
+    "recommendation_refs",
+    "recommendations_by_level"
+  ],
+  "remaining_question_fields": [
+    "answers",
+    "area_label",
+    "decision_id",
+    "dimension_id",
+    "evidence_examples",
+    "id",
+    "short_name",
+    "target_maturity_level",
+    "text"
+  ]
+}
