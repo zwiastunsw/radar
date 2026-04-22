@@ -82,6 +82,7 @@ export function buildExecutiveHtml({
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Widok kierowniczy – dostępność cyfrowa</title>
+  <meta name="robots" content="noindex, nofollow">
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
