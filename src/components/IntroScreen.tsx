@@ -423,7 +423,7 @@ export function IntroScreen({
               "rounded-xl px-5 py-3 text-sm font-medium",
               "focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus)]",
               isFormReady
-                ? "bg-[var(--brand)] text-[var(--on-brand)] hover:opacity-90"
+                ? "btn-primary"
                 : "border border-[var(--border)] bg-[var(--surface-2)] text-[var(--text-muted)]",
             ].join(" ")}
           >
