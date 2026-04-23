@@ -127,7 +127,7 @@ export function IntroScreen({
         <p id={descId} className="mt-3 text-sm leading-7 text-[var(--text-muted)]">
           Narzędzie pomaga ocenić zdolności organizacji do zapewniania dostępności cyfrowej i
           przełożyć wyniki oceny na decyzje kierownicze, rekomendacje oraz plan
-          działań.
+          działań. Przeznaczone jest dla podmiotów publicznych.
         </p>
 
         <div className="mt-6 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
@@ -136,8 +136,9 @@ export function IntroScreen({
               id="instruction-heading"
               className="text-lg font-semibold text-[var(--text-main)]"
             >
-              Jak korzystać z narzędzia
+              Jak korzystać z Radaru dostępności
             </h2>
+			<p className="mt-3 text-sm leading-7 text-[var(--text-muted)]">Odpowiedz na 67 pytań dotyczących 7 wymiarów dostępności. Na podstawie odpowiedzi otrzymasz syntetyczną ocenę i&nbsp;zestaw konkretnych rekomendacji zarządczych.</p>
 
             <ul className="list mt-3 text-sm leading-7 text-[var(--text-muted)]">
               <li>
