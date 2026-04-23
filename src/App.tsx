@@ -228,6 +228,7 @@ export default function AccessibilityAssessmentUI() {
   const currentDimensionIndex = model.dimensions.findIndex(
     (d) => d.id === activeDimensionId
   );
+
   const isLastQuestionInDimension =
     activeQuestions.length > 0 && safeIndex >= activeQuestions.length - 1;
 
@@ -379,13 +380,14 @@ export default function AccessibilityAssessmentUI() {
       shouldMoveFocusRef.current = true;
       setActiveDimensionId(nextDimension.id);
       setCurrentIndex(0);
-      setLiveMessage(`Przejście do kolejnego wymiaru: ${nextDimension.name_pl}.`);
+      setLiveMessage(
+        `Przejście do kolejnego wymiaru: ${nextDimension.name_pl}.`
+      );
       return;
     }
 
-    setLiveMessage(
-      "To jest ostatnie pytanie ostatniego wymiaru. Możesz przejść do wyników."
-    );
+    setStage("results");
+    setLiveMessage("Przejście do ekranu wyników.");
   };
 
   return (
@@ -477,7 +479,7 @@ export default function AccessibilityAssessmentUI() {
                     decision={decisionMap[currentQuestion.decision_id]}
                     dimensionScore={dimensionScore}
                     headingRef={questionHeadingRef}
-					model={model}
+                    model={model}
                   />
                 ) : (
                   <Card className="p-5 text-sm text-[var(--text-muted)]">
@@ -507,7 +509,7 @@ export default function AccessibilityAssessmentUI() {
                         className="btn-primary rounded-2xl px-4 py-2 text-sm"
                       >
                         {isLastQuestionOverall
-                          ? "To już ostatnie pytanie"
+                          ? "Zobacz wyniki →"
                           : isLastQuestionInDimension
                           ? "Następny wymiar →"
                           : "Następne pytanie →"}
