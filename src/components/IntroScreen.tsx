@@ -233,7 +233,7 @@ export function IntroScreen({
                     htmlFor="assessmentDate"
                     className="mb-1 block text-sm font-medium text-[var(--text-main)]"
                   >
-                    Data wykonania samooceny
+                    Data samooceny
                   </label>
                   <input
                     ref={assessmentDateRef}
