@@ -125,8 +125,8 @@ export function IntroScreen({
         </h1>
 
         <p id={descId} className="mt-3 text-sm leading-7 text-[var(--text-muted)]">
-          Narzędzie wspiera ocenę organizacji w zakresie dostępności cyfrowej i
-          pomaga przełożyć wyniki na decyzje kierownicze, rekomendacje oraz plan
+          Narzędzie pomaga ocenić zdolności organizacji do zapewniania dostępności cyfrowej i
+          przełożyć wyniki oceny na decyzje kierownicze, rekomendacje oraz plan
           działań.
         </p>
 
